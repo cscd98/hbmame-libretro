@@ -22167,7 +22167,7 @@ stick to CPC-Power disks, when available)
 	<software name="climbit" supported="no">
 		<description>Climb-It (UK)</description>
 		<year>1985</year>
-		<publisher> Tynesoft </publisher>
+		<publisher>Tynesoft</publisher>
 		<part name="flop1" interface="floppy_3">
 			<dataarea name="flop" size="194816">
 				<rom name="climb-it (uk) (1985).dsk" size="194816" crc="aa513c20" sha1="7bbd3dcc7c3a425d2fe30184dd921ec93b6327f4" offset="0" />
@@ -22179,7 +22179,7 @@ stick to CPC-Power disks, when available)
 	<software name="climbita" cloneof="climbit" supported="no">
 		<description>Climb-It (UK, Alt)</description>
 		<year>1985</year>
-		<publisher> Tynesoft </publisher>
+		<publisher>Tynesoft</publisher>
 		<part name="flop1" interface="floppy_3">
 			<dataarea name="flop" size="194816">
 				<rom name="climbit (1984)(tynesoft).dsk" size="194816" crc="8ee28f87" sha1="a4469759a7393d799bd608e41f444b4840efc758" offset="0" />

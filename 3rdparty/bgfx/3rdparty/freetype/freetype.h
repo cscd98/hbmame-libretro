@@ -1,6 +1,6 @@
 #pragma once
 
-#if defined(_MSC_VER)
+#if defined(_MSC_VER) && !defined(__clang__)
 #	pragma warning(push)
 #	pragma warning(disable: 4100) // DISABLE warning C4100: '' : unreferenced formal parameter
 #	pragma warning(disable: 4146) // DISABLE warning C4146: unary minus operator applied to unsigned type, result still unsigned
@@ -10,6 +10,9 @@
 #	pragma warning(disable: 4701) // DISABLE warning C4701: potentially uninitialized local variable '' used
 #elif defined(__GNUC__)
 #	pragma GCC system_header
+#elif defined(__clang__)
+#   pragma clang diagnostic ignored "-Wshift-negative-value"
+#   pragma clang diagnostic ignored "-Wuninitialized"
 #endif // defined(__GNUC__)
 
 /***************************************************************************/
