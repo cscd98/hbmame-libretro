@@ -153674,7 +153674,7 @@ stick to CPC-Power disks, when available)
 	</software>
 
 	<!-- Identifying Vindicator, The (1988)(Imagine Software).dsk... --> <!-- Mostly GoodCPC -->
-	<software name="vindicat02" cloneof="vindicat" supported="no">
+	<software name="thevindi02" cloneof="thevindi" supported="no">
 		<description>The Vindicator (Imagine Software)</description>
 		<year>1988</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -153686,7 +153686,7 @@ stick to CPC-Power disks, when available)
 	</software>
 
 	<!-- Identifying Vindicator, The (1988)(Imagine Software)[cr Two Mag][t Two Mag].dsk... --> <!-- Mostly GoodCPC -->
-	<software name="vindicat03" cloneof="vindicat" supported="no">
+	<software name="thevindi03" cloneof="thevindi" supported="no">
 		<description>The Vindicator (Imagine Software)[cr Two Mag][t Two Mag]</description>
 		<year>1988</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -153698,7 +153698,7 @@ stick to CPC-Power disks, when available)
 	</software>
 
 	<!-- Identifying Vindicators (1989)(Domark).dsk... --> <!-- Mostly GoodCPC -->
-	<software name="vindicat04" cloneof="vindicat" supported="no">
+	<software name="vindicat02" cloneof="vindicat" supported="no">
 		<description>Vindicators (Domark)</description>
 		<year>1989</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -153710,7 +153710,7 @@ stick to CPC-Power disks, when available)
 	</software>
 
 	<!-- Identifying Vindicators (1989)(Domark)[a].dsk... --> <!-- Mostly GoodCPC -->
-	<software name="vindicat05" cloneof="vindicat" supported="no">
+	<software name="vindicat03" cloneof="vindicat" supported="no">
 		<description>Vindicators (Domark)[a]</description>
 		<year>1989</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -153722,7 +153722,7 @@ stick to CPC-Power disks, when available)
 	</software>
 
 	<!-- Identifying Vindicators (1989)(Domark)[cr GPA][t GPA].dsk... --> <!-- Mostly GoodCPC -->
-	<software name="vindicat06" cloneof="vindicat" supported="no">
+	<software name="vindicat04" cloneof="vindicat" supported="no">
 		<description>Vindicators (Domark)[cr GPA][t GPA]</description>
 		<year>1989</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -189644,7 +189644,7 @@ stick to CPC-Power disks, when available)
 	</software>
 
 	<!-- Identifying Vindicator, The (UK) (1988) [a1].dsk... --> <!-- GoodCPC -->
-	<software name="vindicat07" cloneof="vindicat" supported="no">
+	<software name="thevindi04" cloneof="thevindi" supported="no">
 		<description>The Vindicator (UK) [a1]</description>
 		<year>1988</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -189656,7 +189656,7 @@ stick to CPC-Power disks, when available)
 	</software>
 
 	<!-- Identifying Vindicator, The (UK) (1988) [a2].dsk... --> <!-- GoodCPC -->
-	<software name="vindicat08" cloneof="vindicat" supported="no">
+	<software name="thevindi05" cloneof="thevindi" supported="no">
 		<description>The Vindicator (UK) [a2]</description>
 		<year>1988</year>
 		<publisher>&lt;unknown&gt;</publisher>
