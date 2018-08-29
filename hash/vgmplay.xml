@@ -106741,7 +106741,7 @@
 	</software>
 
 	<software name="720_nes">
-		<description>720� (NES)</description>
+		<description>720° (NES)</description>
 		<year>1989</year>
 		<publisher>Mindscape</publisher>
 		<info name="cores" value="NES APU (N2A03)"/>
@@ -130749,7 +130749,7 @@
 	</software>
 
 	<software name="rbisland_nes">
-		<description>Rainbow Islands - The  Story of Bubble Bobble 2 (NES)</description>
+		<description>Rainbow Islands - The Story of Bubble Bobble 2 (NES)</description>
 		<year>1991</year>
 		<publisher>Taito</publisher>
 		<info name="cores" value="NES APU (N2A03)"/>
@@ -189305,7 +189305,7 @@
 	</software>
 
 	<software name="haraldh_pc">
-		<description>Harald H�rdtand i 'Kampen om de rene t�nder' (IBM PC AT)</description>
+		<description>Harald Hårdtand i 'Kampen om de rene tænder' (IBM PC AT)</description>
 		<year>1992</year>
 		<publisher>Colgate-Palmolive A/S</publisher>
 		<info name="cores" value="AdLib (YM3812)"/>
@@ -235246,7 +235246,7 @@
 	</software>
 
 	<software name="cruwball_md">
-		<description>Cr�e Ball (Twisted Flipper) (GEN/MD)</description>
+		<description>Crüe Ball (Twisted Flipper) (GEN/MD)</description>
 		<year>19??</year>
 		<publisher>No_Data</publisher>
 		<info name="cores" value="SN76496, YM2612"/>
