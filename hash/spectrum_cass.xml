@@ -1174,7 +1174,7 @@
 	</software>
 
 	<software name="cjantics">
-		<description>CJ_s Elephant Antics</description>
+		<description>CJ's Elephant Antics</description>
 		<year>1991</year>
 		<publisher>Codemasters</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -1270,7 +1270,7 @@
 
 	<!-- possible bad dump, shorter image, doesn't load -->
 	<software name="cobrasarm" cloneof="cobrasar" >
-		<description>Cobra_s Arc (medium case)</description>
+		<description>Cobra's Arc (medium case)</description>
 		<year>1986</year>
 		<publisher>Dinamic Software</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -1722,7 +1722,7 @@
 	</software>
 
 	<software name="drdoomsr"> <!-- manual protection -->
-		<description>Dr. Doom_s Revenge! (The Amazing Spider-Man and Captain America in)</description>
+		<description>Dr. Doom's Revenge! (The Amazing Spider-Man and Captain America in)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
