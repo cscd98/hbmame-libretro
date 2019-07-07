@@ -4,6 +4,7 @@
 /******************************************************************************
 
 SciSys Chess Partner 2000, also sold by Novag with the same name.
+It's probably the last SciSys / Novag collaboration.
 
 - 3850PK CPU at ~2MHz, 3853PK memory interface
 - 4KB ROM, 256 bytes RAM(2*2111N)
@@ -27,7 +28,7 @@ Capturing pieces is also unintuitive, having to press the destination square twi
 #include "speaker.h"
 
 // internal artwork
-#include "scisys_cp2000.lh" // clickable
+#include "saitek_cp2000.lh" // clickable
 
 
 namespace {
@@ -227,7 +228,7 @@ void cp2000_state::cp2000(machine_config &config)
 	/* video hardware */
 	PWM_DISPLAY(config, m_display).set_size(4, 7);
 	m_display->set_segmask(0xf, 0x7f);
-	config.set_default_layout(layout_scisys_cp2000);
+	config.set_default_layout(layout_saitek_cp2000);
 
 	/* sound hardware */
 	SPEAKER(config, "speaker").front_center();
@@ -255,4 +256,4 @@ ROM_END
 ******************************************************************************/
 
 //    YEAR  NAME    PARENT CMP MACHINE  INPUT   CLASS         INIT        COMPANY, FULLNAME, FLAGS
-CONS( 1980, cp2000, 0,      0, cp2000,  cp2000, cp2000_state, empty_init, "SciSys", "Chess Partner 2000", MACHINE_SUPPORTS_SAVE | MACHINE_CLICKABLE_ARTWORK )
+CONS( 1980, cp2000, 0,      0, cp2000,  cp2000, cp2000_state, empty_init, "SciSys / Novag", "Chess Partner 2000", MACHINE_SUPPORTS_SAVE | MACHINE_CLICKABLE_ARTWORK )

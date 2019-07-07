@@ -3,7 +3,9 @@
 // thanks-to:Berger
 /******************************************************************************
 
-Novag Delta-1, the chess engine seems similar to Boris (see aci_boris.cpp)
+SciSys Delta-1, the chess engine seems similar to Boris (see aci_boris.cpp)
+It was sold by both Novag and SciSys, ROM has "COPY RIGHT WINKLER HK 1979",
+Winkler was the founder of SciSys(later renamed to Saitek).
 
 Hardware notes:
 - 3850PK CPU at ~2MHz, 3853PK memory interface
@@ -19,7 +21,7 @@ Hardware notes:
 #include "video/pwm.h"
 
 // internal artwork
-#include "novag_delta1.lh" // clickable
+#include "saitek_delta1.lh" // clickable
 
 
 namespace {
@@ -216,7 +218,7 @@ void delta1_state::delta1(machine_config &config)
 	/* video hardware */
 	PWM_DISPLAY(config, m_display).set_size(4, 7);
 	m_display->set_segmask(0xf, 0x7f);
-	config.set_default_layout(layout_novag_delta1);
+	config.set_default_layout(layout_saitek_delta1);
 
 	TIMER(config, "display_blink").configure_periodic(FUNC(delta1_state::blink), attotime::from_msec(250)); // approximation
 }
@@ -241,4 +243,4 @@ ROM_END
 ******************************************************************************/
 
 //    YEAR  NAME      PARENT CMP MACHINE  INPUT   CLASS         INIT        COMPANY, FULLNAME, FLAGS
-CONS( 1979, ccdelta1, 0,      0, delta1,  delta1, delta1_state, empty_init, "Novag", "Chess Champion: Delta-1", MACHINE_SUPPORTS_SAVE | MACHINE_NO_SOUND_HW | MACHINE_CLICKABLE_ARTWORK )
+CONS( 1979, ccdelta1, 0,      0, delta1,  delta1, delta1_state, empty_init, "SciSys / Novag", "Chess Champion: Delta-1", MACHINE_SUPPORTS_SAVE | MACHINE_NO_SOUND_HW | MACHINE_CLICKABLE_ARTWORK )
