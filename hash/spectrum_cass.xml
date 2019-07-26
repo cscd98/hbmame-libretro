@@ -1389,8 +1389,7 @@
 		</part>
 	</software>
 
-	<!-- Unsupported block type (0x19 - Generalized Data Block) encountered -->
-	<software name="batmang" cloneof="batman" supported="no">
+	<software name="batmang" cloneof="batman">
 		<description>Batman (set 8, The Hit Squad)</description>
 		<year>1986</year>
 		<publisher>Ocean / The Hit Squad</publisher>
@@ -2924,13 +2923,13 @@
 	    </part>
 	</software>
 	
-	<software name="beetlemaa" cloneof="crazybug" supported="no"> <!-- resets when you try to start a game? -->
+	<software name="beetlemaa" cloneof="crazybug">
 	    <description>Beetlemania (AWA Software)</description>
 	    <year>1983</year>
 	    <publisher>AWA Software</publisher>
 	    <part name="cass" interface="spectrum_cass">
 	        <dataarea name="cass" size="17857">
-	            <rom name="beetlemania.tzx" size="17857" crc="d02cac3c" sha1="5a648c7d12650d46963b487f3c16e9865761ec27"/>
+	      		<rom name="beetlemania.tzx" size="17901" crc="ff1139a9" sha1="4efafa00f861c18df6b5361673ec5bfd726c53aa"/>
 	        </dataarea>
 	    </part>
 	</software>	
@@ -3421,7 +3420,10 @@
 		</part>
 	</software>
 
-	<!-- are there any versions between 1930 and 1654 missing, these were from different sources -->
+	<!-- Bomb Munchies Version 1860 22nd Sept 2017 is missing -->
+	<!-- Bomb Munchies Version 1775, 22nd April 2017 is missing -->
+	<!-- Bomb Munchies Version 1745 30th December 2016 is missing -->
+
 	<software name="bombmnch1654" cloneof="bombmnch"> 
 		<description>Bomb Munchies (version 1654)</description>
 		<year>201?</year>
@@ -3434,7 +3436,7 @@
 	</software>
 
 	<software name="bombmnch1500" cloneof="bombmnch"> 
-		<description>Bomb Munchies (version 1500)</description>
+		<description>Bomb Munchies (version 1500, 8 May 2016)</description>
 		<year>201?</year>
 		<publisher>Matthew Carrier, Yerzmyey</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -4097,7 +4099,7 @@
 		</part>
 	</software>
 
-	<software name="cauldrons" cloneof="cauldron" supported="no"> <!-- timing error means you have to rewind the tape or it misses a block, decoding error or bad image? -->
+	<software name="cauldrons" cloneof="cauldron">
 		<description>Cauldron (Silverbird)</description>
 		<year>1985</year>
 		<publisher>Palace Software / Silverbird</publisher>
@@ -4164,8 +4166,7 @@
 		</part>		
 	</software>
 
-	<!-- works if converted to .wav with tapir.exe, so decoding problem -->
-	<software name="costacap" supported="no">
+	<software name="costacap">
 		<description>Costa Capers</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -7262,7 +7263,7 @@
 	    </part>
 	</software>
 
-	<software name="eidolon" supported="partial"> <!-- misses a loading block in 128k mode, forcing you to rewind -->
+	<software name="eidolon">
 	    <description>The Eidolon (Ricochet)</description>
 	    <year>1986</year>
 	    <publisher>Activision Inc / Ricochet</publisher>
@@ -12631,14 +12632,9 @@
 	    <description>Klax (The Hit Squad)</description>
 	    <year>1990</year>
 	    <publisher>Domark Ltd / The Hit Squad</publisher>
-	    <part name="cass1" interface="spectrum_cass">
-	        <dataarea name="cass" size="65956"> <!-- this just seems to be incomplete, can only load in 48k mode, but still contains some of the 128k blocks, maybe should match side 2? -->
-	            <rom name="klax - side 1 (the hit squad).tzx" size="65956" crc="a1617cc7" sha1="3d64772d6594e1655084440108a280bc659817bb"/>
-	        </dataarea>
-	    </part>
-	    <part name="cass2" interface="spectrum_cass">
+	    <part name="cass" interface="spectrum_cass">
 	        <dataarea name="cass" size="131520">
-	            <rom name="klax - side 2 (the hit squad).tzx" size="131520" crc="70232f58" sha1="8a4f81aeedf55a78a05f0d6cfb43a2d5b2d67bd1"/>
+	            <rom name="klax (the hit squad).tzx" size="131520" crc="70232f58" sha1="8a4f81aeedf55a78a05f0d6cfb43a2d5b2d67bd1"/>
 	        </dataarea>
 	    </part>
 	</software>
@@ -13346,7 +13342,7 @@
 	    </part>
 	</software>
 	
-	<software name="loadmidn" supported="partial">  <!-- have to rewind tape or misses a block -->
+	<software name="loadmidn">
 	    <description>Loads Of Midnight (set 1)</description>
 	    <year>1987</year>
 	    <publisher>CRL Group PLC</publisher>
@@ -13364,7 +13360,7 @@
 	    </part>
 	</software>
 
-	<software name="loadmidna" cloneof="loadmidn" supported="partial">
+	<software name="loadmidna" cloneof="loadmidn">
 	    <description>Loads Of Midnight (set 2)</description>
 	    <year>1987</year>
 	    <publisher>CRL Group PLC</publisher>
@@ -15203,6 +15199,28 @@
 		</part>
 	</software>
 
+	<software name="mightyff"> 
+		<description>Mighty Final Fight (v1.1)</description>
+		<year>2018</year>
+		<publisher>SaNchez</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="302096">
+				<rom name="mff_v1.1.tap" size="302096" crc="1697a6ed" sha1="41e518ea17d2c1ce768e34fbf138c7e794ada1f9"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="mightyffa" cloneof="mightyff"> 
+		<description>Mighty Final Fight (v1.0)</description>
+		<year>2018</year>
+		<publisher>SaNchez</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="301977">
+				<rom name="mff_v1.0.tap" size="301977" crc="58850963" sha1="705dce1c9523028726b136565ee30ceb15f0590c"/>
+			</dataarea>
+		</part>
+	</software>
+
 
 	<!-- ##############################################################################################################################
 	     Titles beginning with 'N'
@@ -15510,7 +15528,7 @@
 	    </part>
 	</software>
 
-	<software name="ninjaham" supported="partial"> <!-- have to rewind or misses loading blocks -->
+	<software name="ninjaham">
 	    <description>Ninja Hamster</description>
 	    <year>1987</year>
 	    <publisher>CRL Group PLC</publisher>
@@ -15528,7 +15546,7 @@
 	    </part>
 	</software>
 
-	<software name="ninjahamd" cloneof="ninjaham" supported="partial"> <!-- have to rewind or misses loading blocks -->
+	<software name="ninjahamd" cloneof="ninjaham">
 	    <description>Ninja Hamster (Dro Soft)</description>
 	    <year>1987</year>
 	    <publisher>CRL Group PLC / Dro Soft</publisher>
@@ -16221,6 +16239,18 @@
 			</dataarea>
 		</part>
 	</software>
+	
+	<software name="octuktty"> 
+		<description>OctuKitty</description>
+		<year>2018</year>
+		<publisher>Narwhal</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="43800">
+				<rom name="octuktty.tap" size="43800" crc="34f6d64d" sha1="ffc254418e1ff7a517177399ec949c746e77a53e"/>
+			</dataarea>
+		</part>
+	</software>
+		
 	
 	<!-- ##############################################################################################################################
 	     Titles beginning with 'P'
@@ -21128,7 +21158,7 @@
 	    </part>
 	</software>
 	
-	<software name="antiriads" cloneof="antiriad" supported="partial"> <!-- need to rewind tape or misses a block -->
+	<software name="antiriads" cloneof="antiriad">
 	    <description>The Sacred Armour Of Antiriad (Silverbird)</description>
 	    <year>1986</year>
 	    <publisher>Palace Software</publisher>
@@ -22274,7 +22304,18 @@
 		</part>
 	</software>
 
-	<software name="sabotage"> <!-- there are several other games with the same name -->
+	<software name="saboqs"> 
+		<description>Sabotage (Quicksilva Ltd) (cracked)</description>
+		<year>1985</year>
+		<publisher>Quicksilva Ltd</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="41978">
+				<rom name="sabotage_qs.tzx" size="41978" crc="721adc1a" sha1="e8dff0b32dc28ca89321f93deb4eb68c20c0b1ad"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="sabotage">
 	    <description>Sabotage (Zeppelin Games)</description>
 	    <year>1988</year>
 	    <publisher>Zeppelin Games Ltd</publisher>
@@ -24027,6 +24068,28 @@
 		</part>
 	</software>
 
+	<software name="tlumos"> 
+		<description>The Treasure Of Lumos (set 1, 128k, final version)</description>
+		<year>2017</year>
+		<publisher>Jaime Grilo</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="34153">
+				<rom name="the treasure of lumos (final version) [128k with ay music].tap" size="34153" crc="c5164dc4" sha1="b60c081923e979039d2831d6f8b98469a1cd4f40"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="tlumosa" cloneof="tlumos"> 
+		<description>The Treasure Of Lumos (set 2, 48k, initial version)</description>
+		<year>2017</year>
+		<publisher>Jaime Grilo</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="26479">
+				<rom name="the treasure of lumos (initial version).tap" size="26479" crc="936275b5" sha1="de7374b19f1a56ba76f6e74566f1bdad87e6f757"/>
+			</dataarea>
+		</part>
+	</software>
+
 
 	<!-- ##############################################################################################################################
 	     Titles beginning with 'U'
@@ -24265,6 +24328,49 @@
 		</part>
 	</software>
 
+	<software name="vallatin"> 
+		<description>Vallation (set 1, 128k)</description>
+		<year>2017</year>
+		<publisher>Psytronik Software</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="68565">
+				<rom name="vallation128.tzx" size="68565" crc="2e4b612b" sha1="13d7f0368b1507cd3ccf26a37fe8daf2754becdd"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="vallatina" cloneof="vallatin"> 
+		<description>Vallation (set 2, 128k)</description>
+		<year>2017</year>
+		<publisher>Psytronik Software</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="68513">
+				<rom name="vallation128.tap" size="68513" crc="a30a4662" sha1="0dcefdd808b87be1841fbe0c297541f3a7066a80"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="vallatin48" cloneof="vallatin"> 
+		<description>Vallation (set 3, 48k)</description>
+		<year>2016</year>
+		<publisher>Tardis Remakes</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="41207">
+				<rom name="vallation48.tzx" size="41207" crc="4869ba37" sha1="d70ee8941bb5dfeca9663d74e952b7814615a190"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="vallatin48a" cloneof="vallatin"> 
+		<description>Vallation (set 4, 48k)</description>
+		<year>2016</year>
+		<publisher>Tardis Remakes</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="41179">
+				<rom name="vallation48.tap" size="41179" crc="e67312ca" sha1="c567c5965c8a3d9d482d131356f7cc03623d9882"/>
+			</dataarea>
+		</part>
+	</software>
 
 	<!-- ##############################################################################################################################
 	     Titles beginning with 'W'
@@ -126269,7 +126375,6 @@
 	            <rom name="table invaders - side a.tzx" size="63670" crc="02f205a4" sha1="b8177d4d167e39b97c3c2d9d55169d8ab00c7e92"/>
 	        </dataarea>
 	    </part>
-	    <publisher>&lt;unknown&gt;</publisher>
 	    <part name="cass2" interface="spectrum_cass">
 	        <dataarea name="cass" size="63670">
 	            <rom name="table invaders - side b.tzx" size="63670" crc="ce27c9ad" sha1="6b1a18d1e665d420f4df030ddb041e603c49d88b"/>
