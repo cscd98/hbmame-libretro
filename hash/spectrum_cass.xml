@@ -17684,7 +17684,7 @@
 	</software>
 
 	<software name="pingpongerb" cloneof="pingpong">
-		<description>Ping Pong (set 5, Erbe, small case))</description>
+		<description>Ping Pong (set 5, Erbe, small case)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -52108,7 +52108,7 @@
 	</software>
 
 	<software name="cricketc_b" cloneof="cricketc">
-		<description>Cricket Captain (D_H Games)</description>
+		<description>Cricket Captain (D&amp;H Games)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -64334,7 +64334,7 @@
 	</software>
 
 	<software name="fantasyr">
-		<description>Fantasy (R_n_H Microtec)</description>
+		<description>Fantasy (R'n'H Microtec)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -66983,7 +66983,7 @@
 	</software>
 
 	<software name="froggera">
-		<description>Frogger (A _n_ F)</description>
+		<description>Frogger (A 'n' F)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -75430,7 +75430,7 @@
 	</software>
 
 	<software name="hoppinma">
-		<description>Hoppin_ Mad</description>
+		<description>Hoppin' Mad</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -80015,7 +80015,7 @@
 	</software>
 
 	<software name="jetsetwi_m" cloneof="jetsetwi">
-		<description>Jet Set Willy - Dup Moor en t_ Panat</description>
+		<description>Jet Set Willy - Dup Moor en t' Panat</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -80224,7 +80224,7 @@
 	</software>
 
 	<software name="jetsetwi_af" cloneof="jetsetwi">
-		<description>Jet Set Willy - Madam Blavskja_s Carnival Macabre</description>
+		<description>Jet Set Willy - Madam Blavskja's Carnival Macabre</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -81552,7 +81552,7 @@
 	</software>
 
 	<software name="journeyt_b" cloneof="journeyt">
-		<description>Journey To The Centre Of Eddie Smith;s Head</description>
+		<description>Journey To The Centre Of Eddie Smith's Head</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -83098,7 +83098,7 @@
 	</software>
 
 	<software name="kobyashi">
-		<description>Kobyashi Ag_Kwo</description>
+		<description>Kobyashi Ag'Kwo</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -91840,7 +91840,7 @@
 	</software>
 
 	<software name="mexico86">
-		<description>Mexico _86 - Finals</description>
+		<description>Mexico '86 - Finals</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -91851,7 +91851,7 @@
 	</software>
 
 	<software name="mexico86_a" cloneof="mexico86">
-		<description>Mexico _86 - Qualifiers</description>
+		<description>Mexico '86 - Qualifiers</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -103789,7 +103789,7 @@
 	</software>
 
 	<software name="pokerv31">
-		<description>Poker v3.1 (V_M Soft)</description>
+		<description>Poker v3.1 (V&amp;M Soft)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -128258,7 +128258,7 @@
 	</software>
 
 	<software name="thetestga" cloneof="thetestg">
-		<description>The Test (The Guild) (set 2) </description>
+		<description>The Test (The Guild) (set 2)</description>
 		<year>1992</year>
 		<publisher>The Guild</publisher>
 		<part name="cass1" interface="spectrum_cass">
@@ -128810,12 +128810,12 @@
 	</software>
 
 	<software name="theoryof_b" cloneof="theoryof">
-		<description>Theory Of Music Questions And Exercices - 48k</description>
+		<description>Theory Of Music Questions And Exercises - 48k</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass1" interface="spectrum_cass">
 			<dataarea name="cass" size="67123">
-				<rom name="theory of music questions and exercices - 48k - side a.tzx" size="67123" crc="5b0bd5be" sha1="20d8b6ba3985060b9b6a12e10a518bd58daf7e42"/>
+				<rom name="theory of music questions and exercises - 48k - side a.tzx" size="67123" crc="5b0bd5be" sha1="20d8b6ba3985060b9b6a12e10a518bd58daf7e42"/>
 			</dataarea>
 		</part>
 		<part name="cass2" interface="spectrum_cass">
@@ -132118,7 +132118,7 @@
 	</software>
 
 	<software name="troubleb">
-		<description>Trouble Brewin_</description>
+		<description>Trouble Brewin'</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
