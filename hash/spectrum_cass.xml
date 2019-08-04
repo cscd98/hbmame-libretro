@@ -82167,10 +82167,10 @@
 		</part>
 	</software>
 
-	<software name="kaleidos">
+	<software name="kaleidaa">
 		<description>Kaleidoscope (Ad Astra)</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
+		<year>1984</year>
+		<publisher>Ad Astra</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="44101">
 				<rom name="kaleidoscope (ad astra).tzx" size="44101" crc="f00debdc" sha1="4f6f58411e38346e4094857f89d790f7d206203d"/>
@@ -82178,24 +82178,13 @@
 		</part>
 	</software>
 
-	<software name="kaleidos_a" cloneof="kaleidos">
+	<software name="kaleidos">
 		<description>Kaleidoskop</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="8990">
 				<rom name="kaleidoskop.tzx" size="8990" crc="368e2ac2" sha1="a9ab61f1f2d7d9f9097347527912bc968ae05366"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="kanegree">
-		<description>Kane - Greek</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="28249">
-				<rom name="kane - greek.tzx" size="28249" crc="ad0f95ef" sha1="aac0f899da76f6f02aee7c9d6cb865c9c2cf767c"/>
 			</dataarea>
 		</part>
 	</software>
@@ -82211,23 +82200,18 @@
 		</part>
 	</software>
 
-	<software name="karnovsi">
-		<description>Karnov (Proein)</description>
+	<software name="kaneg" cloneof="kane"> <!-- language is still English -->
+		<description>Kane (Greek cover)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass1" interface="spectrum_cass">
-			<dataarea name="cass" size="25051">
-				<rom name="karnov - side 1 (proein).tzx" size="25051" crc="ca3671b7" sha1="a5ad77e4b6621ed96443f34a24be37c1bc0e80c7"/>
-			</dataarea>
-		</part>
-		<part name="cass2" interface="spectrum_cass">
-			<dataarea name="cass" size="210144">
-				<rom name="karnov - side 2 (proein).tzx" size="210144" crc="29ffc92c" sha1="a0ae03685bbe3a833b6e1ba6e2f303044245e258"/>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="28249">
+				<rom name="kane - greek.tzx" size="28249" crc="ad0f95ef" sha1="aac0f899da76f6f02aee7c9d6cb865c9c2cf767c"/>
 			</dataarea>
 		</part>
 	</software>
 
-	<software name="karnovsi_b" cloneof="karnovsi">
+	<software name="karnov">
 		<description>Karnov</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -82239,6 +82223,22 @@
 		<part name="cass2" interface="spectrum_cass">
 			<dataarea name="cass" size="209954">
 				<rom name="karnov - side b.tzx" size="209954" crc="0e38b3f3" sha1="b55d3ebe318f0afdf7a7d60772e2204788fe789e"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="karnovp" cloneof="karnov">
+		<description>Karnov (Proein)</description>
+		<year>19??</year>
+		<publisher>&lt;unknown&gt;</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="25051">
+				<rom name="karnov - side 1 (proein).tzx" size="25051" crc="ca3671b7" sha1="a5ad77e4b6621ed96443f34a24be37c1bc0e80c7"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="210144">
+				<rom name="karnov - side 2 (proein).tzx" size="210144" crc="29ffc92c" sha1="a0ae03685bbe3a833b6e1ba6e2f303044245e258"/>
 			</dataarea>
 		</part>
 	</software>
@@ -82287,17 +82287,6 @@
 		</part>
 	</software>
 
-	<software name="kattrapb">
-		<description>Kat Trap (Bug-Byte)</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="48972">
-				<rom name="kat trap (bug-byte).tzx" size="48972" crc="264f21da" sha1="1a468f4d648bc3139ce461636c14dfb661dae07b"/>
-			</dataarea>
-		</part>
-	</software>
-
 	<software name="kattrap">
 		<description>Kat Trap</description>
 		<year>19??</year>
@@ -82305,6 +82294,17 @@
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="48942">
 				<rom name="kat trap.tzx" size="48942" crc="0ba3af6a" sha1="4fcb5d71ef7b0a747b7534bf074c1489e31632de"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="kattrapb" cloneof="kattrap">
+		<description>Kat Trap (Bug-Byte)</description>
+		<year>19??</year>
+		<publisher>&lt;unknown&gt;</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="48972">
+				<rom name="kat trap (bug-byte).tzx" size="48972" crc="264f21da" sha1="1a468f4d648bc3139ce461636c14dfb661dae07b"/>
 			</dataarea>
 		</part>
 	</software>
@@ -82359,18 +82359,7 @@
 	</software>
 
 	<software name="kendowar">
-		<description>Kendo Warrior (MCM)</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="48870">
-				<rom name="kendo warrior (mcm).tzx" size="48870" crc="9a772354" sha1="76e0e140287c9efac65878702d722969e63f288d"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="kendowar_a" cloneof="kendowar">
-		<description>Kendo Warrior</description>
+		<description>Kendo Warrior (set 1)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -82380,19 +82369,19 @@
 		</part>
 	</software>
 
-	<software name="kennydal">
-		<description>Kenny Dalglish Soccer Manager (Zeppelin)</description>
+	<software name="kendowarm" cloneof="kendowar">
+		<description>Kendo Warrior (set 2, MCM)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="57231">
-				<rom name="kenny dalglish soccer manager (zeppelin).tzx" size="57231" crc="ce955c1d" sha1="42dd6d3e4affdb304e51c212e5b0e26ac01be200"/>
+			<dataarea name="cass" size="48870">
+				<rom name="kendo warrior (mcm).tzx" size="48870" crc="9a772354" sha1="76e0e140287c9efac65878702d722969e63f288d"/>
 			</dataarea>
 		</part>
 	</software>
 
-	<software name="kennydal_a" cloneof="kennydal">
-		<description>Kenny Dalglish Soccer Manager</description>
+	<software name="kennydal">
+		<description>Kenny Dalglish Soccer Manager (set 1)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -82402,8 +82391,19 @@
 		</part>
 	</software>
 
+	<software name="kennydalz" cloneof="kennydal">
+		<description>Kenny Dalglish Soccer Manager (set 2, Zeppelin)</description>
+		<year>19??</year>
+		<publisher>&lt;unknown&gt;</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="57231">
+				<rom name="kenny dalglish soccer manager (zeppelin).tzx" size="57231" crc="ce955c1d" sha1="42dd6d3e4affdb304e51c212e5b0e26ac01be200"/>
+			</dataarea>
+		</part>
+	</software>
+
 	<software name="kennydalmast" cloneof="kennydal">
-		<description>Kenny Dalglish Soccer Manager (Mastering Tape)</description>
+		<description>Kenny Dalglish Soccer Manager (set 3, Mastering Tape)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -82413,19 +82413,8 @@
 		</part>
 	</software>
 
-	<software name="kennydal_b" cloneof="kennydal">
-		<description>Kenny Dalglish Soccer Match (EDOS)</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="48988">
-				<rom name="kenny dalglish soccer match (edos).tzx" size="48988" crc="e48eec81" sha1="85e8445fd566777ac72febea9df6633efc15ba87"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="kennydal_c" cloneof="kennydal">
-		<description>Kenny Dalglish Soccer Match</description>
+	<software name="kennysmt">
+		<description>Kenny Dalglish Soccer Match (set 1)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -82435,24 +82424,35 @@
 		</part>
 	</software>
 
-	<software name="kentilla">
-		<description>Kentilla (Mastertronic)</description>
+	<software name="kennysmte" cloneof="kennysmt">
+		<description>Kenny Dalglish Soccer Match (set 2, EDOS)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="49601">
-				<rom name="kentilla (mastertronic).tzx" size="49601" crc="fd34f042" sha1="222e64888a5bf5366df7886fe797f9e9cdc5cef9"/>
+			<dataarea name="cass" size="48988">
+				<rom name="kenny dalglish soccer match (edos).tzx" size="48988" crc="e48eec81" sha1="85e8445fd566777ac72febea9df6633efc15ba87"/>
 			</dataarea>
 		</part>
 	</software>
 
-	<software name="kentilla_a" cloneof="kentilla">
-		<description>Kentilla</description>
+	<software name="kentilla">
+		<description>Kentilla (set 1)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="50525">
 				<rom name="kentilla.tzx" size="50525" crc="c8526b85" sha1="2f27f403542ac58faaaebd6f0700031c4c281120"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="kentillam" cloneof="kentilla">
+		<description>Kentilla (set 2, Mastertronic)</description>
+		<year>19??</year>
+		<publisher>&lt;unknown&gt;</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="49601">
+				<rom name="kentilla (mastertronic).tzx" size="49601" crc="fd34f042" sha1="222e64888a5bf5366df7886fe797f9e9cdc5cef9"/>
 			</dataarea>
 		</part>
 	</software>
@@ -82512,8 +82512,19 @@
 		</part>
 	</software>
 
-	<software name="kickoffs">
-		<description>Kick Off (System 4)</description>
+	<software name="kickoff">
+		<description>Kick Off (set 1)</description>
+		<year>19??</year>
+		<publisher>&lt;unknown&gt;</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="47069">
+				<rom name="kick off.tzx" size="47069" crc="c0ec1b35" sha1="082795325fd2a712c73b8804c30221e65aea0d6d"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="kickoffs" cloneof="kickoff">
+		<description>Kick Off (set 2, System 4)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -82523,24 +82534,13 @@
 		</part>
 	</software>
 
-	<software name="kickofft">
-		<description>Kick Off (Top Shots)</description>
+	<software name="kickofft" cloneof="kickoff">
+		<description>Kick Off (set 3, Top Shots)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="47099">
 				<rom name="kick off (top shots).tzx" size="47099" crc="37a0e70d" sha1="48f71b4a521c9195ecb9abc715ccc055265cf37b"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="kickoff">
-		<description>Kick Off</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="47069">
-				<rom name="kick off.tzx" size="47069" crc="c0ec1b35" sha1="082795325fd2a712c73b8804c30221e65aea0d6d"/>
 			</dataarea>
 		</part>
 	</software>
@@ -82601,16 +82601,7 @@
 		</part>
 	</software>
 
-	<software name="kijk">
-		<description>KIJK</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="44143">
-				<rom name="kijk.tzx" size="44143" crc="1a15d897" sha1="58cb2d84c2e37226d5a584cdfc39b0479478759e"/>
-			</dataarea>
-		</part>
-	</software>
+
 
 
 	<software name="killedun">
@@ -86739,6 +86730,17 @@
 		</part>
 	</software>
 
+	<software name="kijk" cloneof="lookshar"> <!-- This is the S.O.R.T. game from above, translated into Dutch, if the other game is meant to be included it is missing -->
+		<description>Kijk Goed!</description>
+		<year>19??</year>
+		<publisher>&lt;unknown&gt;</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="44143">
+				<rom name="kijk.tzx" size="44143" crc="1a15d897" sha1="58cb2d84c2e37226d5a584cdfc39b0479478759e"/>
+			</dataarea>
+		</part>
+	</software>
+
 	<software name="loonylan">
 		<description>Loony Lander</description>
 		<year>19??</year>
@@ -86805,7 +86807,7 @@
 		</part>
 	</software>
 
-	<software name="lordofth_a" cloneof="lordofth">
+	<software name="lotr">
 		<description>Lord Of The Rings</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -86831,7 +86833,18 @@
 		</part>
 	</software>
 
-	<software name="lordsofm">
+	<software name="lordmagi">
+		<description>Lords Of Magic (set 1)</description>
+		<year>19??</year>
+		<publisher>&lt;unknown&gt;</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="33224">
+				<rom name="lords of magic.tzx" size="33224" crc="82ab05f9" sha1="321073ac5e64a56fb6944a41f2877b6d46c0bc47"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lordmagia" cloneof="lordmagi">
 		<description>Lords Of Magic (set 2)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -86842,35 +86855,24 @@
 		</part>
 	</software>
 
-	<software name="lordsofm_a" cloneof="lordsofm">
-		<description>Lords Of Magic</description>
+	<software name="lordtime">
+		<description>Lords Of Time (set 1)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="33224">
-				<rom name="lords of magic.tzx" size="33224" crc="82ab05f9" sha1="321073ac5e64a56fb6944a41f2877b6d46c0bc47"/>
+			<dataarea name="cass" size="30403">
+				<rom name="lords of time.tzx" size="30403" crc="48168e78" sha1="8dfc44adf05704b702b4cd82b667af8fe3ee5dd1"/>
 			</dataarea>
 		</part>
 	</software>
 
-	<software name="lordsoft">
+	<software name="lordtimea" cloneof="lordtime">
 		<description>Lords Of Time (set 2)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="30211">
 				<rom name="lords of time - alternate.tzx" size="30211" crc="1b8778be" sha1="f668474ed11fcf0dd248f1cd19f2860fc3920582"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="lordsoft_a" cloneof="lordsoft">
-		<description>Lords Of Time</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="30403">
-				<rom name="lords of time.tzx" size="30403" crc="48168e78" sha1="8dfc44adf05704b702b4cd82b667af8fe3ee5dd1"/>
 			</dataarea>
 		</part>
 	</software>
@@ -86914,24 +86916,13 @@
 		<publisher>RetroWorks</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="82981">
-				<rom name="los amores de brunilda - espaÃ±ol.tzx" size="82981" crc="bfcddbd0" sha1="baca28cbfa9b91677e45218aa5679c6dba7bf811"/>
+				<rom name="los amores de brunilda - spanish.tzx" size="82981" crc="bfcddbd0" sha1="baca28cbfa9b91677e45218aa5679c6dba7bf811"/>
 			</dataarea>
 		</part>
 	</software>
 
-	<software name="losangel">
-		<description>Los Angeles SWAT (Dro Soft)</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="32585">
-				<rom name="los angeles swat (dro soft).tzx" size="32585" crc="a6f36205" sha1="1871eab71ae33038791c723813c8499fd86f201e"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="losangel_a" cloneof="losangel">
-		<description>Los Angeles SWAT</description>
+	<software name="laswat">
+		<description>Los Angeles SWAT (set 1)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -86941,30 +86932,19 @@
 		</part>
 	</software>
 
-	<software name="losextra">
-		<description>Los Extraordinarios Casos Del Dr. Van Halen - El Cuervo De La Tormenta V1.0</description>
+	<software name="laswata" cloneof="laswat">
+		<description>Los Angeles SWAT (set 2, Dro Soft)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="45670">
-				<rom name="los extraordinarios casos del dr. van halen - el cuervo de la tormenta v1.0.tzx" size="45670" crc="e434d2f7" sha1="edbfdce30660315db1559ac282a945754dc8c58a"/>
+			<dataarea name="cass" size="32585">
+				<rom name="los angeles swat (dro soft).tzx" size="32585" crc="a6f36205" sha1="1871eab71ae33038791c723813c8499fd86f201e"/>
 			</dataarea>
 		</part>
 	</software>
 
-	<software name="losextra_a" cloneof="losextra">
-		<description>Los Extraordinarios Casos Del Dr. Van Halen - Los Cantos De Anubis V1.0</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="45161">
-				<rom name="los extraordinarios casos del dr. van halen - los cantos de anubis v1.0.tzx" size="45161" crc="bfed56ef" sha1="0f6bce6111df577c5635c74617b171c93ed3425b"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="losextra_b" cloneof="losextra">
-		<description>Los Extraordinarios Casos Del Dr. Van Halen - Misterio En La Catedral V2.0</description>
+	<software name="vhalen1">
+		<description>Los Extraordinarios Casos Del Dr. Van Halen - 1. Misterio En La Catedral (V2.0)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -86974,8 +86954,30 @@
 		</part>
 	</software>
 
-	<software name="losextra_c" cloneof="losextra">
-		<description>Los Extraordinarios Casos Del Dr. Van Halen - Tristes Alas Del Destino V1.0</description>
+	<software name="vhalen2">
+		<description>Los Extraordinarios Casos Del Dr. Van Halen - 2. El Cuervo De La Tormenta (V1.0)</description>
+		<year>19??</year>
+		<publisher>&lt;unknown&gt;</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="45670">
+				<rom name="los extraordinarios casos del dr. van halen - el cuervo de la tormenta v1.0.tzx" size="45670" crc="e434d2f7" sha1="edbfdce30660315db1559ac282a945754dc8c58a"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="vhalen3">
+		<description>Los Extraordinarios Casos Del Dr. Van Halen - 3. Los Cantos De Anubis (V1.0)</description>
+		<year>19??</year>
+		<publisher>&lt;unknown&gt;</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="45161">
+				<rom name="los extraordinarios casos del dr. van halen - los cantos de anubis v1.0.tzx" size="45161" crc="bfed56ef" sha1="0f6bce6111df577c5635c74617b171c93ed3425b"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="vhalen4">
+		<description>Los Extraordinarios Casos Del Dr. Van Halen - 4. Tristes Alas Del Destino (V1.0)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -86985,8 +86987,8 @@
 		</part>
 	</software>
 
-	<software name="losextra_d" cloneof="losextra">
-		<description>Los Extraordinarios Casos Del Dr. Van Halen - Ultimo Acto V1.0</description>
+	<software name="vhalen5">
+		<description>Los Extraordinarios Casos Del Dr. Van Halen - 5. Ultimo Acto (V1.0)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -87051,65 +87053,12 @@
 		</part>
 	</software>
 
-	<software name="lostinmy">
-		<description>Lost In My Spectrum - English - 48k</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="40029">
-				<rom name="lost in my spectrum - english - 48k.tzx" size="40029" crc="309c0d15" sha1="46de010c81b00d9682ce8021b4442c563caf82ab"/>
-			</dataarea>
-		</part>
-	</software>
 
-	<software name="lostinmy_a" cloneof="lostinmy">
-		<description>Lost In My Spectrum - Italiano - 128k</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="40631">
-				<rom name="lost in my spectrum - italiano - 128k.tzx" size="40631" crc="37f11349" sha1="3eff8a29c0d5bc86f024f36e640f94dcb8f6eafc"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="lostinmy_b" cloneof="lostinmy">
-		<description>Lost In My Spectrum - Italiano - 48k</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="40075">
-				<rom name="lost in my spectrum - italiano - 48k.tzx" size="40075" crc="ab000c03" sha1="baaaf647ba8007239014150a213a236a702166cf"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="lostinmy_c" cloneof="lostinmy">
-		<description>Lost In My Spectrum v1.2 - English</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="26195">
-				<rom name="lost in my spectrum v1.2 - english.tzx" size="26195" crc="0d942e8d" sha1="9f53185e714b6cb014f69267649340d2ba5b35e9"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="lostinmy_d" cloneof="lostinmy">
-		<description>Lost In My Spectrum v1.2 - Italiano</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="26253">
-				<rom name="lost in my spectrum v1.2 - italiano.tzx" size="26253" crc="d2701f25" sha1="42ca3c8aeb85910065543a89067ce015dda15953"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="lostinmy_e" cloneof="lostinmy">
-		<description>Lost In My Spectrum v1.3 - English</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
+	<!-- there is a 2.0 version of this in multiple langauges that still needs adding -->
+	<software name="lostspec">
+		<description>Lost In My Spectrum (set 1, v1.3, English)</description>
+		<year>2012</year>
+		<publisher>Alessandro Grussu</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="26505">
 				<rom name="lost in my spectrum v1.3 - english.tzx" size="26505" crc="6bbadf2d" sha1="0d7e688396ad5c92a1517513fb336c183e69909e"/>
@@ -87117,16 +87066,77 @@
 		</part>
 	</software>
 
-	<software name="lostinmy_f" cloneof="lostinmy">
-		<description>Lost In My Spectrum v1.3 - Italiano</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
+	<software name="lostspeci" cloneof="lostspec">
+		<description>Lost In My Spectrum (set 2, v1.3, Italian)</description>
+		<year>2012</year>
+		<publisher>Alessandro Grussu</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="26578">
 				<rom name="lost in my spectrum v1.3 - italiano.tzx" size="26578" crc="6f3483f9" sha1="9527fa1676690857036ffef3e88b59c72eeef345"/>
 			</dataarea>
 		</part>
 	</software>
+
+	<software name="lostspeca" cloneof="lostspec">
+		<description>Lost In My Spectrum (set 3, v1.2, English)</description>
+		<year>2012</year>
+		<publisher>Alessandro Grussu</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="26195">
+				<rom name="lost in my spectrum v1.2 - english.tzx" size="26195" crc="0d942e8d" sha1="9f53185e714b6cb014f69267649340d2ba5b35e9"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lostspecai" cloneof="lostspec">
+		<description>Lost In My Spectrum (set 4, v1.2, Italian)</description>
+		<year>2012</year>
+		<publisher>Alessandro Grussu</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="26253">
+				<rom name="lost in my spectrum v1.2 - italiano.tzx" size="26253" crc="d2701f25" sha1="42ca3c8aeb85910065543a89067ce015dda15953"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<!-- v1.1 is missing? (first version with turbo loader -->
+
+	<software name="lostspeco" cloneof="lostspec">
+		<description>Lost In My Spectrum (set 5, v1.0, English, 48k)</description>
+		<year>2012</year>
+		<publisher>Alessandro Grussu</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="40029">
+				<rom name="lost in my spectrum - english - 48k.tzx" size="40029" crc="309c0d15" sha1="46de010c81b00d9682ce8021b4442c563caf82ab"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lostspecoi" cloneof="lostspec">
+		<description>Lost In My Spectrum (set 5, v1.0, Italian, 48k)</description>
+		<year>2012</year>
+		<publisher>Alessandro Grussu</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="40075">
+				<rom name="lost in my spectrum - italiano - 48k.tzx" size="40075" crc="ab000c03" sha1="baaaf647ba8007239014150a213a236a702166cf"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lostspecoia" cloneof="lostspec">
+		<description>Lost In My Spectrum - (set 6, v1.0, Italian, 128k)</description>
+		<year>2012</year>
+		<publisher>Alessandro Grussu</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="40631">
+				<rom name="lost in my spectrum - italiano - 128k.tzx" size="40631" crc="37f11349" sha1="3eff8a29c0d5bc86f024f36e640f94dcb8f6eafc"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<!-- no English 128k older set? -->
+
+
 
 	<software name="lostinth">
 		<description>Lost In The Amazon</description>
