@@ -13861,7 +13861,7 @@
 		<year>1989</year>
 		<publisher>MicroProse Software Ltd / Kixx</publisher>
 		<part name="cass1" interface="spectrum_cass">
-		<feature name="part_id" value="Side 1"/>
+			<feature name="part_id" value="Side 1"/>
 			<dataarea name="cass" size="43704">
 				<rom name="microprose soccer (kixx) - side a.tzx" size="43704" crc="baa76ab9" sha1="83d1855b77783e1689b96becc5a7ecec11c58195"/>
 			</dataarea>
@@ -25841,7 +25841,7 @@
 			</dataarea>
 		</part>
 		<part name="cass4" interface="spectrum_cass">
-		<feature name="part_id" value="Tape 2 - Side 2 - Micro Mouse Goes De-bugging, Tube Cube, Strategy 1 - Invasion, Escape, Laser Zone, Strontium Dog - The Killing, Pyramania, Blood 'n' Guts"/>
+			<feature name="part_id" value="Tape 2 - Side 2 - Micro Mouse Goes De-bugging, Tube Cube, Strategy 1 - Invasion, Escape, Laser Zone, Strontium Dog - The Killing, Pyramania, Blood 'n' Guts"/>
 			<dataarea name="cass" size="213081">
 				<rom name="30 games - side 4.tzx" size="213081" crc="10de5884" sha1="a7cd9d546925afeed951d65b7880b6257801e9a8"/>
 			</dataarea>
