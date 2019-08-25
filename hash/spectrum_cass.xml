@@ -109088,7 +109088,7 @@
 	<!-- this differs by 2 bytes from the Z80 snapshot, which means the area around the lives counter isn't filled, the bytesum for the file is correct
 	     on the cassette however, so maybe the snapshot was patched?
 	     the game freezes if you leave the demo running until the last level, but the same happens with the Z80 snapshot -->
-	<software name="hunchy"> 
+	<software name="hunchy">
 		<description>Hunchy (1983, Mr. Micro)</description>
 		<year>1983</year>
 		<publisher>Mr. Micro Ltd</publisher>
