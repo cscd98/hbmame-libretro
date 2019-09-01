@@ -18320,7 +18320,7 @@
 	</software>
 
 	<software name="neoplasm">
-		<description>>Aliens Neoplasma (set 1, v1.2, English)</description>
+		<description>Aliens Neoplasma (set 1, v1.2, English)</description>
 		<year>2019</year>
 		<publisher>Sanchez crew</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -18331,7 +18331,7 @@
 	</software>
 
 	<software name="neoplasma" cloneof="neoplasm" supported="partial">
-		<description>>Aliens Neoplasma (set 2, v1.2, English, Turbo Sound)</description>
+		<description>Aliens Neoplasma (set 2, v1.2, English, Turbo Sound)</description>
 		<year>2019</year>
 		<publisher>Sanchez crew</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -18342,7 +18342,7 @@
 	</software>
 
 	<software name="neoplasms" cloneof="neoplasm">
-		<description>>Aliens Neoplasma (set 3, v1.2, Spanish)</description>
+		<description>Aliens Neoplasma (set 3, v1.2, Spanish)</description>
 		<year>2019</year>
 		<publisher>Sanchez crew</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -18353,7 +18353,7 @@
 	</software>
 
 	<software name="neoplasmsa" cloneof="neoplasm" supported="partial">
-		<description>>Aliens Neoplasma (set 4, v1.2, Spanish, Turbo Soudn)</description>
+		<description>Aliens Neoplasma (set 4, v1.2, Spanish, Turbo Soudn)</description>
 		<year>2019</year>
 		<publisher>Sanchez crew</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -18364,7 +18364,7 @@
 	</software>
 
 	<software name="neoplasmr" cloneof="neoplasm">
-		<description>>Aliens Neoplasma (set 5, v1.2, Russian)</description>
+		<description>Aliens Neoplasma (set 5, v1.2, Russian)</description>
 		<year>2019</year>
 		<publisher>Sanchez crew</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -18375,7 +18375,7 @@
 	</software>
 
 	<software name="neoplasmra" cloneof="neoplasm" supported="partial">
-		<description>>Aliens Neoplasma (set 6, v1.2, Russian, Turbo Sound)</description>
+		<description>Aliens Neoplasma (set 6, v1.2, Russian, Turbo Sound)</description>
 		<year>2019</year>
 		<publisher>Sanchez crew</publisher>
 		<part name="cass" interface="spectrum_cass">
@@ -90476,7 +90476,7 @@
 	</software>
 
 	<software name="lostspec10b" cloneof="lostspec">
-		<description>Lost In My Spectrum - (set 25, v1.0, Italian, 128k)</description>
+		<description>Lost In My Spectrum (set 25, v1.0, Italian, 128k)</description>
 		<year>2012</year>
 		<publisher>Alessandro Grussu</publisher>
 		<part name="cass" interface="spectrum_cass">
