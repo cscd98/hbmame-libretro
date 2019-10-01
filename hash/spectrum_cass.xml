@@ -4948,7 +4948,7 @@
 	<software name="cstlmast">
 		<description>Castle Master</description>
 		<year>1990</year>
-		<publisher> Incentive Software Ltd</publisher>
+		<publisher>Incentive Software Ltd</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="50545">
 				<rom name="castle master.tzx" size="50545" crc="37608721" sha1="af4862cc5837badfb8e1a1afa6a8593d430bb646"/>
@@ -4959,7 +4959,7 @@
 	<software name="cstlmasths" cloneof="cstlmast">
 		<description>Castle Master (The Hit Squad)</description>
 		<year>1990</year>
-		<publisher> Incentive Software Ltd / The Hit Squad</publisher>
+		<publisher>Incentive Software Ltd / The Hit Squad</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="50545">
 				<rom name="castle master (the hit squad).tzx" size="50545" crc="905b8a05" sha1="9bd81520b2162267f726ae19b56af4c5874a772f"/>
@@ -4992,7 +4992,7 @@
 	<software name="chessmas">
 		<description>Chess Master - Computer Tape</description>
 		<year>1984</year>
-		<publisher> Serin Software</publisher>
+		<publisher>Serin Software</publisher>
 		<part name="cass1" interface="spectrum_cass">
 			<feature name="part_id" value="Side 1"/>
 			<dataarea name="cass" size="38702">
@@ -10220,7 +10220,7 @@
 	<software name="gunboat">
 		<description>Gunboat (Dro Soft)</description>
 		<year>19??</year>
-		<publisher> Accolade Inc / Dro Soft</publisher>
+		<publisher>Accolade Inc / Dro Soft</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="82614">
 				<rom name="gunboat (dro soft).tzx" size="82614" crc="f948fc82" sha1="3c88ddd5064cd2f6f1815089383bf9fc12287609"/>
@@ -11775,7 +11775,7 @@
 	<software name="headheelhs" cloneof="headheel">
 		<description>Head Over Heels (set 2, The Hit Squad)</description>
 		<year>1987</year>
-		<publisher> Ocean Software Ltd / The Hit Squad</publisher>
+		<publisher>Ocean Software Ltd / The Hit Squad</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="51739">
 				<rom name="head over heels (the hit squad).tzx" size="51739" crc="0b21205e" sha1="6d8b166043d8a818ea9efb6411fc8ac6da3b5236"/>
@@ -12031,7 +12031,7 @@
 	<software name="hopchop2" cloneof="hopchop">
 		<description>Hop 'n' Chop (version 2)</description>
 		<year>1995</year>
-		<publisher> edwood Designs</publisher>
+		<publisher>edwood Designs</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="54249">
 				<rom name="hop _n_ chop v2.tzx" size="54249" crc="e8cf52e1" sha1="29404158fecdd36f5ecb6957ba32aa29c4492ac6"/>
@@ -14170,7 +14170,7 @@
 	<software name="kamikzjg">
 		<description>Kamikaze (JK Greye)</description>
 		<year>1982</year>
-		<publisher> J.K. Greye Enterprises Ltd</publisher>
+		<publisher>J.K. Greye Enterprises Ltd</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="8652">
 				<rom name="kamikaze (jk greye).tzx" size="8652" crc="a7000dd8" sha1="944538f994f0a718b16508328203a23f64574140"/>
@@ -19451,7 +19451,7 @@
 	<software name="pyramid">
 		<description>The Pyramid</description>
 		<year>1983</year>
-		<publisher> Fantasy Software</publisher>
+		<publisher>Fantasy Software</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="30051">
 				<rom name="the pyramid.tzx" size="30051" crc="ec1b4123" sha1="5d97a1e741b8f4941549fd10ac67e3062847ef4d"/>
@@ -21152,7 +21152,7 @@
 	<software name="ralysime" cloneof="ralysim">
 		<description>Rally Simulator (EDOS)</description>
 		<year>1989</year>
-		<publisher> Zeppelin Games Ltd / EDOS</publisher>
+		<publisher>Zeppelin Games Ltd / EDOS</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="42816">
 				<rom name="rally simulator (edos).tzx" size="42816" crc="11a9eb13" sha1="38f269e55c58eaee1fb768609389f04f16d7a1ee"/>
@@ -21239,7 +21239,7 @@
 	<software name="rbisland">
 		<description>Rainbow Islands (set 1)</description>
 		<year>1990</year>
-		<publisher> Ocean Software Ltd</publisher>
+		<publisher>Ocean Software Ltd</publisher>
 		<part name="cass1" interface="spectrum_cass">
 			<feature name="part_id" value="Side 1"/>
 			<dataarea name="cass" size="94678">
@@ -21293,7 +21293,7 @@
 	<software name="rbislanda" cloneof="rbisland">
 		<description>Rainbow Islands (set 4)</description>
 		<year>1990</year>
-		<publisher> Ocean Software Ltd</publisher>
+		<publisher>Ocean Software Ltd</publisher>
 		<part name="cass1" interface="spectrum_cass">
 			<dataarea name="cass" size="94689">
 				<rom name="rainbow islands - side 1_tzx120.tzx" size="94689" crc="22cc606a" sha1="f3cee64c92ea00fb5a2dfefd5fdd1fa93a553c15"/>
@@ -23254,7 +23254,7 @@
 	<software name="silkworm">
 		<description>Silk Worm</description>
 		<year>1989</year>
-		<publisher> Virgin Games Ltd</publisher>
+		<publisher>Virgin Games Ltd</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="56227">
 				<rom name="silk worm.tzx" size="56227" crc="034b3643" sha1="fab832f66fb5d3a466e4a55eba9fc9d5f7792440"/>
@@ -23265,7 +23265,7 @@
 	<software name="silkworme" cloneof="silkworm">
 		<description>Silk Worm (Erbe)</description>
 		<year>1989</year>
-		<publisher> Virgin Games Ltd / Erbe</publisher>
+		<publisher>Virgin Games Ltd / Erbe</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="56977">
 				<rom name="silk worm (erbe).tzx" size="56977" crc="fd5e309e" sha1="9a7785b078fff49ba70b6f10fb8878b2dccac1ef"/>
@@ -23276,7 +23276,7 @@
 	<software name="silkwormm" cloneof="silkworm">
 		<description>Silk Worm (Mastertronic Plus)</description>
 		<year>1989</year>
-		<publisher> Virgin Games Ltd / Mastertronic Plus</publisher>
+		<publisher>Virgin Games Ltd / Mastertronic Plus</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="56227">
 				<rom name="silk worm (mastertronic plus).tzx" size="56227" crc="723dcd55" sha1="0e07f99aad9f89667f850dd9eae74db07455fda6"/>
@@ -23287,7 +23287,7 @@
 	<software name="silkwormt" cloneof="silkworm">
 		<description>Silk Worm (Tronix)</description>
 		<year>1989</year>
-		<publisher> Virgin Games Ltd / Tronix</publisher>
+		<publisher>Virgin Games Ltd / Tronix</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="56393">
 				<rom name="silk worm (tronix).tzx" size="56393" crc="15141093" sha1="b977450d9c9ef5d139706603c1a47a3ea7b578bb"/>
@@ -29826,7 +29826,7 @@
 	<software name="unbeliev">
 		<description>Unbelievable Ultimate Vol 1</description>
 		<year>1987</year>
-		<publisher> US Gold Ltd</publisher>
+		<publisher>US Gold Ltd</publisher>
 		<part name="cass1" interface="spectrum_cass">
 			<dataarea name="cass" size="31678">
 				<rom name="unbelievable ultimate vol 1 - side 1.tzx" size="31678" crc="285d767e" sha1="4cd961f8da7ac207df6e018702164072dd448f41"/>
@@ -57361,7 +57361,7 @@
 	<software name="cryscavn">
 		<description>The Crystal Cavern (Handasoft) (set 1)</description>
 		<year>1988</year>
-		<publisher> Handasoft</publisher>
+		<publisher>Handasoft</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="40293">
 				<rom name="the crystal cavern (handasoft).tzx" size="40293" crc="e97b49f7" sha1="8c6a48c4f6650eff0e1ad0d3359121d5207c0da2"/>
@@ -57372,7 +57372,7 @@
 	<software name="cryscavna" cloneof="cryscavn">
 		<description>The Crystal Cavern (Handasoft) (set 2)</description>
 		<year>1988</year>
-		<publisher> Handasoft</publisher>
+		<publisher>Handasoft</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="40295">
 				<rom name="the crystal cavern - alternate (handasoft).tzx" size="40295" crc="bbcf52d5" sha1="4a28d4c18291624c58c9790bbbfb2546839f9c2f"/>
@@ -70003,7 +70003,7 @@
 	<software name="freesamp">
 		<description>Free Sample Programs (Android Nim, Millionaire, Biorhythms)</description>
 		<year>1982</year>
-		<publisher> Richard Francis Altwasse</publisher>
+		<publisher>Richard Francis Altwasse</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="16531">
 				<rom name="free sample programs.tzx" size="16531" crc="cf166c53" sha1="9f839e44d2c6ee845454dc2cff8a75d71efaac4a"/>
@@ -98050,7 +98050,7 @@
 	<software name="mpsocm">
 		<description>Multi-Player Soccer Manager (set 1)</description>
 		<year>1991</year>
-		<publisher> D&amp;H Games</publisher>
+		<publisher>D&amp;H Games</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="49372">
 				<rom name="multi-player soccer manager.tzx" size="49372" crc="fa2e0662" sha1="ceefc46ef03df3d1d2e65d4e9cb723f328346cbb"/>
