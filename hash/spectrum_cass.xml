@@ -1923,7 +1923,7 @@
 	</software>
 
 	<!-- OK -->
-	<software name="batmana" cloneof="batman" >
+	<software name="batmana" cloneof="batman">
 		<description>Batman (set 2)</description>
 		<year>1986</year>
 		<publisher>Ocean</publisher>
@@ -1936,7 +1936,7 @@
 
 	<!-- OK -->
 	<!-- has load timer -->
-	<software name="batmanb" cloneof="batman" >
+	<software name="batmanb" cloneof="batman">
 		<description>Batman (set 3)</description>
 		<year>1986</year>
 		<publisher>Ocean</publisher>
@@ -2342,7 +2342,7 @@
 		</part>
 	</software>
 
-	<software name="ballbrkd2" cloneof="ballbrk" >
+	<software name="ballbrkd2" cloneof="ballbrk">
 		<description>Ballbreaker (DRO Soft, set 2)</description>
 		<year>19??</year>
 		<publisher>CRL Group / DRO Soft</publisher>
@@ -5030,7 +5030,7 @@
 	</software>
 
 	<!-- possible bad dump, shorter image, doesn't load -->
-	<software name="cobrasarm" cloneof="cobrasar" >
+	<software name="cobrasarm" cloneof="cobrasar">
 		<description>Cobra's Arc (medium case)</description>
 		<year>1986</year>
 		<publisher>Dinamic Software</publisher>
@@ -17384,7 +17384,7 @@
 		</part>
 	</software>
 
-	<software name="moggy" >
+	<software name="moggy">
 		<description>Moggy</description>
 		<year>2005</year>
 		<publisher>Computer Emuzone / The Mojon Twins</publisher>
@@ -19199,7 +19199,7 @@
 		</part>
 	</software>
 
-	<software name="princecl" >
+	<software name="princecl">
 		<description>Prince Clumsy</description>
 		<year>19??</year>
 		<publisher>Cartoon Time (Codemasters)</publisher>
@@ -19775,7 +19775,7 @@
 	<software name="pred">
 		<description>Predator (Set 1)</description>
 		<year>1987</year>
-		<publisher>Activision Inc </publisher>
+		<publisher>Activision Inc</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="197732">
 				<rom name="predator.tzx" size="197732" crc="55ae019d" sha1="181615acc16670f420fcc3dae651189459c06c68"/>
@@ -23906,7 +23906,7 @@
 	<software name="sdi">
 		<description>SDI - Strategic Defence Initiative</description>
 		<year>1988</year>
-		<publisher>Activision Inc </publisher>
+		<publisher>Activision Inc</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="48081">
 				<rom name="sdi - strategic defence initiative.tzx" size="48081" crc="9dd91929" sha1="18f5c0ff80ae6cf05915c9a97fe691c7651a277f"/>
@@ -24363,10 +24363,10 @@
 		</part>
 	</software>
 
-	<software name="shdwfrtn" >
+	<software name="shdwfrtn">
 		<description>Shadowfire Tuner</description>
 		<year>1985</year>
-		<publisher>Beyond Software </publisher>
+		<publisher>Beyond Software</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="36020">
 				<rom name="shadowfire tuner.tzx" size="36020" crc="7744fd20" sha1="164abc036955abfd1e79a31a5d9d7669c1af9801"/>
@@ -34412,7 +34412,7 @@
 		</part>
 	</software>
 
-	<software name="ys37" >
+	<software name="ys37">
 		<description>Your Sinclair (Issue 37)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -34428,7 +34428,7 @@
 		</part>
 	</software>
 
-	<software name="ys38" >
+	<software name="ys38">
 		<description>Your Sinclair (Issue 38)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -34652,7 +34652,7 @@
 		</part>
 	</software>
 
-	<software name="ys49" >
+	<software name="ys49">
 		<description>Your Sinclair (Issue 49)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -34882,7 +34882,7 @@
 		</part>
 	</software>
 
-	<software name="ys63" >
+	<software name="ys63">
 		<description>Your Sinclair (Issue 63)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -34898,7 +34898,7 @@
 		</part>
 	</software>
 
-	<software name="ys64" >
+	<software name="ys64">
 		<description>Your Sinclair (Issue 64)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -34914,7 +34914,7 @@
 		</part>
 	</software>
 
-	<software name="ys65" >
+	<software name="ys65">
 		<description>Your Sinclair (Issue 65)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -34930,7 +34930,7 @@
 		</part>
 	</software>
 
-	<software name="ys66" >
+	<software name="ys66">
 		<description>Your Sinclair (Issue 66)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -34946,7 +34946,7 @@
 		</part>
 	</software>
 
-	<software name="ys67" >
+	<software name="ys67">
 		<description>Your Sinclair (Issue 67)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -34962,7 +34962,7 @@
 		</part>
 	</software>
 
-	<software name="ys68" >
+	<software name="ys68">
 		<description>Your Sinclair (Issue 68)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -34978,7 +34978,7 @@
 		</part>
 	</software>
 
-	<software name="ys69" >
+	<software name="ys69">
 		<description>Your Sinclair (Issue 69)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -34994,7 +34994,7 @@
 		</part>
 	</software>
 
-	<software name="ys70" >
+	<software name="ys70">
 		<description>Your Sinclair (Issue 70)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35010,7 +35010,7 @@
 		</part>
 	</software>
 
-	<software name="ys71" >
+	<software name="ys71">
 		<description>Your Sinclair (Issue 71)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35026,7 +35026,7 @@
 		</part>
 	</software>
 
-	<software name="ys72" >
+	<software name="ys72">
 		<description>Your Sinclair (Issue 72)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35048,7 +35048,7 @@
 		</part>-->
 	</software>
 
-	<software name="ys73" >
+	<software name="ys73">
 		<description>Your Sinclair (Issue 73)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35064,7 +35064,7 @@
 		</part>
 	</software>
 
-	<software name="ys74" >
+	<software name="ys74">
 		<description>Your Sinclair (Issue 74)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35080,7 +35080,7 @@
 		</part>
 	</software>
 
-	<software name="ys75" >
+	<software name="ys75">
 		<description>Your Sinclair (Issue 75)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35096,7 +35096,7 @@
 		</part>
 	</software>
 
-	<software name="ys76" >
+	<software name="ys76">
 		<description>Your Sinclair (Issue 76)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35112,7 +35112,7 @@
 		</part>
 	</software>
 
-	<software name="ys77" >
+	<software name="ys77">
 		<description>Your Sinclair (Issue 77)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35128,7 +35128,7 @@
 		</part>
 	</software>
 
-	<software name="ys78" >
+	<software name="ys78">
 		<description>Your Sinclair (Issue 78)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35144,7 +35144,7 @@
 		</part>
 	</software>
 
-	<software name="ys79" >
+	<software name="ys79">
 		<description>Your Sinclair (Issue 79)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35160,7 +35160,7 @@
 		</part>
 	</software>
 
-	<software name="ys80" >
+	<software name="ys80">
 		<description>Your Sinclair (Issue 80)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35176,7 +35176,7 @@
 		</part>
 	</software>
 
-	<software name="ys81" >
+	<software name="ys81">
 		<description>Your Sinclair (Issue 81)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35192,7 +35192,7 @@
 		</part>
 	</software>
 
-	<software name="ys82" >
+	<software name="ys82">
 		<description>Your Sinclair (Issue 82)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35208,7 +35208,7 @@
 		</part>
 	</software>
 
-	<software name="ys83" >
+	<software name="ys83">
 		<description>Your Sinclair (Issue 83)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35224,7 +35224,7 @@
 		</part>
 	</software>
 
-	<software name="ys84" >
+	<software name="ys84">
 		<description>Your Sinclair (Issue 84)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35240,7 +35240,7 @@
 		</part>
 	</software>
 
-	<software name="ys85" >
+	<software name="ys85">
 		<description>Your Sinclair (Issue 85)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35262,7 +35262,7 @@
 		</part>-->
 	</software>
 
-	<software name="ys86" >
+	<software name="ys86">
 		<description>Your Sinclair (Issue 86)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35278,7 +35278,7 @@
 		</part>
 	</software>
 
-	<software name="ys87" >
+	<software name="ys87">
 		<description>Your Sinclair (Issue 87)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35294,7 +35294,7 @@
 		</part>
 	</software>
 
-	<software name="ys89" >
+	<software name="ys89">
 		<description>Your Sinclair (Issue 89)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -35310,7 +35310,7 @@
 		</part>
 	</software>
 
-	<software name="ys90" >
+	<software name="ys90">
 		<description>Your Sinclair (Issue 90)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156612,7 +156612,7 @@
 		</part>
 	</software>
 
-	<software name="scompu03" >
+	<software name="scompu03">
 		<description>Spectrum Computing (Issue 03)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156623,7 +156623,7 @@
 		</part>
 	</software>
 
-	<software name="scompu04" >
+	<software name="scompu04">
 		<description>Spectrum Computing (Issue 04)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156634,7 +156634,7 @@
 		</part>
 	</software>
 
-	<software name="scompu05" >
+	<software name="scompu05">
 		<description>Spectrum Computing (Issue 05)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156650,7 +156650,7 @@
 		</part>
 	</software>
 
-	<software name="scompu06" >
+	<software name="scompu06">
 		<description>Spectrum Computing (Issue 06)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156666,7 +156666,7 @@
 		</part>
 	</software>
 
-	<software name="scompu07" >
+	<software name="scompu07">
 		<description>Spectrum Computing (Issue 07)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156682,7 +156682,7 @@
 		</part>
 	</software>
 
-	<software name="scompu08" >
+	<software name="scompu08">
 		<description>Spectrum Computing (Issue 08)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156698,7 +156698,7 @@
 		</part>
 	</software>
 
-	<software name="scompu09" >
+	<software name="scompu09">
 		<description>Spectrum Computing (Issue 09)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156714,7 +156714,7 @@
 		</part>
 	</software>
 
-	<software name="scompu10" >
+	<software name="scompu10">
 		<description>Spectrum Computing (Issue 10)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156730,7 +156730,7 @@
 		</part>
 	</software>
 
-	<software name="scompu11" >
+	<software name="scompu11">
 		<description>Spectrum Computing (Issue 11)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156746,7 +156746,7 @@
 		</part>
 	</software>
 
-	<software name="scompu12" >
+	<software name="scompu12">
 		<description>Spectrum Computing (Issue 12)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156762,7 +156762,7 @@
 		</part>
 	</software>
 
-	<software name="scompu13" >
+	<software name="scompu13">
 		<description>Spectrum Computing (Issue 13)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156778,7 +156778,7 @@
 		</part>
 	</software>
 
-	<software name="scompu14" >
+	<software name="scompu14">
 		<description>Spectrum Computing (Issue 14)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156794,7 +156794,7 @@
 		</part>
 	</software>
 
-	<software name="scompu15" >
+	<software name="scompu15">
 		<description>Spectrum Computing (Issue 15)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156810,7 +156810,7 @@
 		</part>
 	</software>
 
-	<software name="scompu16" >
+	<software name="scompu16">
 		<description>Spectrum Computing (Issue 16)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156826,7 +156826,7 @@
 		</part>
 	</software>
 
-	<software name="scompu17" >
+	<software name="scompu17">
 		<description>Spectrum Computing (Issue 17)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156842,7 +156842,7 @@
 		</part>
 	</software>
 
-	<software name="scompu18" >
+	<software name="scompu18">
 		<description>Spectrum Computing (Issue 18)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156858,7 +156858,7 @@
 		</part>
 	</software>
 
-	<software name="scompu19" >
+	<software name="scompu19">
 		<description>Spectrum Computing (Issue 19)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156874,7 +156874,7 @@
 		</part>
 	</software>
 
-	<software name="scompu20" >
+	<software name="scompu20">
 		<description>Spectrum Computing (Issue 20)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -156890,7 +156890,7 @@
 		</part>
 	</software>
 
-	<software name="scompu21" >
+	<software name="scompu21">
 		<description>Spectrum Computing (Issue 21)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -161256,7 +161256,7 @@
 	</software>
 
 
-	<software name="yoursinc_ec" >
+	<software name="yoursinc_ec">
 		<description>Your Sinclair Digitape (Issue 01)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -161267,7 +161267,7 @@
 		</part>
 	</software>
 
-	<software name="yoursinc_ed" >
+	<software name="yoursinc_ed">
 		<description>Your Sinclair Digitape (Issue 03)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -161283,7 +161283,7 @@
 		</part>
 	</software>
 
-	<software name="yoursinc_ef" >
+	<software name="yoursinc_ef">
 		<description>Your Sinclair Digitape (Issue 04)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -161294,7 +161294,7 @@
 		</part>
 	</software>
 
-	<software name="yoursinc_eg" >
+	<software name="yoursinc_eg">
 		<description>Your Sinclair Digitape (Issue 05)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -161310,7 +161310,7 @@
 		</part>
 	</software>
 
-	<software name="yoursinc_ei" >
+	<software name="yoursinc_ei">
 		<description>Your Sinclair Digitape (Issue 07)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -161326,7 +161326,7 @@
 		</part>
 	</software>
 
-	<software name="yoursinc_ek" >
+	<software name="yoursinc_ek">
 		<description>Your Sinclair Digitape (Issue 08)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -161337,7 +161337,7 @@
 		</part>
 	</software>
 
-	<software name="yoursinc_el" >
+	<software name="yoursinc_el">
 		<description>Your Sinclair Digitape (Issue 09)</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
@@ -161353,7 +161353,7 @@
 		</part>
 	</software>
 
-	<software name="yoursinc_en" >
+	<software name="yoursinc_en">
 		<description>Your Sinclair Special Adventure Offer</description>
 		<year>19??</year>
 		<publisher>&lt;unknown&gt;</publisher>
