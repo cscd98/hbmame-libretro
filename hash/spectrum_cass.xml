@@ -129,6 +129,21 @@
 		</part>
 	</software>
 
+	<!-- This program was included as an audio track on the record "1984" from the Spanish
+             music group "La Mode". It was present only on the vinyl version (not on the cassette),
+             as the last track of the B side, titled as "Programa Computado".
+             It was programmed by Mario Gil (one of the "La Mode" group members). -->
+	<software name="1984">
+		<description>La Mode - 1984 (Programa Computado)</description>
+		<year>1984</year>
+		<publisher>La Mode / Ediciones Nemo</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="13378">
+				<rom name="lamode_1984_programa_computado.tzx" size="13378" crc="2cf24932" sha1="0dbe31463fb5ddaddbd6e53ae489b92f32fc22e9"/>
+			</dataarea>
+		</part>
+	</software>	
+
 	<!-- NC128 -->
 	<software name="3dstarfi">
 		<description>3D Starfighter</description>
