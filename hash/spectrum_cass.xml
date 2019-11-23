@@ -60614,31 +60614,31 @@
 	</software>
 
 	<software name="disciple">
-		<description>DISCiPLE System Tape v1</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
+		<description>DISCiPLE System Tape v2</description>
+		<year>1987</year>
+		<publisher>Miles Gordon Technology</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="13344">
-				<rom name="disciple system tape v1.tzx" size="13344" crc="678e3e15" sha1="40aa91b4be6674d1d660fe7c6764af6e22a91e89"/>
+				<rom name="disciple system tape v2.tzx" size="13344" crc="678e3e15" sha1="40aa91b4be6674d1d660fe7c6764af6e22a91e89"/>
 			</dataarea>
 		</part>
 	</software>
 
 	<software name="disciple_a" cloneof="disciple">
-		<description>DISCiPLE System Tape v2</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
+		<description>DISCiPLE System Tape v2b</description>
+		<year>1987</year>
+		<publisher>Miles Gordon Technology</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="13343">
-				<rom name="disciple system tape v2.tzx" size="13343" crc="992a23fc" sha1="c0bea1d0275782a79762c2b8ba496dc255bcc414"/>
+				<rom name="disciple system tape v2b.tzx" size="13343" crc="992a23fc" sha1="c0bea1d0275782a79762c2b8ba496dc255bcc414"/>
 			</dataarea>
 		</part>
 	</software>
 
 	<software name="disciple_b" cloneof="disciple">
 		<description>DISCiPLE System Tape v2c</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
+		<year>1987</year>
+		<publisher>Miles Gordon Technology</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="13510">
 				<rom name="disciple system tape v2c.tzx" size="13510" crc="b45f0766" sha1="f72dabd21169113d0d96bdad9d08426c513e3935"/>
@@ -60648,19 +60648,30 @@
 
 	<software name="disciple_c" cloneof="disciple">
 		<description>DISCiPLE System Tape v3a</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
+		<year>1987</year>
+		<publisher>Miles Gordon Technology</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="13910">
 				<rom name="disciple system tape v3a.tzx" size="13910" crc="219af476" sha1="7bf03234dc817a857458406b8a20a75b1c5620de"/>
 			</dataarea>
 		</part>
 	</software>
-
+	
 	<software name="disciple_d" cloneof="disciple">
+		<description>DISCiPLE System Tape v3b</description>
+		<year>1987</year>
+		<publisher>Miles Gordon Technology</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="13900">
+				<rom name="disciple system tape v3b.tzx" size="13900" crc="ce4f4108" sha1="62fa0f4ae51cea30b569c8019a05ffd8a1916970"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="disciple_e" cloneof="disciple">
 		<description>DISCiPLE System Tape v3d</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
+		<year>1987</year>
+		<publisher>Miles Gordon Technology</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="24077">
 				<rom name="disciple system tape v3d.tzx" size="24077" crc="e09fe7ff" sha1="239908071d560eeb4ae868097232afe3f1443503"/>
@@ -106717,45 +106728,35 @@
 	</software>
 
 	<software name="plusdsys">
-		<description>Plus D System Tape (MGT)</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
+		<description>Plus D System Tape v2a</description>
+		<year>1987</year>
+		<publisher>Miles Gordon Technology</publisher>
 		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="24362">
-				<rom name="plus d system tape (mgt).tzx" size="24362" crc="948c5cc9" sha1="1ef58a4d60c234fd187329ee1219ce969956f747"/>
+			<dataarea name="cass" size="24352">
+				<rom name="plus d system tape v2a.tzx" size="24352" crc="892644d5" sha1="6beb6507c01426e17679720604f4da4868b9ebfc"/>
 			</dataarea>
 		</part>
 	</software>
 
 	<software name="plusdsys_a" cloneof="plusdsys">
-		<description>Plus D System Tape v1.0</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
+		<description>Plus D System Tape v1</description>
+		<year>1987</year>
+		<publisher>Miles Gordon Technology</publisher>
 		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="48402">
-				<rom name="plus d system tape v1.0.tzx" size="48402" crc="a69bd63c" sha1="dd353f31dc5567a12755889163ca2d9d6b7447a7"/>
+			<dataarea name="cass" size="24266">
+				<rom name="plus d system tape v1.tzx" size="24266" crc="198fb732" sha1="128ed4ad929a8e856d57092bf1d21484090484f6"/>
 			</dataarea>
 		</part>
 	</software>
 
+	<!-- data is just 3 bytes different from v2a, title screen shows v2a, might just be bad dump? -->
 	<software name="plusdsys_b" cloneof="plusdsys">
-		<description>Plus D System Tape v2.3</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
+		<description>Plus D System Tape v2b?</description>
+		<year>1987</year>
+		<publisher>Miles Gordon Technology</publisher>
 		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="24373">
-				<rom name="plus d system tape v2.3.tzx" size="24373" crc="6e3f966b" sha1="85bacfdd3b3d4d969c423857899d7d31d4b1db12"/>
-			</dataarea>
-		</part>
-	</software>
-
-	<software name="plusdsys_c" cloneof="plusdsys">
-		<description>Plus D System Tape v2a</description>
-		<year>19??</year>
-		<publisher>&lt;unknown&gt;</publisher>
-		<part name="cass" interface="spectrum_cass">
-			<dataarea name="cass" size="24269">
-				<rom name="plus d system tape v2a.tzx" size="24269" crc="7e1a097c" sha1="1f702857d90dd49014f13aa86187152caf0d5a8b"/>
+			<dataarea name="cass" size="24362">
+				<rom name="plus d system tape v2b.tzx" size="24362" crc="efa5bdbe" sha1="00fd3ea95069b9ca0ffdd087e057a649ef3d8d6a"/>
 			</dataarea>
 		</part>
 	</software>
