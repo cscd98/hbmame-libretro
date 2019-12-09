@@ -139,7 +139,7 @@
 		<publisher>La Mode / Ediciones Nemo</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="13378">
-				<rom name="lamode_1984_programa_computado.tzx" size="13378" crc="2cf24932" sha1="0dbe31463fb5ddaddbd6e53ae489b92f32fc22e9"/>
+				<rom name="lamode_1984_programa_computado.tzx" size="13308" crc="f87f7615" sha1="97b4d233855d3c5871c5a99aa516f8d26970989d"/>
 			</dataarea>
 		</part>
 	</software>
@@ -90098,7 +90098,27 @@
 		</part>
 	</software>
 
-
+	<!--
+	This program was included as an audio track on the record "David el Gnomo" (the OST from the
+	       Spanish TV animation series with the same name, published by "Ariola Eurodisc S.A.").
+	       It was present on both the vinyl and the casstette versions, as a track titled
+	       "Juego de Los Gnomos para ordenador Spectrum".
+	       It was programmed by Manuel Orcera within the Spanish company "Juliet Software" for the,
+	       also Spanish, company "Compulogical S.A.".
+	       The game was re-released on 1986 on the audio record "Baby Album" (also published by
+	       "Ariola Eurodisc S.A."), but this time only on the vinyl version, not on the cassette.
+	-->
+	<software name="losgnomos">
+		<description>Los Gnomos - David el Gnomo</description>
+		<year>1985</year>
+		<publisher>Ariola Eurodisc S.A.</publisher>
+		<part name="cass" interface="spectrum_cass">
+			<dataarea name="cass" size="47189">
+				<rom name="david el gnomo.tzx" size="47189" crc="c9bee68e" sha1="7ebc4a65fc2a6d3b2a3a593bb32218dab13599a0"/>
+			</dataarea>
+		</part>
+	</software>
+	
 	<software name="lospajar">
 		<description>Los Pajaros De Bangkok</description>
 		<year>19??</year>
