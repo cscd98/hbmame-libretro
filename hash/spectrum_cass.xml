@@ -17588,7 +17588,7 @@
 
 	<software name="moritz3">
 		<description>Super Moritz</description>
-		<year>208</year>
+		<year>2018</year>
 		<publisher>Sebastian Braunert</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="51661">
