@@ -4327,7 +4327,7 @@
 		<publisher>Computer Emuzone</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="60396">
-				<rom name="betiled! español.tzx" size="60396" crc="8eabeb69" sha1="d7eeeda47f9b11b65155d95620794e212b8d783f"/>
+				<rom name="betiled! espanol.tzx" size="60396" crc="8eabeb69" sha1="d7eeeda47f9b11b65155d95620794e212b8d783f"/>
 			</dataarea>
 		</part>
 	</software>
