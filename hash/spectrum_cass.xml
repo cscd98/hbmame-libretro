@@ -32085,6 +32085,346 @@
 	</software>
 
 	<!-- ##############################################################################################################################
+	      covertapes from "Load'N'Run (Spain)"
+	     ############################################################################################################################## -->
+
+	<software name="lnrsp100">
+		<description>Load'N'Run (Spain) (Issue 00)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="135078">
+				<rom name="load_n_run (spain) (issue 00) (side a).tzx" size="135078" crc="6e776021" sha1="a655810ebdae0c3b097f4e9768cf0a0899aad253"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="108036">
+				<rom name="load_n_run (spain) (issue 00) (side b).tzx" size="108036" crc="c17dfb11" sha1="73b3e1d913c17e0403d5a40eebc0d05a85d52d73"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp101">
+		<description>Load'N'Run (Spain) (Issue 01)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="70602">
+				<rom name="load_n_run (spain) (issue 01) (side a).tzx" size="70602" crc="85dd13cf" sha1="30298848c050bae1625e1c747184750c609a2fd8"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="47069">
+				<rom name="load_n_run (spain) (issue 01) (side b).tzx" size="47069" crc="fbccdb05" sha1="906ac870ea8a7f8b75c8ecc7c28c93a9cf96f81b"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp102">
+		<description>Load'N'Run (Spain) (Issue 02)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="114586">
+				<rom name="load_n_run (spain) (issue 02) (side a).tzx" size="114586" crc="e2c4f627" sha1="024180a6ae71ff3043448e58d92ebe00f966e7c2"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="101625">
+				<rom name="load_n_run (spain) (issue 02) (side b).tzx" size="101625" crc="0d574b99" sha1="a02bcdb8d5d161ac8dcb1f8dcb5ab9801eb8c4dc"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp103">
+		<description>Load'N'Run (Spain) (Issue 03)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="180349">
+				<rom name="load_n_run (spain) (issue 03) (side a).tzx" size="180349" crc="cbff03e0" sha1="b5e4a1283736d35832b37265d13d9732811bdc9b"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="83401">
+				<rom name="load_n_run (spain) (issue 03) (side b).tzx" size="83401" crc="b30e6b93" sha1="a88bdfa2a542a07ead0f780231758b3b2c909a19"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp104">
+		<description>Load'N'Run (Spain) (Issue 04)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="145949">
+				<rom name="load_n_run (spain) (issue 04) (side a).tzx" size="145949" crc="e5917930" sha1="e1f5af533de0c2f9f405003b3032dd64f88ae0a2"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="151767">
+				<rom name="load_n_run (spain) (issue 04) (side b).tzx" size="151767" crc="9b5eef77" sha1="3a5e615334afae8fc282782109e3c665abbbd1d6"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp105">
+		<description>Load'N'Run (Spain) (Issue 05)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="148350">
+				<rom name="load_n_run (spain) (issue 05) (side a).tzx" size="148350" crc="fdc7f4b1" sha1="9f4c44c0ecc2cd337f633c241dbc84800072e213"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="107976">
+				<rom name="load_n_run (spain) (issue 05) (side b).tzx" size="107976" crc="52281a59" sha1="c177ea3f483502690b18f7224cd4f584eb94052e"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp106">
+		<description>Load'N'Run (Spain) (Issue 06)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="245832">
+				<rom name="load_n_run (spain) (issue 06) (side a).tzx" size="245832" crc="c503cf0e" sha1="f29c51c89cf6ceb4d22120eba2a9b1bfeb5cf43e"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="247738">
+				<rom name="load_n_run (spain) (issue 06) (side b).tzx" size="247738" crc="deb47c68" sha1="51a8ef7278590063f9461616c8dd1f6802294ac6"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp107">
+		<description>Load'N'Run (Spain) (Issue 07)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="128542">
+				<rom name="load_n_run (spain) (issue 07) (side a).tzx" size="128542" crc="4dd5838a" sha1="0c099cae3ca431309dc86085debf677dbc8635e4"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="132258">
+				<rom name="load_n_run (spain) (issue 07) (side b).tzx" size="132258" crc="f0816565" sha1="71d307d7004a929934b5eaa9c7c74d39143235d3"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp108">
+		<description>Load'N'Run (Spain) (Issue 08)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="148769">
+				<rom name="load_n_run (spain) (issue 08) (side a).tzx" size="148769" crc="915533b4" sha1="4175f1c281d820fba951b0c54790742af0ab095f"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="149172">
+				<rom name="load_n_run (spain) (issue 08) (side b).tzx" size="149172" crc="986d6192" sha1="e59ca49d9660f65b53ac720142d27890c16c3e9c"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp109">
+		<description>Load'N'Run (Spain) (Issue 09)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="168967">
+				<rom name="load_n_run (spain) (issue 09) (side a).tzx" size="168967" crc="1dda174c" sha1="72d9da3d7183182dd9dd92c93d252fcd5322eeb7"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="153316">
+				<rom name="load_n_run (spain) (issue 09) (side b).tzx" size="153316" crc="c3dc9242" sha1="2af5e3e7ac886a4ac3ec96b638a3c1979365d95e"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp110">
+		<description>Load'N'Run (Spain) (Issue 10)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="157298">
+				<rom name="load_n_run (spain) (issue 10) (side a).tzx" size="157298" crc="f07d2967" sha1="580fb54b1166dfc997db9d87597cdc0095f9a4bc"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="144323">
+				<rom name="load_n_run (spain) (issue 10) (side b).tzx" size="144323" crc="fd501a17" sha1="672ae183ef97b7cb30738fc590ab08703748b0f9"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp111">
+		<description>Load'N'Run (Spain) (Issue 11)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="241319">
+				<rom name="load_n_run (spain) (issue 11) (side a).tzx" size="241319" crc="d25458fa" sha1="65bb2d7ff4905230185580ef679d49a1c2b052fe"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="237231">
+				<rom name="load_n_run (spain) (issue 11) (side b).tzx" size="237231" crc="0d7b2a15" sha1="dd9ccc8dc6f5ee4a8efd18e1963398a76d6302f0"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp200">
+		<description>Load'N'Run 2ª época (Spain) (Issue 00)</description>
+		<year>1986</year>
+		<publisher>Audimicro</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="97942">
+				<rom name="load_n_run 2a epoca (spain) (issue 00) (side a).tzx" size="97942" crc="b943b7c2" sha1="6fb0ff63684619f5d75fa145cfcfeb18348bac85"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="113637">
+				<rom name="load_n_run 2a epoca (spain) (issue 00) (side b).tzx" size="113637" crc="333c4340" sha1="078d2f325ebff10c62e093e444fb618703e16da7"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp201">
+		<description>Load'N'Run 2ª época (Spain) (Issue 01)</description>
+		<year>1986</year>
+		<publisher>Audimicro</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="65397">
+				<rom name="load_n_run 2a epoca (spain) (issue 01) (side a).tzx" size="65397" crc="ce3cf6ca" sha1="93bebcf922558dadbbeb8618832ca4fe38ff338d"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="79996">
+				<rom name="load_n_run 2a epoca (spain) (issue 01) (side b).tzx" size="79996" crc="9faedf29" sha1="b72409365849d1ab578c8da827dc43f0f3cf6d81"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp202">
+		<description>Load'N'Run 2ª época (Spain) (Issue 02)</description>
+		<year>1986</year>
+		<publisher>Audimicro</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="120900">
+				<rom name="load_n_run 2a epoca (spain) (issue 02) (side a).tzx" size="120900" crc="ffd369f1" sha1="3754ca90d0ad2c16b16f3f3e965874890eb46b98"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="129653">
+				<rom name="load_n_run 2a epoca (spain) (issue 02) (side b).tzx" size="129653" crc="8cad587e" sha1="aa544e34f320a5ff4e1c3a24bf225030f79cfd82"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp203">
+		<description>Load'N'Run 2ª época (Spain) (Issue 03)</description>
+		<year>1986</year>
+		<publisher>Audimicro</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="174747">
+				<rom name="load_n_run 2a epoca (spain) (issue 03) (side a).tzx" size="174747" crc="635b9406" sha1="00efb0bce43583fb218a06830424f4dbdea151af"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="167695">
+				<rom name="load_n_run 2a epoca (spain) (issue 03) (side b).tzx" size="167695" crc="8806c8b5" sha1="4f0930c4b68d6132d38599cf0542018409c2e73f"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp204">
+		<description>Load'N'Run 2ª época (Spain) (Issue 04)</description>
+		<year>1986</year>
+		<publisher>Audimicro</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="162009">
+				<rom name="load_n_run 2a epoca (spain) (issue 04) (side a).tzx" size="162009" crc="0ddfe7f1" sha1="820f294c1baf91d1775ed0998eb2b25076ddcb19"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="160674">
+				<rom name="load_n_run 2a epoca (spain) (issue 04) (side b).tzx" size="160674" crc="c311e034" sha1="11eadb79a2fe32a8964bccff50591c1938685153"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp205">
+		<description>Load'N'Run 2ª época (Spain) (Issue 05)</description>
+		<year>1986</year>
+		<publisher>Audimicro</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="130318">
+				<rom name="load_n_run 2a epoca (spain) (issue 05) (side a).tzx" size="130318" crc="8e075bbd" sha1="4f7640a667e2890a9ff3239320801a9c912b376f"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="126528">
+				<rom name="load_n_run 2a epoca (spain) (issue 05) (side b).tzx" size="126528" crc="805e4987" sha1="2ab62537f31c8f7bc3515e03dadbdc1cd2b99142"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp206">
+		<description>Load'N'Run 2ª época (Spain) (Issue 06)</description>
+		<year>1986</year>
+		<publisher>Audimicro</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="212341">
+				<rom name="load_n_run 2a epoca (spain) (issue 06) (side a).tzx" size="212341" crc="fe4c5006" sha1="7face0bdbeb75d751971917050e91e848da6fab0"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="193484">
+				<rom name="load_n_run 2a epoca (spain) (issue 06) (side b).tzx" size="193484" crc="36e3bfde" sha1="be755335125686263e0a8fa43503ef33aa6d0149"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp207">
+		<description>Load'N'Run 2ª época (Spain) (Issue 07)</description>
+		<year>1986</year>
+		<publisher>Audimicro</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="147048">
+				<rom name="load_n_run 2a epoca (spain) (issue 07) (side a).tzx" size="147048" crc="eb734673" sha1="1cc5c34cfb6233b978c633b905f69cd38cb60291"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="135281">
+				<rom name="load_n_run 2a epoca (spain) (issue 07) (side b).tzx" size="135281" crc="e7e2c754" sha1="9db36be9fad050d1e1ce477c4c5ea9346ea468ee"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp208">
+		<description>Load'N'Run 2ª época (Spain) (Issue 08)</description>
+		<year>1986</year>
+		<publisher>Audimicro</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size="83196">
+				<rom name="load_n_run 2a epoca (spain) (issue 08) (side a).tzx" size="83196" crc="9071b92f" sha1="856fec3d42fa910fdcd37c9b41e3614ae46d7bfa"/>
+			</dataarea>
+		</part>
+		<part name="cass2" interface="spectrum_cass">
+			<dataarea name="cass" size="38948">
+				<rom name="load_n_run 2a epoca (spain) (issue 08) (side b).tzx" size="38948" crc="0d4589d3" sha1="0528a23138269a62c0abe3175ac3ff31388a2966"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<!-- ##############################################################################################################################
 	      covertapes from 'Crash'
 	     ############################################################################################################################## -->
 
