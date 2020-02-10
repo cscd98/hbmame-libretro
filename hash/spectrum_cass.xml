@@ -32085,7 +32085,13 @@
 	</software>
 
 	<!-- ##############################################################################################################################
-	      covertapes from "Load'N'Run (Spain)"
+	      Covertapes from "Load'N'Run (Spain)"
+		  Unless otherwise stated, many dumps from this magazine will require verification since they come from an untrusted source,
+		  which has been caught altering dumps before release, converting them to TZX from TAP or Z80, and even sharing supposed dumps
+		  of a fake issue which never existed. This might extend to other existing dumps of other Load'N'Run variations (Amstrad, MSX
+		  and Commodore issues, Italian editions, etc).
+		  Pending verification of the older dumps, the only Spanish Load'N'Run cassette left to properly preserve is
+		  "Load'N'Run (Spain) (Especial deportes)".
 	     ############################################################################################################################## -->
 
 	<software name="lnrsp100">
@@ -32169,6 +32175,7 @@
 	</software>
 
 	<software name="lnrsp105">
+		<!--	Verified dump from trusted source. Previous version had one block missing and its loader altered.	-->
 		<description>Load'N'Run (Spain) (Issue 05)</description>
 		<year>1985</year>
 		<publisher>Mecsa / Inforpress</publisher>
@@ -32276,6 +32283,19 @@
 		<part name="cass2" interface="spectrum_cass">
 			<dataarea name="cass" size="237231">
 				<rom name="load_n_run (spain) (issue 11) (side b).tzx" size="237231" crc="0d7b2a15" sha1="dd9ccc8dc6f5ee4a8efd18e1963398a76d6302f0"/>
+			</dataarea>
+		</part>
+	</software>
+
+	<software name="lnrsp10e">
+		<!--	Verified dump from trusted source. Previous version had a block name altered and had been converted to TZX from a TAP file.	-->
+		<!--	Both sides contain the same data	-->
+		<description>Load'N'Run (Spain) (Especial)</description>
+		<year>1985</year>
+		<publisher>Mecsa / Inforpress</publisher>
+		<part name="cass1" interface="spectrum_cass">
+			<dataarea name="cass" size = "27410">
+				<rom name="load_n_run (spain) (especial).tzx" size="27410" crc="f0cdb6c9" sha1="4157c4aaa805801a9c7eeaf2a451a6dfe98ccf85"/>
 			</dataarea>
 		</part>
 	</software>
