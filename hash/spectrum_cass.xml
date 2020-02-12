@@ -82181,7 +82181,7 @@
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass" interface="spectrum_cass">
 			<dataarea name="cass" size="22651">
-				<rom name="invasores galácticos.tzx" size="22651" crc="03aaf3e4" sha1="05fb367e864377853ed63b9a3e79be00fde37eae"/>
+				<rom name="invasores galacticos.tzx" size="22651" crc="03aaf3e4" sha1="05fb367e864377853ed63b9a3e79be00fde37eae"/>
 			</dataarea>
 		</part>
 	</software>
@@ -152917,12 +152917,12 @@
 		<publisher>&lt;unknown&gt;</publisher>
 		<part name="cass1" interface="spectrum_cass">
 			<dataarea name="cass" size="44836">
-				<rom name="librería de software spectrum (issue 04) - side 1.tap" size="44836" crc="60559153" sha1="337f108a352b338628fe2b9e19eff3e6bcaa6252"/>
+				<rom name="libreria de software spectrum (issue 04) - side 1.tap" size="44836" crc="60559153" sha1="337f108a352b338628fe2b9e19eff3e6bcaa6252"/>
 			</dataarea>
 		</part>
 		<part name="cass2" interface="spectrum_cass">
 			<dataarea name="cass" size="47061">
-				<rom name="librería de software spectrum (issue 04) - side 2.tap" size="47061" crc="e17cdc8d" sha1="c5e7ce738cc57e68ed528d61d3e5eed90145d35e"/>
+				<rom name="libreria de software spectrum (issue 04) - side 2.tap" size="47061" crc="e17cdc8d" sha1="c5e7ce738cc57e68ed528d61d3e5eed90145d35e"/>
 			</dataarea>
 		</part>
 	</software>
