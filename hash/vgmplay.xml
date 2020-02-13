@@ -43462,27 +43462,27 @@
 			</dataarea>
 		</part>
 		<part name="006" interface="vgm_quik">
-			<feature name="part_id" value="05 bar - �maximum�.vgz" />
+			<feature name="part_id" value="05 bar - (maximum).vgz" />
 			<dataarea name="quik" size="216920">
-				<rom name="05 bar - �maximum�.vgz" size="216920" crc="088e0816" sha1="88d29fababfcd8af6d7632e44342fe1488dd07a3" offset="0" />
+				<rom name="05 bar - (maximum).vgz" size="216920" crc="088e0816" sha1="88d29fababfcd8af6d7632e44342fe1488dd07a3" offset="0" />
 			</dataarea>
 		</part>
 		<part name="007" interface="vgm_quik">
-			<feature name="part_id" value="06 toy store - �dhalsim�.vgz" />
+			<feature name="part_id" value="06 toy store - (dhalsim).vgz" />
 			<dataarea name="quik" size="240732">
-				<rom name="06 toy store - �dhalsim�.vgz" size="240732" crc="75db893d" sha1="7eb99875705b34daa91c6f9145fbf719a7d468a8" offset="0" />
+				<rom name="06 toy store - (dhalsim).vgz" size="240732" crc="75db893d" sha1="7eb99875705b34daa91c6f9145fbf719a7d468a8" offset="0" />
 			</dataarea>
 		</part>
 		<part name="008" interface="vgm_quik">
-			<feature name="part_id" value="07 ski resort - �la menkoi�.vgz" />
+			<feature name="part_id" value="07 ski resort - (la menkoi).vgz" />
 			<dataarea name="quik" size="208407">
-				<rom name="07 ski resort - �la menkoi�.vgz" size="208407" crc="c220ab0f" sha1="8bb1e69daff5fdb7721885782edf2fc3299e1e1c" offset="0" />
+				<rom name="07 ski resort - (la menkoi).vgz" size="208407" crc="c220ab0f" sha1="8bb1e69daff5fdb7721885782edf2fc3299e1e1c" offset="0" />
 			</dataarea>
 		</part>
 		<part name="009" interface="vgm_quik">
-			<feature name="part_id" value="08 amazon - float rental shop �safuriru�.vgz" />
+			<feature name="part_id" value="08 amazon - float rental shop (safuriru).vgz" />
 			<dataarea name="quik" size="269671">
-				<rom name="08 amazon - float rental shop �safuriru�.vgz" size="269671" crc="f01b8a54" sha1="1754305d8961460d447b4a4fe99aabe81a58571b" offset="0" />
+				<rom name="08 amazon - float rental shop (safuriru).vgz" size="269671" crc="f01b8a54" sha1="1754305d8961460d447b4a4fe99aabe81a58571b" offset="0" />
 			</dataarea>
 		</part>
 		<part name="010" interface="vgm_quik">
@@ -48528,9 +48528,9 @@
 			</dataarea>
 		</part>
 		<part name="023" interface="vgm_quik">
-			<feature name="part_id" value="23 ol�.vgz" />
+			<feature name="part_id" value="23 ole.vgz" />
 			<dataarea name="quik" size="144342">
-				<rom name="23 ol�.vgz" size="144342" crc="03fc5c76" sha1="5e0177479626ae82b4e0582b84501e5607927a29" offset="0" />
+				<rom name="23 ole.vgz" size="144342" crc="03fc5c76" sha1="5e0177479626ae82b4e0582b84501e5607927a29" offset="0" />
 			</dataarea>
 		</part>
 		<part name="024" interface="vgm_quik">
@@ -101766,9 +101766,9 @@
 			</dataarea>
 		</part>
 		<part name="002" interface="vgm_quik">
-			<feature name="part_id" value="02 4th fire � (mvs title).vgz" />
+			<feature name="part_id" value="02 4th fire ss (mvs title).vgz" />
 			<dataarea name="quik" size="184036">
-				<rom name="02 4th fire � (mvs title).vgz" size="184036" crc="5c098949" sha1="463e70e20c1bcd0e902631d909bad92822d71d9b" offset="0" />
+				<rom name="02 4th fire ss (mvs title).vgz" size="184036" crc="5c098949" sha1="463e70e20c1bcd0e902631d909bad92822d71d9b" offset="0" />
 			</dataarea>
 		</part>
 		<part name="003" interface="vgm_quik">
@@ -104921,15 +104921,15 @@
 			</dataarea>
 		</part>
 		<part name="030" interface="vgm_quik">
-			<feature name="part_id" value="30 beautiful sibling love - shurachan ondo de b�rabura (shura's ending 1).vgz" />
+			<feature name="part_id" value="30 beautiful sibling love - shurachan ondo de burabura (shura's ending 1).vgz" />
 			<dataarea name="quik" size="69954">
-				<rom name="30 beautiful sibling love - shurachan ondo de b�rabura (shura's ending 1).vgz" size="69954" crc="0e2a1488" sha1="f7cf46c7b7d4ff0b39ebdf6ba1a36eca2c350ba8" offset="0" />
+				<rom name="30 beautiful sibling love - shurachan ondo de burabura (shura's ending 1).vgz" size="69954" crc="0e2a1488" sha1="f7cf46c7b7d4ff0b39ebdf6ba1a36eca2c350ba8" offset="0" />
 			</dataarea>
 		</part>
 		<part name="031" interface="vgm_quik">
-			<feature name="part_id" value="31 beautiful sibling love - shurachan ondo de b�rabura (shura's ending 2).vgz" />
+			<feature name="part_id" value="31 beautiful sibling love - shurachan ondo de burabura (shura's ending 2).vgz" />
 			<dataarea name="quik" size="73337">
-				<rom name="31 beautiful sibling love - shurachan ondo de b�rabura (shura's ending 2).vgz" size="73337" crc="cc881d83" sha1="8df2bca6fc930223c0b87b2053efcdbaf9b0af1d" offset="0" />
+				<rom name="31 beautiful sibling love - shurachan ondo de burabura (shura's ending 2).vgz" size="73337" crc="cc881d83" sha1="8df2bca6fc930223c0b87b2053efcdbaf9b0af1d" offset="0" />
 			</dataarea>
 		</part>
 		<part name="032" interface="vgm_quik">
@@ -155687,9 +155687,9 @@
 			</dataarea>
 		</part>
 		<part name="004" interface="vgm_quik">
-			<feature name="part_id" value="04 game over (marche fun�bre).vgz" />
+			<feature name="part_id" value="04 game over (marche funebre).vgz" />
 			<dataarea name="quik" size="7790">
-				<rom name="04 game over (marche fun�bre).vgz" size="7790" crc="d7f80b8b" sha1="21e69e627c8cf375ba198883434f8713763cd3ab" offset="0" />
+				<rom name="04 game over (marche funebre).vgz" size="7790" crc="d7f80b8b" sha1="21e69e627c8cf375ba198883434f8713763cd3ab" offset="0" />
 			</dataarea>
 		</part>
 		<part name="005" interface="vgm_quik">
@@ -155735,9 +155735,9 @@
 			</dataarea>
 		</part>
 		<part name="012" interface="vgm_quik">
-			<feature name="part_id" value="12 wedding ceremony (treulich gef�hrt).vgz" />
+			<feature name="part_id" value="12 wedding ceremony (treulich gefuhrt).vgz" />
 			<dataarea name="quik" size="37561">
-				<rom name="12 wedding ceremony (treulich gef�hrt).vgz" size="37561" crc="d22e9875" sha1="43eae27d7e0050d83132b8619f20ae954707105d" offset="0" />
+				<rom name="12 wedding ceremony (treulich gefuhrt).vgz" size="37561" crc="d22e9875" sha1="43eae27d7e0050d83132b8619f20ae954707105d" offset="0" />
 			</dataarea>
 		</part>
 	</software>
@@ -191490,9 +191490,9 @@
 			</dataarea>
 		</part>
 		<part name="005" interface="vgm_quik">
-			<feature name="part_id" value="05 game over (marche fun�bre).vgz" />
+			<feature name="part_id" value="05 game over (marche funebre).vgz" />
 			<dataarea name="quik" size="410">
-				<rom name="05 game over (marche fun�bre).vgz" size="410" crc="5896362a" sha1="087ee0ce5f1ed567ffa7811bceb7611712f771a0" offset="0" />
+				<rom name="05 game over (marche funebre).vgz" size="410" crc="5896362a" sha1="087ee0ce5f1ed567ffa7811bceb7611712f771a0" offset="0" />
 			</dataarea>
 		</part>
 		<part name="006" interface="vgm_quik">
@@ -191544,9 +191544,9 @@
 			</dataarea>
 		</part>
 		<part name="014" interface="vgm_quik">
-			<feature name="part_id" value="14 wedding ceremony (treulich gef�hrt).vgz" />
+			<feature name="part_id" value="14 wedding ceremony (treulich gefuhrt).vgz" />
 			<dataarea name="quik" size="604">
-				<rom name="14 wedding ceremony (treulich gef�hrt).vgz" size="604" crc="e0458e55" sha1="554fe09c8d730119cffa9b4571a56b8036cbcada" offset="0" />
+				<rom name="14 wedding ceremony (treulich gefuhrt).vgz" size="604" crc="e0458e55" sha1="554fe09c8d730119cffa9b4571a56b8036cbcada" offset="0" />
 			</dataarea>
 		</part>
 		<part name="015" interface="vgm_quik">
@@ -198545,9 +198545,9 @@
 			</dataarea>
 		</part>
 		<part name="005" interface="vgm_quik">
-			<feature name="part_id" value="05 m�l�e island.vgz" />
+			<feature name="part_id" value="05 melee island.vgz" />
 			<dataarea name="quik" size="9402">
-				<rom name="05 m�l�e island.vgz" size="9402" crc="6bb04145" sha1="34d7ec5241055e2166cc1f955977c48b47c4bdad" offset="0" />
+				<rom name="05 melee island.vgz" size="9402" crc="6bb04145" sha1="34d7ec5241055e2166cc1f955977c48b47c4bdad" offset="0" />
 			</dataarea>
 		</part>
 		<part name="006" interface="vgm_quik">
@@ -334041,9 +334041,9 @@
 			</dataarea>
 		</part>
 		<part name="012" interface="vgm_quik">
-			<feature name="part_id" value="wonder boy - the dragon's trap (gg) - 12 - monsterland�h(dungeon fall).vgm" />
+			<feature name="part_id" value="wonder boy - the dragon's trap (gg) - 12 - monsterland (dungeon fall).vgm" />
 			<dataarea name="quik" size="1846">
-				<rom name="wonder boy - the dragon's trap (gg) - 12 - monsterland�h(dungeon fall).vgm" size="1846" crc="023a2307" sha1="aa0e9a87f84d3a3f4cae5786993c635d0453b9f2" offset="0" />
+				<rom name="wonder boy - the dragon's trap (gg) - 12 - monsterland (dungeon fall).vgm" size="1846" crc="023a2307" sha1="aa0e9a87f84d3a3f4cae5786993c635d0453b9f2" offset="0" />
 			</dataarea>
 		</part>
 		<part name="013" interface="vgm_quik">
