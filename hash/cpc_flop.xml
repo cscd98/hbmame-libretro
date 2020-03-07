@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE softwarelist SYSTEM "softwarelist.dtd">
+<!--
+license:CC0
 
-<!-- Amstrad CPC 464 / 464+ / 6128 / 6128+ etc. Disks
+    Amstrad CPC 464 / 464+ / 6128 / 6128+ etc. Disks
 
     Note, the majority of this has been converted from the 'CPC Power Collection'
     Some games have known mastering errors which results in them failing at certain points, these can be documented in the future
@@ -11,9 +13,7 @@
     I believe most of the dumps are good, but many fail in MESS due to inadequate emulation, some of the protection routines are quite fussy.
     In cases where games fail to operate try the pirate versions (which in current convention are those not tagged with [Original] )
 
--->
-
-<!-- Loading Instructions:
+    Loading Instructions:
 
        for most disks type 'cat' to get a directory listing.
 
@@ -24,18 +24,12 @@
        for games which have no loading instructions look for a .bas file in the directory listing, for example game.bas
        and type run"game.bas
 
--->
-
-<!-- To investigate:
+To investigate:
 1.  <rom name="boot disk.dsk" size="194816" crc="dfea048f" sha1="15de6cc0cff021a2d82f53296da1c80707ebeb21" />
 is shared by a lot of sets... is it a generic boot disk?
 2. The following sets have identical Face A/B disks: thelasts, 2in1uk2f, cashbook02, bonzobli, nucleard02, microspr02, microgra01, shapeand01, rexharde01, fresfigh02, micropen02, bobsleig02. Is this correct?
--->
 
-
-<!-- List Revision History
-
-
+    List Revision History
 
     27/11/11 : Preliminary list, automatically generated with minor cleanups. A _LOT_ of the cloning will be wrong as it's just auto generated. Names need a lot of cleaning up
             Included were Games, Compilations, Educational, Utilities

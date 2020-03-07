@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <!DOCTYPE softwarelist SYSTEM "softwarelist.dtd">
+<!--
+license:CC0
 
 
-<!-- Thanks to:
+    Thanks to:
 
     Steve Brown, Andrew Barker, Paul Hurd, Tony Barnett, Claus Jahn, Donald Graham,
     Guy Bearman, Jose Luis Soler, Krasimir Hristov, Andrew Blood, Dave Stevens,
     John Wilson, Edwina Brown, Walter Pooley, Tomaz Kac, Martijn van der Heide,
     Ramsoft, Dunny, Woody, Mikie and many many others.
 
--->
 
-<!-- to load software in 16/48K mode you must use the following sequence at the prompt
+    to load software in 16/48K mode you must use the following sequence at the prompt
 
      "J" "shift+P" "shift+P" "enter"  (in non-MAME emulators this is often "ctrl+P")
 
