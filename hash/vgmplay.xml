@@ -197030,6 +197030,7 @@ license:CC0
 		</part>
 	</software>
 
+	<!-- song 063 is not vgz but vgm -->
 	<software name="spquest4_pc">
 		<description>Space Quest IV - Roger Wilco and the Time Rippers (IBM PC AT)</description>
 		<year>1991</year>
@@ -197410,7 +197411,7 @@ license:CC0
 		<part name="063" interface="vgm_quik">
 			<feature name="part_id" value="63 fight against roger jr.vgz" />
 			<dataarea name="quik" size="3508">
-				<rom name="63 fight against roger jr.vgz" size="3508" crc="3dd5b16a" sha1="8c01dd5b903a17dad275a65f34ac32c332a4fe4d" offset="0" />
+				<rom name="63 fight against roger jr.vgz" size="3508" crc="3dd5b16a" sha1="8c01dd5b903a17dad275a65f34ac32c332a4fe4d" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="064" interface="vgm_quik">
@@ -298705,6 +298706,7 @@ license:CC0
 		</part>
 	</software>
 
+	<!-- the full set is in vgm and not vgz -->
 	<software name="telstad_md">
 		<description>Tel Tel Stadium (GEN/MD)</description>
 		<year>19??</year>
@@ -298713,73 +298715,73 @@ license:CC0
 		<part name="001" interface="vgm_quik">
 			<feature name="part_id" value="01 - title screen.vgz" />
 			<dataarea name="quik" size="48555">
-				<rom name="01 - title screen.vgz" size="48555" crc="d2e63630" sha1="4ed8a81fb3f8a239a6d594b96b6e893ab1852774" offset="0" />
+				<rom name="01 - title screen.vgz" size="48555" crc="d2e63630" sha1="4ed8a81fb3f8a239a6d594b96b6e893ab1852774" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="002" interface="vgm_quik">
 			<feature name="part_id" value="02 - start.vgz" />
 			<dataarea name="quik" size="11710">
-				<rom name="02 - start.vgz" size="11710" crc="a6e4df1f" sha1="a785816ef100283ead2a1b059e618d7480060303" offset="0" />
+				<rom name="02 - start.vgz" size="11710" crc="a6e4df1f" sha1="a785816ef100283ead2a1b059e618d7480060303" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="003" interface="vgm_quik">
 			<feature name="part_id" value="03 - bgm 1.vgz" />
 			<dataarea name="quik" size="80393">
-				<rom name="03 - bgm 1.vgz" size="80393" crc="4f23bb54" sha1="3627c041f06c3548edd604d0c4114f97c1303db8" offset="0" />
+				<rom name="03 - bgm 1.vgz" size="80393" crc="4f23bb54" sha1="3627c041f06c3548edd604d0c4114f97c1303db8" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="004" interface="vgm_quik">
 			<feature name="part_id" value="04 - bgm 2.vgz" />
 			<dataarea name="quik" size="96232">
-				<rom name="04 - bgm 2.vgz" size="96232" crc="aabad549" sha1="712cfe6b1d03c5923f3e3c0c4b9732667810cdf0" offset="0" />
+				<rom name="04 - bgm 2.vgz" size="96232" crc="aabad549" sha1="712cfe6b1d03c5923f3e3c0c4b9732667810cdf0" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="005" interface="vgm_quik">
 			<feature name="part_id" value="05 - score.vgz" />
 			<dataarea name="quik" size="12669">
-				<rom name="05 - score.vgz" size="12669" crc="c55f2f3d" sha1="cebd4e18316ebcb267b9671a50606c2c3cac9fef" offset="0" />
+				<rom name="05 - score.vgz" size="12669" crc="c55f2f3d" sha1="cebd4e18316ebcb267b9671a50606c2c3cac9fef" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="006" interface="vgm_quik">
 			<feature name="part_id" value="06 - home run.vgz" />
 			<dataarea name="quik" size="20052">
-				<rom name="06 - home run.vgz" size="20052" crc="6b7e8986" sha1="3abdf68e8523f29b9f463cd6e7a244a1721eb7e1" offset="0" />
+				<rom name="06 - home run.vgz" size="20052" crc="6b7e8986" sha1="3abdf68e8523f29b9f463cd6e7a244a1721eb7e1" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="007" interface="vgm_quik">
 			<feature name="part_id" value="07 - results.vgz" />
 			<dataarea name="quik" size="12433">
-				<rom name="07 - results.vgz" size="12433" crc="a37ba81e" sha1="db3ff17e99b5a667043ef33b8d0964f18c2df929" offset="0" />
+				<rom name="07 - results.vgz" size="12433" crc="a37ba81e" sha1="db3ff17e99b5a667043ef33b8d0964f18c2df929" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="008" interface="vgm_quik">
 			<feature name="part_id" value="08 - team info.vgz" />
 			<dataarea name="quik" size="70985">
-				<rom name="08 - team info.vgz" size="70985" crc="a2fb8f9a" sha1="d153b3779b027924c1fa047c7848106fc307663a" offset="0" />
+				<rom name="08 - team info.vgz" size="70985" crc="a2fb8f9a" sha1="d153b3779b027924c1fa047c7848106fc307663a" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="009" interface="vgm_quik">
 			<feature name="part_id" value="09 - team configuration.vgz" />
 			<dataarea name="quik" size="32539">
-				<rom name="09 - team configuration.vgz" size="32539" crc="820350e2" sha1="f1b990e218885f938724cfbe2d911c3b9724c717" offset="0" />
+				<rom name="09 - team configuration.vgz" size="32539" crc="820350e2" sha1="f1b990e218885f938724cfbe2d911c3b9724c717" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="010" interface="vgm_quik">
 			<feature name="part_id" value="10 - online mode.vgz" />
 			<dataarea name="quik" size="45170">
-				<rom name="10 - online mode.vgz" size="45170" crc="4525b0aa" sha1="df8dae3ba4552b3bd25d792086e4ae89e8f81e80" offset="0" />
+				<rom name="10 - online mode.vgz" size="45170" crc="4525b0aa" sha1="df8dae3ba4552b3bd25d792086e4ae89e8f81e80" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="011" interface="vgm_quik">
 			<feature name="part_id" value="11 - fanfare.vgz" />
 			<dataarea name="quik" size="6595">
-				<rom name="11 - fanfare.vgz" size="6595" crc="15d17082" sha1="d6faa310f353e52ad310d8567045715dd1af5a03" offset="0" />
+				<rom name="11 - fanfare.vgz" size="6595" crc="15d17082" sha1="d6faa310f353e52ad310d8567045715dd1af5a03" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 		<part name="012" interface="vgm_quik">
 			<feature name="part_id" value="12 - ending theme.vgz" />
 			<dataarea name="quik" size="54756">
-				<rom name="12 - ending theme.vgz" size="54756" crc="9e333980" sha1="3cfa0a56fbc0507f630bb50d9483fa58e325300f" offset="0" />
+				<rom name="12 - ending theme.vgz" size="54756" crc="9e333980" sha1="3cfa0a56fbc0507f630bb50d9483fa58e325300f" offset="0" status="baddump"/>
 			</dataarea>
 		</part>
 	</software>
