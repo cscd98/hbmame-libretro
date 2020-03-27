@@ -164,6 +164,10 @@ public:
 	// fetch items by name
 	template <class DeviceClass> inline DeviceClass *device(const char *tag) { return downcast<DeviceClass *>(root_device().subdevice(tag)); }
 
+#if defined(__LIBRETRO__)
+void retro_machineexit();
+void retro_loop();
+#endif
 	// immediate operations
 	int run(bool quiet);
 	void pause();

@@ -422,6 +422,16 @@ newoption {
 	description = "Select projects to be built. Will look into project folder for files.",
 }
 
+newoption {
+	trigger = "LIBRETRO_IOS",
+	description = "Specify iOS target when building using libretro"
+}
+
+newoption {
+	trigger = "LIBRETRO_TVOS",
+	description = "Specify tvOS target when building using libretro"
+}
+
 dofile ("extlib.lua")
 
 if _OPTIONS["SHLIB"]=="1" then
@@ -467,6 +477,10 @@ end
 configurations {
 	"Debug",
 	"Release",
+	-- BEGIN libretro overrides to MAME's GENie build
+	"libretrodbg",
+	"libretro",
+	-- END libretro overrides to MAME's GENie build
 }
 
 platforms {
@@ -524,10 +538,14 @@ if string.sub(_ACTION,1,4) == "vs20" and _OPTIONS["osd"]=="sdl" then
 	end
 end
 -- Build SDL2 for Android
+if _OPTIONS["osd"] == "retro" then
+-- RETRO HACK no sdl for libretro android
+else
 if _OPTIONS["targetos"] == "android" then
 	_OPTIONS["with-bundled-sdl2"] = "1"
 end
-
+end
+-- RETRO HACK END no sdl for libretro android
 configuration {}
 
 if _OPTIONS["osd"] == "uwp" then
@@ -570,6 +588,22 @@ configuration { "gmake or ninja" }
 	}
 
 dofile ("toolchain.lua")
+
+-- RETRO HACK
+if _OPTIONS["osd"]=="retro" then
+	if string.sub(_ACTION,1,4) ~= "vs20" then
+		buildoptions {
+			"-fPIC"
+		}
+	end
+
+	configuration { "*" }
+		defines {
+			"__LIBRETRO__",
+			"NDEBUG",
+		}
+end
+-- RETRO HACK
 
 if _OPTIONS["targetos"]=="windows" then
 	configuration { "x64" }
@@ -655,7 +689,8 @@ else
 	defines {
 		"LSB_FIRST",
 	}
-	if _OPTIONS["targetos"]=="macosx" then
+	-- For iOS in libretro, don't specify the arch since it's already specified in $(CC) and $(CXX)
+	if _OPTIONS["targetos"]=="macosx" and _OPTIONS["LIBRETRO_IOS"] ~= "1" and _OPTIONS["LIBRETRO_TVOS"] ~= "1" then
 		configuration { "arm64" }
 			buildoptions {
 				"-arch arm64",
