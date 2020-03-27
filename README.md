@@ -1,7 +1,7 @@
 What is HBMAME?
 ===============
 
-HBMAME stands for Home Brew MAME.
+HBMAME stands for Home Brew MAME. It runs on Windows 7 SP1 or later.
 
 HBMAME has 2 purposes:
 Firstly is to preserve homebrew games written for arcade machines or arcade emulators.
@@ -16,19 +16,21 @@ make -f Makefile.libretro
 ```
 
 
+
 Where can I find out more?
 ==========================
 
-* [Official MAME Development Team Site](http://mamedev.org/) (includes binary downloads for MAME and MESS, wiki, forums, and more)
-* [Official HBMAME site](http://hbmame.1emulation.com/)
-* [Forum](http://www.mameworld.info/ubbthreads/postlist.php?Cat=&Board=misfitmame) (bug reports go here too)
+* [Official HBMAME site] http://hbmame.1emulation.com/
+* [Forum] https://www.1emulation.com/forums/forum/125-mameui/
 
 
 Licensing Information
 =====================
 
+The primary license is GPL_2.0 : https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+
 Information about the MAME content can be found at https://github.com/mamedev/mame/blob/master/README.md
 
-Information about the MAME license can be found at https://github.com/mamedev/mame/blob/master/COPYING
+Information about the license can be found in COPYING
 
 Information about the WINUI portion can be found at https://github.com/Robbbert/mameui/blob/master/docs/winui_license.txt
