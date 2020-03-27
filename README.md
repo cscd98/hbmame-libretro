@@ -12,13 +12,7 @@ How to compile
 ==============
 
 ```
-make TARGET=hbmame SYMBOLS=0 NO_SYMBOLS=1 DEPRECATED=0
-```
-
-or
-
-```
-make TARGET=hbmame OSD=winui SYMBOLS=0 NO_SYMBOLS=1 DEPRECATED=0
+make TARGET=hbmame -f Makefile.libretro
 ```
 
 
