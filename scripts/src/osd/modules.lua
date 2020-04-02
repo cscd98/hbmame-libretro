@@ -467,21 +467,8 @@ end
 
 
 newoption {
-	trigger = "USE_TAPTUN",
-	description = "Include tap/tun network module",
-	allowed = {
-		{ "0",  "Don't include tap/tun network module" },
-		{ "1",  "Include tap/tun network module" },
-	},
-}
-
-newoption {
-	trigger = "USE_PCAP",
-	description = "Include pcap network module",
-	allowed = {
-		{ "0",  "Don't include pcap network module" },
-		{ "1",  "Include pcap network module" },
-	},
+	trigger = "DONT_USE_NETWORK",
+	description = "Disable network access",
 }
 
 newoption {
@@ -564,21 +551,7 @@ newoption {
 }
 
 
-if not _OPTIONS["USE_TAPTUN"] then
-	if _OPTIONS["targetos"]=="linux" or _OPTIONS["targetos"]=="windows" then
-		_OPTIONS["USE_TAPTUN"] = "1"
-	else
-		_OPTIONS["USE_TAPTUN"] = "0"
-	end
-end
 
-if not _OPTIONS["USE_PCAP"] then
-	if _OPTIONS["targetos"]=="macosx" or _OPTIONS["targetos"]=="netbsd" then
-		_OPTIONS["USE_PCAP"] = "1"
-	else
-		_OPTIONS["USE_PCAP"] = "0"
-	end
-end
 
 if not _OPTIONS["USE_QTDEBUG"] then
 	if _OPTIONS["targetos"]=="windows" or _OPTIONS["targetos"]=="macosx" or _OPTIONS["targetos"]=="solaris" or _OPTIONS["targetos"]=="haiku" or _OPTIONS["targetos"]=="asmjs" then

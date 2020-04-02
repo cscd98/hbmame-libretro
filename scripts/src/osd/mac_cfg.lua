@@ -7,20 +7,11 @@ forcedincludes {
 --  MAME_DIR .. "src/osd/sdl/sdlprefix.h"
 }
 
-if _OPTIONS["USE_TAPTUN"]=="1" or _OPTIONS["USE_PCAP"]==1 then
+if not _OPTIONS["DONT_USE_NETWORK"] then
 	defines {
 		"USE_NETWORK",
+		"OSD_NET_USE_PCAP",
 	}
-	if _OPTIONS["USE_TAPTUN"]=="1" then
-		defines {
-			"OSD_NET_USE_TAPTUN",
-		}
-	end
-	if _OPTIONS["USE_PCAP"]=="1" then
-		defines {
-			"OSD_NET_USE_PCAP",
-		}
-	end
 end
 
 defines {
