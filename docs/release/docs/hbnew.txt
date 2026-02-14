@@ -7,22 +7,23 @@
 
 New Games
 ---------------------------------
-- [breakrev09]          Breakers Revenge (Enhanced 2022-11-03)
+- [breakrev09]          Breakers Revenge (Enhanced, 2022-11-03)
 - [dksprfin3]           Donkey Kong Springfinity v1.03 (2023-09-17)
 - [doubledr21]          Double Dragon (Special 2017 v1.0.0311 2023)
-- [doubledr22]          Double Dragon (Plus 2015-03-11)
-- [doubledr23]          Double Dragon (Optimized 2014-09-17)
+- [doubledr22]          Double Dragon (Plus, 2015-03-11)
+- [doubledr23]          Double Dragon (Optimized, 2014-09-17)
 - [fatfury2s05]         Fatal Fury 2 (Alternate board)
+- [garoup13]            Garou - Mark of the Wolves (Enhanced, 2023-06-06)
 - [hypernoid01]         Hypernoid (2022-02-24)
 - [jumpnrund01]         Jump n Run Tech Demo (Dez 2020)
-- [lastblad37]          Last Blade (Infinite Energy 2023-04-17)
+- [lastblad37]          Last Blade (Infinite Energy, 2023-04-17)
 - [lastblad38]          Last Blade (Special v2.5 Final)
-- [lastbld2s35]         Last Blade 2 (Infinite Energy 2023-02-02)
-- [lastbld2s36]         Last Blade 2 (Enhanced Edition 2014-04-09)
+- [lastbld2s35]         Last Blade 2 (Infinite Energy, 2023-02-02)
+- [lastbld2s36]         Last Blade 2 (Enhanced Edition, 2014-04-09)
 - [mk08]                Mortal Kombat (rev 5.1, 2026-02-06)(Wolf h/w, beta) [Asure]
 - [mk2s07]              Mortal Kombat 2 (rev 3.2W, 2025-09-05)(Wolf h/w) [Asure]
 - [samsho14]            Samurai Shodown (Alternate board)
-- [samsho2s34]          Samurai Shodown II (Optimized 2020-09-23)
+- [samsho2s34]          Samurai Shodown II (Optimized, 2020-09-23)
 - [sf2prime]            Street Fighter II': Prime (v0.72)
 
 
