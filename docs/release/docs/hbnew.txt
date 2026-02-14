@@ -21,6 +21,8 @@ New Games
 - [lastbld2s36]         Last Blade 2 (Enhanced Edition 2014-04-09)
 - [mk08]                Mortal Kombat (rev 5.1, 2026-02-06)(Wolf h/w, beta) [Asure]
 - [mk2s07]              Mortal Kombat 2 (rev 3.2W, 2025-09-05)(Wolf h/w) [Asure]
+- [samsho14]            Samurai Shodown (Alternate board)
+- [samsho2s34]          Samurai Shodown II (Optimized 2020-09-23)
 - [sf2prime]            Street Fighter II': Prime (v0.72)
 
 
