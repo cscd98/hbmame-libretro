@@ -14,8 +14,10 @@ New Games
 - [doubledr23]          Double Dragon (Optimized, 2014-09-17)
 - [fatfury2s05]         Fatal Fury 2 (Alternate board)
 - [garoup13]            Garou - Mark of the Wolves (Enhanced, 2023-06-06)
+- [gowcaizr05]          Voltage Fighter Gowcaizer (Eternal, 2025-04-19)
 - [hypernoid01]         Hypernoid (2022-02-24)
 - [jumpnrund01]         Jump n Run Tech Demo (Dez 2020)
+- [kabukikl14]          Far East of Eden (Enhanced, 2023-03-22)
 - [lastblad37]          Last Blade (Infinite Energy, 2023-04-17)
 - [lastblad38]          Last Blade (Special v2.5 Final)
 - [lastbld2s35]         Last Blade 2 (Infinite Energy, 2023-02-02)
@@ -24,6 +26,7 @@ New Games
 - [mk2s07]              Mortal Kombat 2 (rev 3.2W, 2025-09-05)(Wolf h/w) [Asure]
 - [samsho14]            Samurai Shodown (Alternate board)
 - [samsho2s34]          Samurai Shodown II (Optimized, 2020-09-23)
+- [savagere09]          Savage Reign (Plus, 2015-03-20)
 - [sf2prime]            Street Fighter II': Prime (v0.72)
 - [svcsplus20]          SVC Chaos Super Plus (Enhanced, 2023-06-21)
 
