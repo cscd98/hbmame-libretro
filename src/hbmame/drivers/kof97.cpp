@@ -139,8 +139,8 @@ ROM_START( kof97s006 )
 	ROM_LOAD16_BYTE( "232.c2", 0x0000001, 0x800000, CRC(e4d45c81) SHA1(fdb2b9326362e27b1c7a5beb977e0bc537488186) )
 	ROM_LOAD16_BYTE( "232s006.c3", 0x1000000, 0x800000, CRC(b092e64f) SHA1(7d809432d068db8f9056f5210570191416f1a53b) )
 	ROM_LOAD16_BYTE( "232s006.c4", 0x1000001, 0x800000, CRC(d25e8a04) SHA1(52227828e3fdd27399b4cd514551abf856293f47) )
-	ROM_LOAD16_BYTE( "232z.c5",   0x2000000, 0x400000, CRC(9af776d3) SHA1(a054ca17e6b35c8743286a025488b04186eebdbe) )
-	ROM_LOAD16_BYTE( "232z.c6",   0x2000001, 0x400000, CRC(9428d70c) SHA1(c0122ef6f83645f57edef6956400fe49fd94dfca) )
+	ROM_LOAD16_BYTE( "232s634.c5",   0x2000000, 0x400000, CRC(9af776d3) SHA1(a054ca17e6b35c8743286a025488b04186eebdbe) )
+	ROM_LOAD16_BYTE( "232s634.c6",   0x2000001, 0x400000, CRC(9428d70c) SHA1(c0122ef6f83645f57edef6956400fe49fd94dfca) )
 ROM_END
 
 ROM_START( kof97s007 )
@@ -5481,7 +5481,7 @@ ROM_END
 ROM_START( kof97s223 )  // kof97aot - all confirmed
 	ROM_REGION( 0x500000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "232s223.p1", 0x000000, 0x100000, CRC(edd3bd8f) SHA1(7c422db860c9b8c8caf933bfabbc43b891fc0a5e) )
-	ROM_LOAD16_WORD_SWAP( "232zm.p2", 0x100000, 0x400000, CRC(ca11478d) SHA1(484533266ba677fa2930e977226c4b72a59de8e2) )
+	ROM_LOAD16_WORD_SWAP( "232s635.p2", 0x100000, 0x400000, CRC(ca11478d) SHA1(484533266ba677fa2930e977226c4b72a59de8e2) )
 
 	NEO_SFIX_128K( "232.s1", CRC(8514ecf5) SHA1(18d8e7feb51ea88816f1c786932a53655b0de6a0) )
 
@@ -6614,8 +6614,8 @@ ROM_START( kof97s271 ) // kof97plus
 	ROM_LOAD16_BYTE( "232.c2", 0x0000001, 0x800000, CRC(e4d45c81) SHA1(fdb2b9326362e27b1c7a5beb977e0bc537488186) )
 	ROM_LOAD16_BYTE( "232s006.c3", 0x1000000, 0x800000, CRC(b092e64f) SHA1(7d809432d068db8f9056f5210570191416f1a53b) )
 	ROM_LOAD16_BYTE( "232s006.c4", 0x1000001, 0x800000, CRC(d25e8a04) SHA1(52227828e3fdd27399b4cd514551abf856293f47) )
-	ROM_LOAD16_BYTE( "232z.c5",   0x2000000, 0x400000, CRC(9af776d3) SHA1(a054ca17e6b35c8743286a025488b04186eebdbe) )
-	ROM_LOAD16_BYTE( "232z.c6",   0x2000001, 0x400000, CRC(9428d70c) SHA1(c0122ef6f83645f57edef6956400fe49fd94dfca) )
+	ROM_LOAD16_BYTE( "232s634.c5",   0x2000000, 0x400000, CRC(9af776d3) SHA1(a054ca17e6b35c8743286a025488b04186eebdbe) )
+	ROM_LOAD16_BYTE( "232s634.c6",   0x2000001, 0x400000, CRC(9428d70c) SHA1(c0122ef6f83645f57edef6956400fe49fd94dfca) )
 ROM_END
 
 ROM_START( kof97s272 ) // kof97pm
@@ -6825,8 +6825,8 @@ ROM_START( kof97s280 ) // kof97rv
 	ROM_LOAD16_BYTE( "232.c2", 0x0000001, 0x800000, CRC(e4d45c81) SHA1(fdb2b9326362e27b1c7a5beb977e0bc537488186) )
 	ROM_LOAD16_BYTE( "232.c3", 0x1000000, 0x800000, CRC(581d6618) SHA1(14d3124a08ded59f86932c6b28e1a4e48c564ccd) )
 	ROM_LOAD16_BYTE( "232.c4", 0x1000001, 0x800000, CRC(49bb1e68) SHA1(f769c1bd1b019521111ff3f0d22c63cb1f2640ef) )
-	ROM_LOAD16_BYTE( "232z.c5",   0x2000000, 0x400000, CRC(9af776d3) SHA1(a054ca17e6b35c8743286a025488b04186eebdbe) )
-	ROM_LOAD16_BYTE( "232z.c6",   0x2000001, 0x400000, CRC(9428d70c) SHA1(c0122ef6f83645f57edef6956400fe49fd94dfca) )
+	ROM_LOAD16_BYTE( "232s634.c5",   0x2000000, 0x400000, CRC(9af776d3) SHA1(a054ca17e6b35c8743286a025488b04186eebdbe) )
+	ROM_LOAD16_BYTE( "232s634.c6",   0x2000001, 0x400000, CRC(9428d70c) SHA1(c0122ef6f83645f57edef6956400fe49fd94dfca) )
 ROM_END
 
 ROM_START( kof97s281 ) // kof97saw - Hack by Wesker - (Shingo: The content must kill the technique entire flame special effect is the red flame)
@@ -7934,7 +7934,7 @@ ROM_END
 ROM_START( kof97s313 )
 	ROM_REGION( 0x500000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "232s313.p1", 0x000000, 0x100000, CRC(024f6249) SHA1(8649f9649570bb79148d4ceb1b8cb4a0a24a4504) )
-	ROM_LOAD16_WORD_SWAP( "232z.p2", 0x100000, 0x400000, CRC(505e3981) SHA1(a8bcddcffc5e6a3f1879e91fc07ea5c9177b8f37) )
+	ROM_LOAD16_WORD_SWAP( "232s634.p2", 0x100000, 0x400000, CRC(505e3981) SHA1(a8bcddcffc5e6a3f1879e91fc07ea5c9177b8f37) )
 
 	NEO_SFIX_128K( "232s310.s1", CRC(5f54b99a) SHA1(0fbe88e6098bcd340459761dcf81beb247ec0bbd) )
 
@@ -8051,7 +8051,7 @@ ROM_END
 ROM_START( kof97s318 )
 	ROM_REGION( 0x500000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "232s318.p1", 0x000000, 0x100000, CRC(5ac079a8) SHA1(a19f5dce5f6b22b5ca677fbfeeea8964c7bcd9ca) )
-	ROM_LOAD16_WORD_SWAP( "232zm.p2", 0x100000, 0x400000, CRC(ca11478d) SHA1(484533266ba677fa2930e977226c4b72a59de8e2) )
+	ROM_LOAD16_WORD_SWAP( "232s635.p2", 0x100000, 0x400000, CRC(ca11478d) SHA1(484533266ba677fa2930e977226c4b72a59de8e2) )
 
 	NEO_SFIX_128K( "232.s1", CRC(8514ecf5) SHA1(18d8e7feb51ea88816f1c786932a53655b0de6a0) )
 
@@ -12466,8 +12466,8 @@ ROM_START( kof97s516 )
 	ROM_LOAD16_BYTE( "232.c2", 0x0000001, 0x800000, CRC(e4d45c81) SHA1(fdb2b9326362e27b1c7a5beb977e0bc537488186) )
 	ROM_LOAD16_BYTE( "232.c3", 0x1000000, 0x800000, CRC(581d6618) SHA1(14d3124a08ded59f86932c6b28e1a4e48c564ccd) )
 	ROM_LOAD16_BYTE( "232.c4", 0x1000001, 0x800000, CRC(49bb1e68) SHA1(f769c1bd1b019521111ff3f0d22c63cb1f2640ef) )
-	ROM_LOAD16_BYTE( "232z.c5",   0x2000000, 0x400000, CRC(9af776d3) SHA1(a054ca17e6b35c8743286a025488b04186eebdbe) )
-	ROM_LOAD16_BYTE( "232z.c6",   0x2000001, 0x400000, CRC(9428d70c) SHA1(c0122ef6f83645f57edef6956400fe49fd94dfca) )
+	ROM_LOAD16_BYTE( "232s634.c5",   0x2000000, 0x400000, CRC(9af776d3) SHA1(a054ca17e6b35c8743286a025488b04186eebdbe) )
+	ROM_LOAD16_BYTE( "232s634.c6",   0x2000001, 0x400000, CRC(9428d70c) SHA1(c0122ef6f83645f57edef6956400fe49fd94dfca) )
 ROM_END
 
 ROM_START( kof97s517 )
@@ -15290,7 +15290,7 @@ GAME( 1997, kof97s038,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neo
 GAME( 1997, kof97s039,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Heavenly Protoss, 2012-01-29)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s040,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Dragon Super Plus, 2016-06-14)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s041,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Wulin Myth Test Version 34)(85 Gonitz Foot Super Kill After The Avatar Teleportation, The Big Snake Colorful Sunlight Teleport)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kof97s042,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Wulin Mythology Test Version 35)(85 Optimized Gonitz Foot Super Kill To Avoid Card Death, Big Snake Colorful Sunshine Heart Shine)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kof97s042,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Wulin Mythology Test Version 35)(85 Optimised Gonitz Foot Super Kill To Avoid Card Death, Big Snake Colorful Sunshine Heart Shine)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s043,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Wulin Mythology Dark Snake Test Version 27)(83 All Banned From Heaven, Repairing Kagura And Buns Brother Bugs In Place, Strengthening An Lina, Big Snake Colorful Sunshine Six Hair + Protective Light))", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s044,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Wulin Mythology Dark Snake Test Version 28)(85 All Banned From The Sky, Yamazaki Ryuji Exhibition Tenth Anniversary Super Killing On The Ground Stepping On The Drooling Whip, Repairing Kagura And Buns Brother Bugs)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s045,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (The Martial Arts Mythical Dark Snake Test Version 30)(85 Amendment To The Seven-Yuan Society?s Move-Style Big Move To Kill, The Big Snake Shines)", MACHINE_SUPPORTS_SAVE )
@@ -15428,7 +15428,7 @@ GAME( 2020, kof97s176,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neo
 GAME( 2020, kof97s177,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (BC Enhanced Version Simplified Move, 2020-05-25)", MACHINE_SUPPORTS_SAVE )
 GAME( 2020, kof97s178,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Start Of Dream Simplify Edition, 2020-05-25)", MACHINE_SUPPORTS_SAVE )
 GAME( 2020, kof97s179,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Start Of Dream Edition, 2020-05-25)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, kof97s180,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Optimized Version, Practice Version, 2020-05-27)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kof97s180,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Optimised Version, Practice Version, 2020-05-27)", MACHINE_SUPPORTS_SAVE )
 GAME( 2020, kof97s181,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (World Armed Forces 83 Modified Version, 2020-05-22)", MACHINE_SUPPORTS_SAVE )
 GAME( 2020, kof97s182,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (World Armed Forces 85 Modified Version, 2020-05-22)", MACHINE_SUPPORTS_SAVE )
 GAME( 2020, kof97s183,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (14 Windbreaker Eight Gods Second Impact Original, 2020-06-12)", MACHINE_SUPPORTS_SAVE )
@@ -15436,7 +15436,7 @@ GAME( 2020, kof97s184,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neo
 GAME( 2020, kof97s185,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (SP Special Edition 2015, 2020-06-18)", MACHINE_SUPPORTS_SAVE )
 GAME( 2020, kof97s186,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Windbreaker Eight Gods Second Shock, 2020-06-02)", MACHINE_SUPPORTS_SAVE )
 GAME( 2020, kof97s187,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (10th Anniversary, 2020-06-27)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, kof97s188,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Optimized Modified Version 2020, 2020-06-26)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kof97s188,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Optimised Modified Version 2020, 2020-06-26)", MACHINE_SUPPORTS_SAVE )
 GAME( 2020, kof97s189,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (10th Anniversary 1.0 2009 Original, 2020-06-30)", MACHINE_SUPPORTS_SAVE )
 GAME( 2020, kof97s190,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (10th Anniversary 1.0 2009 Simplify, 2020-06-30)", MACHINE_SUPPORTS_SAVE )
 GAME( 2020, kof97s191,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Angry Athena Original, 2020-06-28)", MACHINE_SUPPORTS_SAVE )
@@ -15479,7 +15479,7 @@ GAME( 2006, kof97s227,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neo
 GAME( 1997, kof97s228,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "chbandy", "Kof'97 (Moves and Style changed - Extra stage select)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s229,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "CHL", "Kof'97 (Diff Moves, 2003-03-25)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s230,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "CHL", "Kof'97 (Diff Moves rev.2, 2003-04-09)", MACHINE_SUPPORTS_SAVE )
-GAME( 2013, kof97s231,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "GOTVG", "Kof'97 (Optimized version, 2013-05-29)", MACHINE_SUPPORTS_SAVE )
+GAME( 2013, kof97s231,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "GOTVG", "Kof'97 (Optimised version, 2013-05-29)", MACHINE_SUPPORTS_SAVE )
 GAME( 2007, kof97s232,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "EGHT", "Kof'97 (10th Anniversary)(Chinese Edition)", MACHINE_SUPPORTS_SAVE )
 GAME( 2010, kof97s233,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Ivex", "Kof'97 (Combo, 2010-02-07)", MACHINE_SUPPORTS_SAVE )
 GAME( 2006, kof97s234,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Ivex", "Kof'97 (Combo 2006)", MACHINE_SUPPORTS_SAVE )
@@ -15733,7 +15733,7 @@ GAME( 1997, kof97s486,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neo
 GAME( 1997, kof97s487,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "bdmwzq",    "Kof'97 (EX Red Blood Modification)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s488,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Yukimura",    "Kof'97 (Close Kill The Splash Screen)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s489,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Ivex",    "Kof'97 (Turn Towards)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kof97s490,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Optimized And Simplified Version)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kof97s490,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Optimised And Simplified Version)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s491,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Use Your Dream To Do [L])", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s492,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "yashional",    "Kof'97 (Evolution New)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s493,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "yashional",    "Kof'97 (Evolution New (new))", MACHINE_SUPPORTS_SAVE )
@@ -15797,7 +15797,7 @@ GAME( 1997, kof97s552,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neo
 GAME( 1997, kof97s553,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",    "Kof'97 (Fixed Orochi Vs Kenso)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s554,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "zhyxxxx",    "Kof'97 (Chris Instruction Transfiguration)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s555,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "zhuoxian2007",    "Kof'97 (Liana Orders The Runaway)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kof97s556,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "zhuoxian2007",    "Kof'97 (Directed To Run Away Optimized Version)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kof97s556,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "zhuoxian2007",    "Kof'97 (Directed To Run Away Optimised Version)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s557,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "fok1997",    "Kof'97 (Flying Props Unlimited)", MACHINE_SUPPORTS_SAVE )
 GAME( 2010, kof97s558,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "yashional",    "Kof'97 (Defense Endurance Modification V2, 2010-03-08)", MACHINE_SUPPORTS_SAVE )
 GAME( 2013, kof97s559,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Doom (dp271)",    "Kof'97 (Adjust The Cursor Position, 2013-05-29)", MACHINE_SUPPORTS_SAVE )
@@ -15869,12 +15869,12 @@ GAME( 1997, kof97s632,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neo
 GAME( 1997, kof97s633,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof'97 (Seven Yoga Community Imitation 98)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s634,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Zuojie", "Kof'97 (Hack Unknown, 2016-01-X4)", MACHINE_SUPPORTS_SAVE )
 GAME( 1997, kof97s635,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "LB70", "Kof'97 (ZMonanger)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kof97s637,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "GOTVG", "Kof '97 (Balanced & Optimized, 2023-12-25)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kof97s637,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "GOTVG", "Kof '97 (Balanced & Optimised, 2023-12-25)", MACHINE_SUPPORTS_SAVE )
 GAME( 2024, kof97s638,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "GOTVG", "Kof '97 (Champion Edition, 2024-02-08)", MACHINE_SUPPORTS_SAVE )
 GAME( 2023, kof97s639,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "GOTVG", "Kof '97 (Evolution & Balance, 2023-12-17)", MACHINE_SUPPORTS_SAVE )
 GAME( 2022, kof97s640,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",  "Kof '97 (Evolution New Edition, 2022-09-16)", MACHINE_SUPPORTS_SAVE )
 GAME( 2021, kof97s641,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "GOTVG", "Kof '97 (Invincible Plus!, B2.1.2107, 2021-07-09)", MACHINE_SUPPORTS_SAVE )
-GAME( 2022, kof97s643,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",  "Kof '97 (Randomized, 2022-07-18)", MACHINE_SUPPORTS_SAVE )
+GAME( 2022, kof97s643,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",  "Kof '97 (Randomised, 2022-07-18)", MACHINE_SUPPORTS_SAVE )
 GAME( 2023, kof97s644,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "GOTVG", "Kof '97 (Strengthen Innovation, 2023-12-18)", MACHINE_SUPPORTS_SAVE )
 GAME( 2020, kof97s645,   kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",  "Kof '97 (Ultimate Battle Plus, 2020-03-27)", MACHINE_SUPPORTS_SAVE )
 

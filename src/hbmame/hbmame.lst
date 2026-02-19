@@ -2088,8 +2088,6 @@ kikikai                                //parent
 kikikai01
 
 @source:kof94.cpp
-kof94k
-kof94kh
 kof94s01
 kof94s02
 kof94s03
@@ -2130,9 +2128,11 @@ kof94s37
 kof94s38
 kof94s39
 kof94s40
+kof94s41
+kof94s42
+kof94s43
 
 @source:kof95.cpp
-kof95k
 kof95s01
 kof95s02
 kof95s03
@@ -2177,6 +2177,8 @@ kof95s44
 kof95s45
 kof95s46
 kof95s47
+kof95s48
+kof95s49
 
 @source:kof96.cpp
 kof96s01
@@ -6752,14 +6754,6 @@ kf2k19uni03
 kf2k19uni04
 kf2k20uni01
 kf2k20uni02
-kof2k4mp
-kof2k4mp2
-kof2k4omg
-kof2k4pls
-kof2k4ru // no sound in attract mode
-kof2k4se1
-kof2k4seb
-kof2k4spl
 kof2k4se01
 kof2k4se04
 kof2k4se05
@@ -6794,6 +6788,13 @@ kof2k4se33
 kof2k4se34
 kof2k4se35
 kof2k4se36
+kof2k4se37
+kof2k4se38
+kof2k4se39
+kof2k4se40 // no sound in attract mode
+kof2k4se41
+kof2k4se42
+kof2k4pls
 kof2k4pls01
 kof2k4pls02
 kof2k4pls03
@@ -6813,6 +6814,7 @@ kof2k4pls17
 kof2k4pls18
 kof2k4pls19
 kof2k4pls20
+kof2k4pls21
 
 @source:nglastblade.cpp
 lastblad01

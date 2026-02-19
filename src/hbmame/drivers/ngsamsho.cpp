@@ -4871,7 +4871,7 @@ GAME( 1993, samsho09,   samsho,   neogeo_noslot, neogeo, neogeo_state, init_neog
 GAME( 1993, samsho10,   samsho,   neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Ydmis", "Samurai Shodown (Add Char - Ultra kill start max)", MACHINE_SUPPORTS_SAVE )
 GAME( 1993, samsho11,   samsho,   neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Creamymami and Ydmis", "Samurai Shodown (Add Char - Ultra kill start max - Ultra kill always max)", MACHINE_SUPPORTS_SAVE )
 GAME( 2005, samsho12,   samsho,   neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "dokx4869", "Samurai Shodown (Easy special attacks, 2005-09-19)", MACHINE_SUPPORTS_SAVE )
-GAME( 2008, samsho13,   samsho,   neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "zuojie & kof1996", "Samurai Shodown (Unlimited Credits in Console Mode 2008-10-23)", MACHINE_SUPPORTS_SAVE )
+GAME( 2008, samsho13,   samsho,   neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "zuojie & kof1996", "Samurai Shodown (Unlimited Credits in Console Mode, 2008-10-23)", MACHINE_SUPPORTS_SAVE )
 GAME( 1993, samsho14,   samsho,   neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "SNK", "Samurai Shodown (Alternate board)", MACHINE_SUPPORTS_SAVE )
 // Samurai Shodown II
 GAME( 1994, samsho2s01, samsho2,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Creamymami[EGCG]",    "Samurai Shodown II (Always Maximun Power)", MACHINE_SUPPORTS_SAVE )
@@ -4907,7 +4907,7 @@ GAME( 1994, samsho2s30, samsho2,  neogeo_noslot, neogeo, neogeo_state, init_neog
 GAME( 1994, samsho2s31, samsho2,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Yashional", "Samurai Shodown II (Command change)", MACHINE_SUPPORTS_SAVE )
 GAME( 1994, samsho2s32, samsho2,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Creamymami and Ydmis", "Samurai Shodown II (Char - Pow hack)", MACHINE_SUPPORTS_SAVE )
 GAME( 2008, samsho2s33, samsho2,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "zuojie & kof1996", "Samurai Shodown II (Unlimited Credits in Console Mode, 2008-10-23)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, samsho2s34, samsho2,  gsc,           neogeo, neogeo_state, init_neogeo,   ROT0, "GOTVG", "Samurai Shodown II (Optimized, 2020-09-23)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, samsho2s34, samsho2,  gsc,           neogeo, neogeo_state, init_neogeo,   ROT0, "GOTVG", "Samurai Shodown II (Optimised, 2020-09-23)", MACHINE_SUPPORTS_SAVE )
 // Samurai Shodown III
 GAME( 1995, fswords01,  samsho3,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "Ydmis & Foxy[PHT]", "Fighters Swords (Enable hidden characters v1/V.Alt)", MACHINE_SUPPORTS_SAVE )
 GAME( 1995, fswords02,  samsho3,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,   ROT0, "yumeji[2ch]", "Fighters Swords (Enable hidden characters v2)", MACHINE_SUPPORTS_SAVE )
@@ -5028,7 +5028,7 @@ GAME( 2014, samsh5sp14, samsh5sp, neogeo_noslot, neogeo, neogeo_state, init_sam5
 GAME( 2004, samsh5sp15, samsh5sp, neogeo_noslot, neogeo, neogeo_state, init_sam5sphb, ROT0, "wesker[FGCH]", "Samurai Shodown V Special (Unlock Fatality V1.02, 2004-09-10)", MACHINE_SUPPORTS_SAVE )
 GAME( 2004, samsh5sp16, samsh5sp, neogeo_noslot, neogeo, neogeo_state, init_sam5sphb, ROT0, "wesker[FGCH]", "Samurai Shodown V Special (Unlock fatality v1)", MACHINE_SUPPORTS_SAVE )
 GAME( 2004, samsh5sp17, samsh5sp, neogeo_noslot, neogeo, neogeo_state, init_sam5sphb, ROT0, "wesker[FGCH]", "Samurai Shodown V Special (Unlock fatality v2)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, samsh5sp18, samsh5sp, neogeo_noslot, neogeo, neogeo_state, init_sam5sphb, ROT0, "dokx4869", "Samurai Shodown V Special (Optimize The Move)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, samsh5sp18, samsh5sp, neogeo_noslot, neogeo, neogeo_state, init_sam5sphb, ROT0, "dokx4869", "Samurai Shodown V Special (Optimise The Move)", MACHINE_SUPPORTS_SAVE )
 GAME( 2004, samsh5sp19, samsh5sp, neogeo_noslot, neogeo, neogeo_state, init_sam5sphb, ROT0, "DDJ", "Samurai Shodown V Special (Always Have Super Move)", MACHINE_SUPPORTS_SAVE )
 GAME( 2004, samsh5sp20, samsh5sp, neogeo_noslot, neogeo, neogeo_state, init_sam5sphb, ROT0, "DDJ", "Samurai Shodown V Special (Charlotte Always Have 14hit Move)", MACHINE_SUPPORTS_SAVE )
 GAME( 2004, samsh5sp21, samsh5sp, neogeo_noslot, neogeo, neogeo_state, init_sam5sphb, ROT0, "DDJ", "Samurai Shodown V Special (Easy Move)", MACHINE_SUPPORTS_SAVE )

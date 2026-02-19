@@ -2342,7 +2342,7 @@ GAME( 2007, kof96s53,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_
 GAME( 2007, kof96s54,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "EGHT", "Kof'96 (10th Anniversary Edition set 2)", MACHINE_SUPPORTS_SAVE )
 GAME( 2007, kof96s55,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "EGHT", "Kof'96 (10th Anniversary Edition set 3)", MACHINE_SUPPORTS_SAVE )
 GAME( 2009, kof96s56,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "EGHT", "Kof'96 (10th Anniversary Edition 2016)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, kof96s57,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "EGHT", "Kof'96 (The Aniversary Edition 2.3 Final Version, 2020-05-27)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kof96s57,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Emugame Hackteam", "Kof'96 (10th Aniversary Edition 2.3 Final Version, 2020-05-27)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, kof96s58,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Ydmis", "Kof'96 (Enable hidden characters)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, kof96s59,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Chl & Jason", "Kof'96 (Remix Changed Move List v1.2)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, kof96s60,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof'96 (Boss Hack)", MACHINE_SUPPORTS_SAVE )
@@ -2384,5 +2384,5 @@ GAME( 1996, kof96s95,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_
 GAME( 1996, kof96s96,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "CHL, Jason/K3", "Kof'96 (Remix Ultra v1.1)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, kof96s97,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Wesker", "Kof'96 (Diff Moves)", MACHINE_SUPPORTS_SAVE )
 GAME( 1996, kof96s98,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Ydmis", "Kof'96 (Add Char - Ultra pow hack ABC)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, kof96s99,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof'96 (The Aniversary Edition 2.3 Final Version (gfx), 2020-05-27)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kof96s99,       kof96,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Emugame Hackteam", "Kof'96 (10th Aniversary Edition 2.3 Final Version (gfx), 2020-05-27)", MACHINE_SUPPORTS_SAVE )
 

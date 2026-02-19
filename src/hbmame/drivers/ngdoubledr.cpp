@@ -593,6 +593,6 @@ GAME( 1995, doubledr17,    doubledr, neogeo_noslot, neogeo, neogeo_state,  init_
 GAME( 1995, doubledr18,    doubledr, neogeo_noslot, neogeo, neogeo_state,  init_neogeo, ROT0, "hack", "Double Dragon (Easy Special Attacks)", MACHINE_SUPPORTS_SAVE )
 GAME( 2009, doubledr19,    doubledr, neogeo_noslot, neogeo, neogeo_state,  init_neogeo, ROT0, "Blackheart", "Double Dragon (Perfectly simplified Edition, 2009-09-19)", MACHINE_SUPPORTS_SAVE )
 GAME( 2017, doubledr20,    doubledr, gsc,           neogeo, neogeo_state,  init_neogeo, ROT0, "GSC2007", "Double Dragon (Special 2017 v1.0.0311)", MACHINE_SUPPORTS_SAVE )
-GAME( 2023, doubledr21,    doubledr, gsc,           neogeo, neogeo_state,  init_neogeo, ROT0, "GOTVG", "Double Dragon (Special 2017 v1.0.0311 2023)", MACHINE_SUPPORTS_SAVE ) // 2023-09-11
-GAME( 2015, doubledr22,    doubledr, neogeo_noslot, neogeo, neogeo_state,  init_neogeo, ROT0, "GOTVG", "Double Dragon (Plus 2015-03-11)", MACHINE_SUPPORTS_SAVE )
-GAME( 2014, doubledr23,    doubledr, neogeo_noslot, neogeo, neogeo_state,  init_neogeo, ROT0, "GOTVG", "Double Dragon (Optimized 2014-09-17)", MACHINE_SUPPORTS_SAVE )
+GAME( 2023, doubledr21,    doubledr, gsc,           neogeo, neogeo_state,  init_neogeo, ROT0, "GOTVG", "Double Dragon (Special 2017 v1.0.0311, 2023-09-11)", MACHINE_SUPPORTS_SAVE )
+GAME( 2015, doubledr22,    doubledr, neogeo_noslot, neogeo, neogeo_state,  init_neogeo, ROT0, "GOTVG", "Double Dragon (Plus, 2015-03-11)", MACHINE_SUPPORTS_SAVE )
+GAME( 2014, doubledr23,    doubledr, neogeo_noslot, neogeo, neogeo_state,  init_neogeo, ROT0, "GOTVG", "Double Dragon (Optimised, 2014-09-17)", MACHINE_SUPPORTS_SAVE )
