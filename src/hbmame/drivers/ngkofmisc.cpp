@@ -1661,65 +1661,6 @@ ROM_START( kog20 ) // kogsm - multijet
 ROM_END
 
 
-
-
-
-ROM_START( kf2k8uni ) // hack of kof10th
-	ROM_REGION( 0x800000, "maincpu", 0 )
-	ROM_LOAD16_WORD_SWAP( "368.p1", 0x000000, 0x400000, CRC(966210bf) SHA1(9f86f29dbfe7ac951485908a20a6ce120ebdeb5f) )
-	ROM_LOAD16_WORD_SWAP( "368.p2", 0x400000, 0x400000, CRC(ae5f00f7) SHA1(807cbd02cdba320c7cf32c915a663338d7a89252) )
-
-	NEO_SFIX_128K( "368.s1", CRC(e57b5757) SHA1(d3dbb83c3d8b9860361b36496bfdc95220b8b75f) )
-
-	NEO_BIOS_AUDIO_128K( "kf10-m1.bin", CRC(f6fab859) SHA1(0184aa1394b9f9946d610278b53b846020dd88dc) )
-
-	ROM_REGION( 0x1000000, "ymsnd:adpcma", 0 )
-	ROM_LOAD( "kf10-v1.bin", 0x000000, 0x800000, CRC(0fc9a58d) SHA1(9d79ef00e2c2abd9f29af5521c2fbe5798bf336f) )
-	ROM_LOAD( "kf10-v2.bin", 0x800000, 0x800000, CRC(b8c475a4) SHA1(10caf9c69927a223445d2c4b147864c02ce520a8) )
-
-	ROM_REGION( 0x4000000, "sprites", 0 )
-	ROM_LOAD16_BYTE( "368.c1", 0x0000000, 0x400000, CRC(ea774fb8) SHA1(01ce6330716046b591c606b5d016dd5e57fa007b) )
-	ROM_LOAD16_BYTE( "368.c2", 0x0000001, 0x400000, CRC(6f497789) SHA1(8c8573ea191d29f0d250901ebf0116a41e184c78) )
-	ROM_LOAD16_BYTE( "kf10-c1b.bin", 0x0800000, 0x400000, CRC(b5abfc28) SHA1(eabf60992bb3485c95330065294071ec155bfe7c) )
-	ROM_LOAD16_BYTE( "kf10-c2b.bin", 0x0800001, 0x400000, CRC(6cc4c6e1) SHA1(be824a944e745ee18efdc45c81fd496a4d624b9c) )
-	ROM_LOAD16_BYTE( "kf10-c3a.bin", 0x1000000, 0x400000, CRC(5b3d4a16) SHA1(93ac1cd7739100f8c32732644f81f2a19837b131) )
-	ROM_LOAD16_BYTE( "kf10-c4a.bin", 0x1000001, 0x400000, CRC(c6f3419b) SHA1(340c17a73aeb7bf8a6209f8459e6f00000075b50) )
-	ROM_LOAD16_BYTE( "kf10-c3b.bin", 0x1800000, 0x400000, CRC(9d2bba19) SHA1(5ebbd0af3f83a60e33c8ccb743e3d5f5a96f1273) )
-	ROM_LOAD16_BYTE( "kf10-c4b.bin", 0x1800001, 0x400000, CRC(5a4050cb) SHA1(8fd2291f349efa1ed5cd37ad4e273b60fe831a77) )
-	ROM_LOAD16_BYTE( "kf10-c5a.bin", 0x2000000, 0x400000, CRC(a289d1e1) SHA1(50c7d7ebde6e118a01036cc3e40827fcd9f0d3fd) )
-	ROM_LOAD16_BYTE( "kf10-c6a.bin", 0x2000001, 0x400000, CRC(e6494b5d) SHA1(18e064b9867ae0b0794065f8dbefd486620419db) )
-	ROM_LOAD16_BYTE( "kf10-c5b.bin", 0x2800000, 0x400000, CRC(404fff02) SHA1(56d1b32c87ea4885e49264e8b21846e465a20e1f) )
-	ROM_LOAD16_BYTE( "kf10-c6b.bin", 0x2800001, 0x400000, CRC(f2ccfc9e) SHA1(69db7fac7023785ab94ea711a72dbc2826cfe1a3) )
-	ROM_LOAD16_BYTE( "kf10-c7a.bin", 0x3000000, 0x400000, CRC(be79c5a8) SHA1(ded3c5eb3571647f50533eb682c2675372ace3fb) )
-	ROM_LOAD16_BYTE( "kf10-c8a.bin", 0x3000001, 0x400000, CRC(a5952ca4) SHA1(76dbb3cb45ce5a4beffa1ed29491204fc6617e42) )
-	ROM_LOAD16_BYTE( "368.c7", 0x3800000, 0x400000, CRC(1b6f3bde) SHA1(5e1222197f5a09837930cc34713667dc1644c02a) )
-	ROM_LOAD16_BYTE( "368.c8", 0x3800001, 0x400000, CRC(113555e3) SHA1(52b48e182d23422492d95c95de4c86b1d30864e0) )
-ROM_END
-
-ROM_START( kf2k8uni01 )
-	ROM_REGION( 0x900000, "maincpu", 0 )
-	ROM_LOAD16_WORD_SWAP( "368s01.p1",  0x000000, 0x800000, CRC(b99354cf) SHA1(deb87554d0c64e9209bd0ac4296bee2879b50b9d) )
-
-	NEO_SFIX_128K( "368.s1", CRC(e57b5757) SHA1(d3dbb83c3d8b9860361b36496bfdc95220b8b75f) )
-
-	NEO_BIOS_AUDIO_128K( "kf10-m1.bin", CRC(f6fab859) SHA1(0184aa1394b9f9946d610278b53b846020dd88dc) )
-
-	ROM_REGION( 0x1000000, "ymsnd:adpcma", 0 )
-	ROM_LOAD( "kf10-v1.bin", 0x000000, 0x800000, CRC(0fc9a58d) SHA1(9d79ef00e2c2abd9f29af5521c2fbe5798bf336f) )
-	ROM_LOAD( "kf10-v2.bin", 0x800000, 0x800000, CRC(b8c475a4) SHA1(10caf9c69927a223445d2c4b147864c02ce520a8) )
-
-	ROM_REGION( 0x4000000, "sprites", 0 )
-	ROM_LOAD16_BYTE( "368s01.c1", 0x0000000, 0x800000, CRC(2e30f558) SHA1(0833a938aa052059063e9e2afee9295d505cc0ff) )
-	ROM_LOAD16_BYTE( "368s01.c2", 0x0000001, 0x800000, CRC(c7d6f682) SHA1(b17dbeaef260721b3752009ff77fcf324f30dc75) )
-	ROM_LOAD16_BYTE( "265d.c3", 0x1000000, 0x800000, CRC(959fad0b) SHA1(63AB83DDC5F688DC8165A7FF8D262DF3FCD942A2) )
-	ROM_LOAD16_BYTE( "265d.c4", 0x1000001, 0x800000, CRC(efe6a468) SHA1(2A414285E48AA948B5B0D4A9333BAB083B5FB853) )
-	ROM_LOAD16_BYTE( "265d.c5", 0x2000000, 0x800000, CRC(74bba7c6) SHA1(E01ADC7A4633BC0951B9B4F09ABC07D728E9A2D9) )
-	ROM_LOAD16_BYTE( "265d.c6", 0x2000001, 0x800000, CRC(e20d2216) SHA1(5D28EEA7B581E780B78F391A8179F1678EE0D9A5) )
-	ROM_LOAD16_BYTE( "368s01.c7", 0x3000000, 0x800000, CRC(aeef5880) SHA1(0f97472cf13fe4f03e2e163f29162ed2ad9a8f34) )
-	ROM_LOAD16_BYTE( "368s01.c8", 0x3000001, 0x800000, CRC(c9d84812) SHA1(0901e7d081ec4ce4f61867f1552e9922e2bdb8a5) )
-ROM_END
-
-
 ROM_START( kof10thd )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "366d.p1", 0x000000, 0x800000, CRC(30c82f4c) SHA1(d02e6fa14af6fd4aff0349fcb3d275d9226ccbe7) )
@@ -2749,10 +2690,10 @@ ROM_END
  Kof 10th Anniversary 2005 Unique
 ************************************/
 
-ROM_START( kf2k5uni01 )
+ROM_START( kf2k5u01 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
-	ROM_LOAD16_WORD_SWAP( "5006hc01.p1",  0x400000, 0x400000, CRC(72ba5467) SHA1(09df8c62586867fa7a86484f781df3298189b7c1) )
+	ROM_LOAD16_WORD_SWAP( "367s01.p1",  0x400000, 0x400000, CRC(72ba5467) SHA1(09df8c62586867fa7a86484f781df3298189b7c1) )
 
 	NEO_SFIX_128K( "5006-s1.bin", CRC(91f8c544) SHA1(9d16cafb9ca4bc54f31f7fd82b1be06ec8b11c79) )
 
@@ -2781,10 +2722,10 @@ ROM_START( kf2k5uni01 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni02 )
+ROM_START( kf2k5u02 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
-	ROM_LOAD16_WORD_SWAP( "5006hc02.p1",  0x400000, 0x400000, CRC(3d51ab31) SHA1(8a8a66bbaef963741dabc919f8e540fb40a9eaf5) )
+	ROM_LOAD16_WORD_SWAP( "367s02.p1",  0x400000, 0x400000, CRC(3d51ab31) SHA1(8a8a66bbaef963741dabc919f8e540fb40a9eaf5) )
 
 	NEO_SFIX_128K( "5006-s1.bin", CRC(91f8c544) SHA1(9d16cafb9ca4bc54f31f7fd82b1be06ec8b11c79) )
 
@@ -2813,10 +2754,10 @@ ROM_START( kf2k5uni02 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni03 )
+ROM_START( kf2k5u03 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
-	ROM_LOAD16_WORD_SWAP( "5006hc03.p1",  0x400000, 0x400000, CRC(966fa849) SHA1(79e6f383ff31293a7a708177d8e0ef4962440a49) )
+	ROM_LOAD16_WORD_SWAP( "367s03.p1",  0x400000, 0x400000, CRC(966fa849) SHA1(79e6f383ff31293a7a708177d8e0ef4962440a49) )
 
 	NEO_SFIX_128K( "5006-s1.bin", CRC(91f8c544) SHA1(9d16cafb9ca4bc54f31f7fd82b1be06ec8b11c79) )
 
@@ -2845,10 +2786,10 @@ ROM_START( kf2k5uni03 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni04 )
+ROM_START( kf2k5u04 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
-	ROM_LOAD16_WORD_SWAP( "5006hc04.p1",  0x400000, 0x400000, CRC(910d2feb) SHA1(2f4da0b720ca2cf8f5d770bf8d0e566e296f4236) )
+	ROM_LOAD16_WORD_SWAP( "367s04.p1",  0x400000, 0x400000, CRC(910d2feb) SHA1(2f4da0b720ca2cf8f5d770bf8d0e566e296f4236) )
 
 	NEO_SFIX_128K( "5006-s1.bin", CRC(91f8c544) SHA1(9d16cafb9ca4bc54f31f7fd82b1be06ec8b11c79) )
 
@@ -2877,7 +2818,7 @@ ROM_START( kf2k5uni04 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni05 )
+ROM_START( kf2k5u05 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
 	ROM_LOAD16_WORD_SWAP( "5006-p1.bin",  0x400000, 0x400000, CRC(72c39c46) SHA1(4ba0657de20319c0bc30c7c3bba7d7331d0ce9a7) )
@@ -2909,10 +2850,10 @@ ROM_START( kf2k5uni05 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni06 )
+ROM_START( kf2k5u06 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
-	ROM_LOAD16_WORD_SWAP( "5006hc06.p1",  0x400000, 0x400000, CRC(3177a7f8) SHA1(501e8eb8deb3400c3b6432782f4b8dd53affda3c) )
+	ROM_LOAD16_WORD_SWAP( "367s06.p1",  0x400000, 0x400000, CRC(3177a7f8) SHA1(501e8eb8deb3400c3b6432782f4b8dd53affda3c) )
 
 	NEO_SFIX_128K( "5006-s1.bin", CRC(91f8c544) SHA1(9d16cafb9ca4bc54f31f7fd82b1be06ec8b11c79) )
 
@@ -2941,12 +2882,12 @@ ROM_START( kf2k5uni06 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni07 )
+ROM_START( kf2k5u07 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
-	ROM_LOAD16_WORD_SWAP( "5006hc07.p1",  0x400000, 0x400000, CRC(ae9e1f4a) SHA1(cd8fc7ffafb75881ba6078bac4c731ea4ee9ad44) )
+	ROM_LOAD16_WORD_SWAP( "367s07.p1",  0x400000, 0x400000, CRC(ae9e1f4a) SHA1(cd8fc7ffafb75881ba6078bac4c731ea4ee9ad44) )
 
-	NEO_SFIX_128K( "5006hc07.s1", CRC(0bcb306c) SHA1(7d4d1e87e971b73bc71ba2414eb6c5f73bce27c3) )
+	NEO_SFIX_128K( "367s07.s1", CRC(0bcb306c) SHA1(7d4d1e87e971b73bc71ba2414eb6c5f73bce27c3) )
 
 	NEO_BIOS_AUDIO_128K( "5006-m1.bin", CRC(9050bfe7) SHA1(765bf3d954f775231b7ef2504bb844cd0b29e3f7) )
 
@@ -2973,10 +2914,10 @@ ROM_START( kf2k5uni07 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni08 )
+ROM_START( kf2k5u08 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
-	ROM_LOAD16_WORD_SWAP( "5006hc08.p1",  0x400000, 0x400000, CRC(14a7517e) SHA1(85dd8e5d7c42d79467d0e930ed1d8e9818cad1bd) )
+	ROM_LOAD16_WORD_SWAP( "367s08.p1",  0x400000, 0x400000, CRC(14a7517e) SHA1(85dd8e5d7c42d79467d0e930ed1d8e9818cad1bd) )
 
 	NEO_SFIX_128K( "5006-s1.bin", CRC(91f8c544) SHA1(9d16cafb9ca4bc54f31f7fd82b1be06ec8b11c79) )
 
@@ -3005,12 +2946,12 @@ ROM_START( kf2k5uni08 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni09 )
+ROM_START( kf2k5u09 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
 	ROM_LOAD16_WORD_SWAP( "5006-p1.bin",  0x400000, 0x400000, CRC(72c39c46) SHA1(4ba0657de20319c0bc30c7c3bba7d7331d0ce9a7) )
 
-	NEO_SFIX_128K( "5006hc09.s1", CRC(85692763) SHA1(11dbeb5b1bb9b24312b1ff110d4648f8c945b142) )
+	NEO_SFIX_128K( "367s09.s1", CRC(85692763) SHA1(11dbeb5b1bb9b24312b1ff110d4648f8c945b142) )
 
 	NEO_BIOS_AUDIO_128K( "5006-m1.bin", CRC(9050bfe7) SHA1(765bf3d954f775231b7ef2504bb844cd0b29e3f7) )
 
@@ -3037,12 +2978,12 @@ ROM_START( kf2k5uni09 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni10 )
+ROM_START( kf2k5u10 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
 	ROM_LOAD16_WORD_SWAP( "5006-p1.bin",  0x400000, 0x400000, CRC(72c39c46) SHA1(4ba0657de20319c0bc30c7c3bba7d7331d0ce9a7) )
 
-	NEO_SFIX_128K( "5006hc10.s1", CRC(63ced2a3) SHA1(6131000a6cc25b71a0d0bf48c60774d40c5c054c) )
+	NEO_SFIX_128K( "367s10.s1", CRC(63ced2a3) SHA1(6131000a6cc25b71a0d0bf48c60774d40c5c054c) )
 
 	NEO_BIOS_AUDIO_128K( "5006-m1.bin", CRC(9050bfe7) SHA1(765bf3d954f775231b7ef2504bb844cd0b29e3f7) )
 
@@ -3069,10 +3010,10 @@ ROM_START( kf2k5uni10 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni11 )
+ROM_START( kf2k5u11 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
-	ROM_LOAD16_WORD_SWAP( "5006hc11.p1",  0x400000, 0x400000, CRC(41a0aa88) SHA1(5a1d1d58ace320cb1abc229ff59c0a2483b0aaa4) )
+	ROM_LOAD16_WORD_SWAP( "367s11.p1",  0x400000, 0x400000, CRC(41a0aa88) SHA1(5a1d1d58ace320cb1abc229ff59c0a2483b0aaa4) )
 
 	NEO_SFIX_128K( "5006-s1.bin", CRC(91f8c544) SHA1(9d16cafb9ca4bc54f31f7fd82b1be06ec8b11c79) )
 
@@ -3101,7 +3042,7 @@ ROM_START( kf2k5uni11 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni12 )
+ROM_START( kf2k5u12 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "5006-p2a.bin", 0x000000, 0x400000, CRC(ced883a2) SHA1(f93db4d74ce0a73a3e9631966fee37be22470c89) )
 	ROM_LOAD16_WORD_SWAP( "5006-p1.bin",  0x400000, 0x400000, CRC(72c39c46) SHA1(4ba0657de20319c0bc30c7c3bba7d7331d0ce9a7) )
@@ -3133,12 +3074,12 @@ ROM_START( kf2k5uni12 )
 	ROM_LOAD16_BYTE( "kf10-c8b.bin", 0x3800001, 0x400000, CRC(661b7a52) SHA1(0ae2ad2389134892f156337332b77adade3ddad1) )
 ROM_END
 
-ROM_START( kf2k5uni15 ) //kof10thalphau
+ROM_START( kf2k5u15 ) //kof10thalphau
 	ROM_REGION( 0x800000, "maincpu", 0 )
-	ROM_LOAD16_WORD_SWAP( "366s15.p1", 0x000000, 0x800000, CRC(53cb8a6b) SHA1(63acfbeb77bfa38c1545e9c61addce4009b22a1e) )
+	ROM_LOAD16_WORD_SWAP( "367s15.p1", 0x000000, 0x800000, CRC(53cb8a6b) SHA1(63acfbeb77bfa38c1545e9c61addce4009b22a1e) )
 	ROM_FILL(0x012510,1,0x65)
 
-	NEO_SFIX_128K( "366s15.s1", CRC(614db6b7) SHA1(11c65a37e3eb1441a13ce68c6db7367270b0e65b) )
+	NEO_SFIX_128K( "367s15.s1", CRC(614db6b7) SHA1(11c65a37e3eb1441a13ce68c6db7367270b0e65b) )
 
 	NEO_BIOS_AUDIO_128K( "kf10-m1.bin", CRC(f6fab859) SHA1(0184aa1394b9f9946d610278b53b846020dd88dc) )
 
@@ -3157,12 +3098,12 @@ ROM_START( kf2k5uni15 ) //kof10thalphau
 	ROM_LOAD16_BYTE( "265d.c8", 0x3000001, 0x800000, CRC(bef667a3) SHA1(D5E8BC185DCF63343D129C31D2DDAB9F723F1A12) )
 ROM_END
 
-ROM_START( kf2k5uni16 ) //kof10thalphau
+ROM_START( kf2k5u16 ) //kof10thalphau
 	ROM_REGION( 0x800000, "maincpu", 0 )
-	ROM_LOAD16_WORD_SWAP( "366s16.p1", 0x000000, 0x800000, CRC(bc16bdca) SHA1(6d2c1c7d962bedc222e0c1cc14722d054294922c) )
+	ROM_LOAD16_WORD_SWAP( "367s16.p1", 0x000000, 0x800000, CRC(bc16bdca) SHA1(6d2c1c7d962bedc222e0c1cc14722d054294922c) )
 	ROM_FILL(0x012510,1,0x65)
 
-	NEO_SFIX_128K( "366s15.s1", CRC(614db6b7) SHA1(11c65a37e3eb1441a13ce68c6db7367270b0e65b) )
+	NEO_SFIX_128K( "367s15.s1", CRC(614db6b7) SHA1(11c65a37e3eb1441a13ce68c6db7367270b0e65b) )
 
 	NEO_BIOS_AUDIO_128K( "kf10-m1.bin", CRC(f6fab859) SHA1(0184aa1394b9f9946d610278b53b846020dd88dc) )
 
@@ -3181,12 +3122,12 @@ ROM_START( kf2k5uni16 ) //kof10thalphau
 	ROM_LOAD16_BYTE( "265d.c8", 0x3000001, 0x800000, CRC(bef667a3) SHA1(D5E8BC185DCF63343D129C31D2DDAB9F723F1A12) )
 ROM_END
 
-ROM_START( kf2k5uni18 ) //kof10thuomg
+ROM_START( kf2k5u18 ) //kof10thuomg
 	ROM_REGION( 0xC00000, "maincpu", 0 )
-	ROM_LOAD16_WORD_SWAP( "366s18.p1",  0x000000, 0x800000, CRC(fcd074e7) SHA1(2b62d16e22726a8d560bc00b678517a3c70b3243) )
+	ROM_LOAD16_WORD_SWAP( "367s18.p1",  0x000000, 0x800000, CRC(fcd074e7) SHA1(2b62d16e22726a8d560bc00b678517a3c70b3243) )
 	ROM_LOAD16_WORD_SWAP( "265or.p2", 0x800000, 0x400000, CRC(293bbf78) SHA1(647eea522d0a163675205aeab9b0b9ebb3a47eea) )
 
-	NEO_SFIX_128K( "366s15.s1", CRC(614db6b7) SHA1(11c65a37e3eb1441a13ce68c6db7367270b0e65b) )
+	NEO_SFIX_128K( "367s15.s1", CRC(614db6b7) SHA1(11c65a37e3eb1441a13ce68c6db7367270b0e65b) )
 
 	NEO_BIOS_AUDIO_128K( "kf10-m1.bin", CRC(f6fab859) SHA1(0184aa1394b9f9946d610278b53b846020dd88dc) )
 
@@ -3199,8 +3140,8 @@ ROM_START( kf2k5uni18 ) //kof10thuomg
 	ROM_LOAD16_BYTE( "265d.c8",     0x0000001, 0x800000, CRC(bef667a3) SHA1(D5E8BC185DCF63343D129C31D2DDAB9F723F1A12) )  // to fix KOF2002 logo
 	ROM_LOAD16_BYTE( "265omg8.c3", 0x1000000, 0x800000, CRC(2367927c) SHA1(31a5b58feaeb2ecbde5573b48b50cdd8bcaa6ab4) )
 	ROM_LOAD16_BYTE( "265omg8.c4", 0x1000001, 0x800000, CRC(4ad48c29) SHA1(9908a7c2d579059a97927d58f4ea95b17deb9952) )
-	ROM_LOAD16_BYTE( "365ru.c5",  0x2000000, 0x800000, CRC(11126545) SHA1(4ae58848c8a6701c9cfcd60e6674e8fb7491c0c0) )
-	ROM_LOAD16_BYTE( "365ru.c6",  0x2000001, 0x800000, CRC(d225bb9b) SHA1(ee627dab6aeebfb1af9dbdc315a927245243817c) )
+	ROM_LOAD16_BYTE( "365s40.c5",  0x2000000, 0x800000, CRC(11126545) SHA1(4ae58848c8a6701c9cfcd60e6674e8fb7491c0c0) )
+	ROM_LOAD16_BYTE( "365s40.c6",  0x2000001, 0x800000, CRC(d225bb9b) SHA1(ee627dab6aeebfb1af9dbdc315a927245243817c) )
 	ROM_LOAD16_BYTE( "265omg8.c7", 0x3000000, 0x800000, CRC(890c2a4a) SHA1(04e8720ee62782b8fd6621ef4dc4e7469f57b10c) )
 	ROM_LOAD16_BYTE( "265omg8.c8", 0x3000001, 0x800000, CRC(b726009d) SHA1(29e84e7012cd5c109937ea2e6a455ed9829776ac) )
 	ROM_COPY("sprites", 0xc6ed00, 0x3c6ed00, 0x3e00)
@@ -3208,11 +3149,94 @@ ROM_START( kf2k5uni18 ) //kof10thuomg
 	ROM_LOAD16_BYTE( "366s18.c2", 0x0000001, 0x800000, CRC(202a8cba) SHA1(6241a2f54e93eb89ea5be1d002ed8aed078cd93e) )
 ROM_END
 
+ROM_START( kf2k5u19 ) //kf10thup
+	ROM_REGION( 0x800000, "maincpu", 0 )
+	ROM_LOAD16_WORD_SWAP( "367s19.p1", 0x000000, 0x800000, CRC(637dfdce) SHA1(65f13013eaea3c8d328f75c6afc8cd0a9ebcdcc5) )
+
+	NEO_SFIX_128K( "367s15.s1", CRC(614db6b7) SHA1(11c65a37e3eb1441a13ce68c6db7367270b0e65b) )
+
+	NEO_BIOS_AUDIO_128K( "kf10-m1.bin", CRC(f6fab859) SHA1(0184aa1394b9f9946d610278b53b846020dd88dc) )
+
+	ROM_REGION( 0x1000000, "ymsnd:adpcma", 0 )
+	ROM_LOAD( "265d.v1", 0x000000, 0x800000, CRC(0fc9a58d) SHA1(9d79ef00e2c2abd9f29af5521c2fbe5798bf336f) )
+	ROM_LOAD( "265d.v2", 0x800000, 0x800000, CRC(b8c475a4) SHA1(10caf9c69927a223445d2c4b147864c02ce520a8) )
+
+	ROM_REGION( 0x4000000, "sprites", 0 )
+	ROM_LOAD16_BYTE( "370.c1", 0x0000000, 0x800000, CRC(2c59db66) SHA1(67af8d7b31098ffc71b302bc48384689ad02e706) )
+	ROM_LOAD16_BYTE( "370.c2", 0x0000001, 0x800000, CRC(024ffd69) SHA1(10282a65a1fac990ede1333a44d225be1b0d6950) )
+	ROM_LOAD16_BYTE( "265d.c3", 0x1000000, 0x800000, CRC(959fad0b) SHA1(63ab83ddc5f688dc8165a7ff8d262df3fcd942a2) )
+	ROM_LOAD16_BYTE( "265d.c4", 0x1000001, 0x800000, CRC(efe6a468) SHA1(2a414285e48aa948b5b0d4a9333bab083b5fb853) )
+	ROM_LOAD16_BYTE( "265d.c5", 0x2000000, 0x800000, CRC(74bba7c6) SHA1(e01adc7a4633bc0951b9b4f09abc07d728e9a2d9) )
+	ROM_LOAD16_BYTE( "265d.c6", 0x2000001, 0x800000, CRC(e20d2216) SHA1(5d28eea7b581e780b78f391a8179f1678ee0d9a5) )
+	ROM_LOAD16_BYTE( "367s19.c7", 0x3000000, 0x800000, CRC(2bb52a73) SHA1(925c19d9ee2e474b6a27371d828822364f8c46e5) )
+	ROM_LOAD16_BYTE( "367s19.c8", 0x3000001, 0x800000, CRC(26586fc1) SHA1(425647284a99321b3885222d7210624354c0beaf) )
+ROM_END
+
+
+/*********************************
+ Kof 10th Anniversary 2008
+*********************************/
+ROM_START( kf2k8u ) // hack of kof10th
+	ROM_REGION( 0x800000, "maincpu", 0 )
+	ROM_LOAD16_WORD_SWAP( "368.p1", 0x000000, 0x400000, CRC(966210bf) SHA1(9f86f29dbfe7ac951485908a20a6ce120ebdeb5f) )
+	ROM_LOAD16_WORD_SWAP( "368.p2", 0x400000, 0x400000, CRC(ae5f00f7) SHA1(807cbd02cdba320c7cf32c915a663338d7a89252) )
+
+	NEO_SFIX_128K( "368.s1", CRC(e57b5757) SHA1(d3dbb83c3d8b9860361b36496bfdc95220b8b75f) )
+
+	NEO_BIOS_AUDIO_128K( "kf10-m1.bin", CRC(f6fab859) SHA1(0184aa1394b9f9946d610278b53b846020dd88dc) )
+
+	ROM_REGION( 0x1000000, "ymsnd:adpcma", 0 )
+	ROM_LOAD( "kf10-v1.bin", 0x000000, 0x800000, CRC(0fc9a58d) SHA1(9d79ef00e2c2abd9f29af5521c2fbe5798bf336f) )
+	ROM_LOAD( "kf10-v2.bin", 0x800000, 0x800000, CRC(b8c475a4) SHA1(10caf9c69927a223445d2c4b147864c02ce520a8) )
+
+	ROM_REGION( 0x4000000, "sprites", 0 )
+	ROM_LOAD16_BYTE( "368.c1", 0x0000000, 0x400000, CRC(ea774fb8) SHA1(01ce6330716046b591c606b5d016dd5e57fa007b) )
+	ROM_LOAD16_BYTE( "368.c2", 0x0000001, 0x400000, CRC(6f497789) SHA1(8c8573ea191d29f0d250901ebf0116a41e184c78) )
+	ROM_LOAD16_BYTE( "kf10-c1b.bin", 0x0800000, 0x400000, CRC(b5abfc28) SHA1(eabf60992bb3485c95330065294071ec155bfe7c) )
+	ROM_LOAD16_BYTE( "kf10-c2b.bin", 0x0800001, 0x400000, CRC(6cc4c6e1) SHA1(be824a944e745ee18efdc45c81fd496a4d624b9c) )
+	ROM_LOAD16_BYTE( "kf10-c3a.bin", 0x1000000, 0x400000, CRC(5b3d4a16) SHA1(93ac1cd7739100f8c32732644f81f2a19837b131) )
+	ROM_LOAD16_BYTE( "kf10-c4a.bin", 0x1000001, 0x400000, CRC(c6f3419b) SHA1(340c17a73aeb7bf8a6209f8459e6f00000075b50) )
+	ROM_LOAD16_BYTE( "kf10-c3b.bin", 0x1800000, 0x400000, CRC(9d2bba19) SHA1(5ebbd0af3f83a60e33c8ccb743e3d5f5a96f1273) )
+	ROM_LOAD16_BYTE( "kf10-c4b.bin", 0x1800001, 0x400000, CRC(5a4050cb) SHA1(8fd2291f349efa1ed5cd37ad4e273b60fe831a77) )
+	ROM_LOAD16_BYTE( "kf10-c5a.bin", 0x2000000, 0x400000, CRC(a289d1e1) SHA1(50c7d7ebde6e118a01036cc3e40827fcd9f0d3fd) )
+	ROM_LOAD16_BYTE( "kf10-c6a.bin", 0x2000001, 0x400000, CRC(e6494b5d) SHA1(18e064b9867ae0b0794065f8dbefd486620419db) )
+	ROM_LOAD16_BYTE( "kf10-c5b.bin", 0x2800000, 0x400000, CRC(404fff02) SHA1(56d1b32c87ea4885e49264e8b21846e465a20e1f) )
+	ROM_LOAD16_BYTE( "kf10-c6b.bin", 0x2800001, 0x400000, CRC(f2ccfc9e) SHA1(69db7fac7023785ab94ea711a72dbc2826cfe1a3) )
+	ROM_LOAD16_BYTE( "kf10-c7a.bin", 0x3000000, 0x400000, CRC(be79c5a8) SHA1(ded3c5eb3571647f50533eb682c2675372ace3fb) )
+	ROM_LOAD16_BYTE( "kf10-c8a.bin", 0x3000001, 0x400000, CRC(a5952ca4) SHA1(76dbb3cb45ce5a4beffa1ed29491204fc6617e42) )
+	ROM_LOAD16_BYTE( "368.c7", 0x3800000, 0x400000, CRC(1b6f3bde) SHA1(5e1222197f5a09837930cc34713667dc1644c02a) )
+	ROM_LOAD16_BYTE( "368.c8", 0x3800001, 0x400000, CRC(113555e3) SHA1(52b48e182d23422492d95c95de4c86b1d30864e0) )
+ROM_END
+
+ROM_START( kf2k8u01 )
+	ROM_REGION( 0x900000, "maincpu", 0 )
+	ROM_LOAD16_WORD_SWAP( "368s01.p1",  0x000000, 0x800000, CRC(b99354cf) SHA1(deb87554d0c64e9209bd0ac4296bee2879b50b9d) )
+
+	NEO_SFIX_128K( "368.s1", CRC(e57b5757) SHA1(d3dbb83c3d8b9860361b36496bfdc95220b8b75f) )
+
+	NEO_BIOS_AUDIO_128K( "kf10-m1.bin", CRC(f6fab859) SHA1(0184aa1394b9f9946d610278b53b846020dd88dc) )
+
+	ROM_REGION( 0x1000000, "ymsnd:adpcma", 0 )
+	ROM_LOAD( "kf10-v1.bin", 0x000000, 0x800000, CRC(0fc9a58d) SHA1(9d79ef00e2c2abd9f29af5521c2fbe5798bf336f) )
+	ROM_LOAD( "kf10-v2.bin", 0x800000, 0x800000, CRC(b8c475a4) SHA1(10caf9c69927a223445d2c4b147864c02ce520a8) )
+
+	ROM_REGION( 0x4000000, "sprites", 0 )
+	ROM_LOAD16_BYTE( "368s01.c1", 0x0000000, 0x800000, CRC(2e30f558) SHA1(0833a938aa052059063e9e2afee9295d505cc0ff) )
+	ROM_LOAD16_BYTE( "368s01.c2", 0x0000001, 0x800000, CRC(c7d6f682) SHA1(b17dbeaef260721b3752009ff77fcf324f30dc75) )
+	ROM_LOAD16_BYTE( "265d.c3", 0x1000000, 0x800000, CRC(959fad0b) SHA1(63AB83DDC5F688DC8165A7FF8D262DF3FCD942A2) )
+	ROM_LOAD16_BYTE( "265d.c4", 0x1000001, 0x800000, CRC(efe6a468) SHA1(2A414285E48AA948B5B0D4A9333BAB083B5FB853) )
+	ROM_LOAD16_BYTE( "265d.c5", 0x2000000, 0x800000, CRC(74bba7c6) SHA1(E01ADC7A4633BC0951B9B4F09ABC07D728E9A2D9) )
+	ROM_LOAD16_BYTE( "265d.c6", 0x2000001, 0x800000, CRC(e20d2216) SHA1(5D28EEA7B581E780B78F391A8179F1678EE0D9A5) )
+	ROM_LOAD16_BYTE( "368s01.c7", 0x3000000, 0x800000, CRC(aeef5880) SHA1(0f97472cf13fe4f03e2e163f29162ed2ad9a8f34) )
+	ROM_LOAD16_BYTE( "368s01.c8", 0x3000001, 0x800000, CRC(c9d84812) SHA1(0901e7d081ec4ce4f61867f1552e9922e2bdb8a5) )
+ROM_END
+
+
 /*********************************
  Kof 10th Anniversary 2019 Unique
  (generic name = kof10thuo)
 *********************************/
-ROM_START( kf2k19uni01 )
+ROM_START( kf2k19u01 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "369s01.p1", 0x000000, 0x800000, CRC(20d0dd47) SHA1(178457183987a63e6c6b8b6e0614a53835e1e868) )
 
@@ -3235,7 +3259,7 @@ ROM_START( kf2k19uni01 )
 	ROM_LOAD16_BYTE( "265d.c8", 0x3000001, 0x800000, CRC(bef667a3) SHA1(D5E8BC185DCF63343D129C31D2DDAB9F723F1A12) )
 ROM_END
 
-ROM_START( kf2k19uni02 )
+ROM_START( kf2k19u02 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "369s02.p1", 0x000000, 0x800000, CRC(956ac7f9) SHA1(d0667d0fbb9ead1db9a8ad273ba8922e08764989) )
 
@@ -3258,7 +3282,7 @@ ROM_START( kf2k19uni02 )
 	ROM_LOAD16_BYTE( "265d.c8", 0x3000001, 0x800000, CRC(bef667a3) SHA1(D5E8BC185DCF63343D129C31D2DDAB9F723F1A12) )
 ROM_END
 
-ROM_START( kf2k19uni03 )
+ROM_START( kf2k19u03 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "369s03.p1", 0x000000, 0x800000, CRC(70beaeda) SHA1(a16027b3d9cd81dd7c2f58c7f530c7c790772904) )
 
@@ -3281,7 +3305,7 @@ ROM_START( kf2k19uni03 )
 	ROM_LOAD16_BYTE( "265d.c8", 0x3000001, 0x800000, CRC(bef667a3) SHA1(D5E8BC185DCF63343D129C31D2DDAB9F723F1A12) )
 ROM_END
 
-ROM_START( kf2k19uni04 )
+ROM_START( kf2k19u04 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "369s04.p1", 0x000000, 0x800000, CRC(a92246ab) SHA1(7681c8dc0dacf3610aa2036d55a930c8c6f33061) )
 
@@ -3304,7 +3328,10 @@ ROM_START( kf2k19uni04 )
 	ROM_LOAD16_BYTE( "265d.c8", 0x3000001, 0x800000, CRC(bef667a3) SHA1(D5E8BC185DCF63343D129C31D2DDAB9F723F1A12) )
 ROM_END
 
-ROM_START( kf2k20uni01 )
+/*********************************
+ Kof 10th Anniversary 2020 Unique
+*********************************/
+ROM_START( kf2k20u01 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "370s01.p1", 0x000000, 0x800000, CRC(5c261d57) SHA1(0e886ff9241d641c2445800031749f65ba13d654) )
 
@@ -3327,7 +3354,7 @@ ROM_START( kf2k20uni01 )
 	ROM_LOAD16_BYTE( "265d.c8", 0x3000001, 0x800000, CRC(bef667a3) SHA1(D5E8BC185DCF63343D129C31D2DDAB9F723F1A12) )
 ROM_END
 
-ROM_START( kf2k20uni02 )
+ROM_START( kf2k20u02 )
 	ROM_REGION( 0x800000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "370s02.p1", 0x000000, 0x800000, CRC(77b4bf26) SHA1(452d4f8eaca66cc8c85f304d4c7333cb83bc765a) )
 
@@ -3350,10 +3377,10 @@ ROM_START( kf2k20uni02 )
 	ROM_LOAD16_BYTE( "265d.c8", 0x3000001, 0x800000, CRC(bef667a3) SHA1(D5E8BC185DCF63343D129C31D2DDAB9F723F1A12) )
 ROM_END
 
+
 /************************
  Kof Special Edition 2004
 ***************************/
-
 ROM_START( kof2k4se01 )
 	ROM_REGION( 0x500000, "maincpu", 0 )
 	ROM_LOAD16_WORD_SWAP( "365s01.p2", 0x000000, 0x080000, CRC(faab22a9) SHA1(126c5a4640a9f3bc0d436fb0ccce16b95e29e8c2) )
@@ -4950,90 +4977,90 @@ ROM_START( kof2k4pls21 ) // kof2k4spl
 ROM_END
 
 
-/*    YEAR  NAME        PARENT    MACHINE        INPUT   CLASS         INIT          MONITOR COMPANY                 FULLNAME FLAGS */
+/*    YEAR  NAME           PARENT    MACHINE        INPUT   CLASS         INIT          MONITOR COMPANY                 FULLNAME FLAGS */
 // Crouching Tiger Hidden Dragon
-GAME( 2004, cthd2k3b,   neogeo,   neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "HunterX Hacker", "Crouching Tiger Hidden Dragon 2003 (Hidden Characters Boss V1)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s01,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "zhaolu94",    "Crouching Tiger Hidden Dragon 2003 (Color Fix Form Kof2001)", MACHINE_SUPPORTS_SAVE )
-GAME( 2016, ct2k3s02,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Simplified Color, 2016-03-15)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s03,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "bootleg",    "Crouching Tiger Hidden Dragon 2003 (Plus)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s04,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "bootleg",    "Crouching Tiger Hidden Dragon 2003 (Super Plus)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s05,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Creamymami[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Hidden Characters Boss V2)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s06,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Igniz & Zero",    "Crouching Tiger Hidden Dragon 2003 (Hidden Characters Append-Solve A Variable Four Problem)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s07,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Hunter X Hacker",    "Crouching Tiger Hidden Dragon 2003 (Power Max v1)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s08,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Creamymami[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Power Max v2)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s09,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "tcwlee[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Color Mod)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s10,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "tcwlee[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Color Mod v1)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s11,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "tcwlee[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Color Mod v2)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s12,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Flycboy[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Color Mod v3)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s13,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "zhangshee",    "Crouching Tiger Hidden Dragon 2003 (Icy Blue Style)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s14,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Flycboy[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Some Team Color change)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s15,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "ayane",    "Crouching Tiger Hidden Dragon 2003 (Blood Version V1)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s16,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "ayane",    "Crouching Tiger Hidden Dragon 2003 (Blood Version V2)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s17,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Fixed Sound Bugs)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s18,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "oak2003",    "Crouching Tiger Hidden Dragon 2003 (Half Transparency Life Bar v1)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s19,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "oak2003",    "Crouching Tiger Hidden Dragon 2003 (Half Transparency Life Bar v2)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s20,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Eddids[FGCH]",    "Crouching Tiger Hidden Dragon 2003 (Unlimited Credits in Console Mode)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s21,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.0)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s22,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.1)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s23,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.2)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s24,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.3)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s25,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.4)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s26,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.5)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s27,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.6)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s28,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.7)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s29,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.8)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s30,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.9)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s31,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2k3a,  ROT0, "bootleg", "Crouching Tiger Hidden Dragon 2003 (set 2)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s32,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "bootleg",    "Crouching Tiger Hidden Dragon 2003  (set 2 fully decrypted)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s33,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "bootleg", "Crouching Tiger Hidden Dragon 2003 (set 1 fully decrypted)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s34,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Fighters Kim and HunterX Hacker", "Crouching Tiger Hidden Dragon 2003 (Add Char - Pow hack)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s35,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Eddids[FGCH]", "Crouching Tiger Hidden Dragon 2003 (Ice fz remix)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s36,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Jason[FGCH]", "Crouching Tiger Hidden Dragon 2003 (Some characters move to simplify 1.2)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s37,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Jason/K3", "Crouching Tiger Hidden Dragon 2003 (Remix Edition)(Diff Move, 2003-08-18)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s38,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Crouching Tiger Hidden Dragon 2003 Super Plus (decrypted)", MACHINE_SUPPORTS_SAVE )
-GAME( 2016, ct2k3s39,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack", "Crouching Tiger Hidden Dragon 2003 (Simplified, 2016-03-15)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s40,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack", "Crouching Tiger Hidden Dragon 2003 (Blood Edition)", MACHINE_SUPPORTS_SAVE )
-GAME( 2004, ct2k3s41,   cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack", "Crouching Tiger Hidden Dragon 2003 (Red Fire Remix)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, cthd2k3b,      neogeo,   neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "HunterX Hacker", "Crouching Tiger Hidden Dragon 2003 (Hidden Characters Boss V1)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s01,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "zhaolu94",    "Crouching Tiger Hidden Dragon 2003 (Color Fix Form Kof2001)", MACHINE_SUPPORTS_SAVE )
+GAME( 2016, ct2k3s02,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Simplified Color, 2016-03-15)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s03,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "bootleg",    "Crouching Tiger Hidden Dragon 2003 (Plus)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s04,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "bootleg",    "Crouching Tiger Hidden Dragon 2003 (Super Plus)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s05,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Creamymami[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Hidden Characters Boss V2)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s06,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Igniz & Zero",    "Crouching Tiger Hidden Dragon 2003 (Hidden Characters Append-Solve A Variable Four Problem)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s07,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Hunter X Hacker",    "Crouching Tiger Hidden Dragon 2003 (Power Max v1)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s08,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Creamymami[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Power Max v2)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s09,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "tcwlee[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Color Mod)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s10,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "tcwlee[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Color Mod v1)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s11,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "tcwlee[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Color Mod v2)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s12,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Flycboy[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Color Mod v3)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s13,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "zhangshee",    "Crouching Tiger Hidden Dragon 2003 (Icy Blue Style)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s14,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Flycboy[EGCG]",    "Crouching Tiger Hidden Dragon 2003 (Some Team Color change)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s15,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "ayane",    "Crouching Tiger Hidden Dragon 2003 (Blood Version V1)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s16,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "ayane",    "Crouching Tiger Hidden Dragon 2003 (Blood Version V2)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s17,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Fixed Sound Bugs)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s18,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "oak2003",    "Crouching Tiger Hidden Dragon 2003 (Half Transparency Life Bar v1)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s19,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "oak2003",    "Crouching Tiger Hidden Dragon 2003 (Half Transparency Life Bar v2)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s20,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Eddids[FGCH]",    "Crouching Tiger Hidden Dragon 2003 (Unlimited Credits in Console Mode)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s21,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.0)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s22,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.1)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s23,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.2)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s24,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.3)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s25,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.4)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s26,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.5)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s27,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.6)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s28,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.7)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s29,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.8)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s30,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack",    "Crouching Tiger Hidden Dragon 2003 (Super Remix Edition 1.9)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s31,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2k3a,  ROT0, "bootleg", "Crouching Tiger Hidden Dragon 2003 (set 2)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s32,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "bootleg",    "Crouching Tiger Hidden Dragon 2003  (set 2 fully decrypted)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s33,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "bootleg", "Crouching Tiger Hidden Dragon 2003 (set 1 fully decrypted)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s34,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Fighters Kim and HunterX Hacker", "Crouching Tiger Hidden Dragon 2003 (Add Char - Pow hack)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s35,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Eddids[FGCH]", "Crouching Tiger Hidden Dragon 2003 (Ice fz remix)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s36,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Jason[FGCH]", "Crouching Tiger Hidden Dragon 2003 (Some characters move to simplify 1.2)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s37,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "Jason/K3", "Crouching Tiger Hidden Dragon 2003 (Remix Edition)(Diff Move, 2003-08-18)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s38,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Crouching Tiger Hidden Dragon 2003 Super Plus (decrypted)", MACHINE_SUPPORTS_SAVE )
+GAME( 2016, ct2k3s39,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack", "Crouching Tiger Hidden Dragon 2003 (Simplified, 2016-03-15)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s40,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack", "Crouching Tiger Hidden Dragon 2003 (Blood Edition)", MACHINE_SUPPORTS_SAVE )
+GAME( 2004, ct2k3s41,      cthd2k3b, neogeo_noslot, neogeo, neogeo_state, init_cthd2003,  ROT0, "hack", "Crouching Tiger Hidden Dragon 2003 (Red Fire Remix)", MACHINE_SUPPORTS_SAVE )
  // King of Gladiator
-GAME( 1997, kog01,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "zxbdragon&ryu",    "King of Gladiator (Out Of Order Timing)(Fix v1)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog02,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "zxbdragon&ryu",    "King of Gladiator (Pneumatic Accumulation Mode)(Fix v2)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog03,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "Eddids[FGCH]",     "King of Gladiator (Unlimited Credits In Console Mode)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog04,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "Isuka",            "King of Gladiator (Simplify The Move Version)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog05,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "hack",          "King of Gladiator (Colorful Version v1.5)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog06,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "tcwlee[EGCG]",     "King of Gladiator (Color Change)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog07,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "hack",          "King of Gladiator (Violet Fire)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog08,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "hack",          "King of Gladiator (Icy Blue Style)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog09,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "liuzheng0131",     "King of Gladiator (Valentine's Day And Red Fire)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog10,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "K65535",           "King of Gladiator (Purple & Green Edition)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog11,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "Bloodlust",        "King of Gladiator (Add Chris's Purple Fire)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, kog12,      kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",             "King of Gladiator (Resurgence Plus Dog Slaughter Edition, 2020-01-23)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog13,      kof97,    hbmame_kog,    neogeo, neogeo_state, init_kogd,      ROT0, "hack", "King of Gladiator (fully decrypted)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog14,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "Zxbdragon / Ryu", "King of Gladiator (Remove the mark of the screen, Fix v3)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog15,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "hack", "King of Gladiator (Green Fire edition)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog16,      kof97,    hbmame_kog,    neogeo, neogeo_state, init_kogd,      ROT0, "hack", "King of Gladiator mix Plus-EX", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog17,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "bootleg", "King of Gladiator Plus (set 1)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog18,      kof97,    hbmame_kog,    neogeo, neogeo_state, init_kogd,      ROT0, "bootleg", "King of Gladiator Plus (set 2)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog19,      kof97,    hbmame_kog,    neogeo, neogeo_state, init_kogd,      ROT0, "Zxbdragon / Ryu", "King of Gladiator Plus (Fixed Edition)", MACHINE_SUPPORTS_SAVE )
-GAME( 1997, kog20,      kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "KalceTin", "King of Gladiator (Smoke Version v1.5 Fix)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog01,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "zxbdragon&ryu",    "King of Gladiator (Out Of Order Timing)(Fix v1)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog02,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "zxbdragon&ryu",    "King of Gladiator (Pneumatic Accumulation Mode)(Fix v2)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog03,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "Eddids[FGCH]",     "King of Gladiator (Unlimited Credits In Console Mode)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog04,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "Isuka",            "King of Gladiator (Simplify The Move Version)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog05,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "hack",          "King of Gladiator (Colorful Version v1.5)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog06,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "tcwlee[EGCG]",     "King of Gladiator (Color Change)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog07,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "hack",          "King of Gladiator (Violet Fire)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog08,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "hack",          "King of Gladiator (Icy Blue Style)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog09,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "liuzheng0131",     "King of Gladiator (Valentine's Day And Red Fire)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog10,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "K65535",           "King of Gladiator (Purple & Green Edition)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog11,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "Bloodlust",        "King of Gladiator (Add Chris's Purple Fire)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kog12,         kof97,    neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack",             "King of Gladiator (Resurgence Plus Dog Slaughter Edition, 2020-01-23)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog13,         kof97,    hbmame_kog,    neogeo, neogeo_state, init_kogd,      ROT0, "hack", "King of Gladiator (fully decrypted)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog14,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "Zxbdragon / Ryu", "King of Gladiator (Remove the mark of the screen, Fix v3)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog15,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "hack", "King of Gladiator (Green Fire edition)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog16,         kof97,    hbmame_kog,    neogeo, neogeo_state, init_kogd,      ROT0, "hack", "King of Gladiator mix Plus-EX", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog17,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "bootleg", "King of Gladiator Plus (set 1)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog18,         kof97,    hbmame_kog,    neogeo, neogeo_state, init_kogd,      ROT0, "bootleg", "King of Gladiator Plus (set 2)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog19,         kof97,    hbmame_kog,    neogeo, neogeo_state, init_kogd,      ROT0, "Zxbdragon / Ryu", "King of Gladiator Plus (Fixed Edition)", MACHINE_SUPPORTS_SAVE )
+GAME( 1997, kog20,         kof97,    neogeo_kog,    neogeo, neogeo_state, init_kog,       ROT0, "KalceTin", "King of Gladiator (Smoke Version v1.5 Fix)", MACHINE_SUPPORTS_SAVE )
 // 10th Anniversary
-GAME( 2005, kof10thd,   kof2002,  neogeo_noslot,     neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary (Fully Decrypted)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thd16, kof2002,  neogeo_noslot,     neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary Unique (Simplify Edition)", MACHINE_SUPPORTS_SAVE )
-GAME( 2015, kof10thep15,kof2002,  neogeo_noslot,     neogeo, neogeo_state, init_kf10thep,  ROT0, "hack", "Kof 10th Anniversary Extra Plus (Simplify Edition)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thu,   kof2002,  neogeo_noslot,     neogeo, neogeo_state, init_kof10thu,  ROT0, "hack", "Kof 10th Anniversary Unique (set 1)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thub,  kof2002,  neogeo_noslot,     neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary Unique (Portuguese)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thud,  kof2002,  neogeo_noslot,     neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary Unique (decrypted)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep01,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "Creamymami[EGCG]",    "Kof 10th Anniversary Extra Plus (Unlimited Power Store)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep02,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "kumagorou",    "Kof 10th Anniversary Extra Plus (Green Fire)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep03,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "kawada7278",    "Kof 10th Anniversary Extra Plus (Violet Fire)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep04,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "Kim",    "Kof 10th Anniversary Extra Plus (Icy Blue Style)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep05,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "oak2003",    "Kof 10th Anniversary Extra Plus (Fix s1's 3 Errors)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep06,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "oak2003",    "Kof 10th Anniversary Extra Plus (Turn Life Bar Into Half Transparency)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep07,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "Kim",    "Kof 10th Anniversary Extra Plus (Change Color In Battle)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep08,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "kof1996",    "Kof 10th Anniversary Extra Plus (Remove Countdown)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep09,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "wesker[FGCH]",    "Kof 10th Anniversary Extra Plus (Practice Mode Maximum Power)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep10,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "oak2003",    "Kof 10th Anniversary Extra Plus (Turn Time-Bg Into Half Transparency V1)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep11,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "oak2003",    "Kof 10th Anniversary Extra Plus (Turn Time-Bg Into Half Transparency V2)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kof10thep12,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "Eddids[FGCH]",    "Kof 10th Anniversary Extra Plus (Unlimited Credits in Console Mode)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thd,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary (Fully Decrypted)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thd16,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary Unique (Simplify Edition)", MACHINE_SUPPORTS_SAVE )
+GAME( 2015, kof10thep15,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "hack", "Kof 10th Anniversary Extra Plus (Simplify Edition)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thu,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kof10thu,  ROT0, "hack", "Kof 10th Anniversary Unique (set 1)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thub,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary Unique (Portuguese)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thud,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary Unique (decrypted)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep01,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "Creamymami[EGCG]",    "Kof 10th Anniversary Extra Plus (Unlimited Power Store)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep02,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "kumagorou",    "Kof 10th Anniversary Extra Plus (Green Fire)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep03,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "kawada7278",    "Kof 10th Anniversary Extra Plus (Violet Fire)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep04,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "Kim",    "Kof 10th Anniversary Extra Plus (Icy Blue Style)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep05,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "oak2003",    "Kof 10th Anniversary Extra Plus (Fix s1's 3 Errors)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep06,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "oak2003",    "Kof 10th Anniversary Extra Plus (Turn Life Bar Into Half Transparency)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep07,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "Kim",    "Kof 10th Anniversary Extra Plus (Change Color In Battle)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep08,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "kof1996",    "Kof 10th Anniversary Extra Plus (Remove Countdown)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep09,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "wesker[FGCH]",    "Kof 10th Anniversary Extra Plus (Practice Mode Maximum Power)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep10,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "oak2003",    "Kof 10th Anniversary Extra Plus (Turn Time-Bg Into Half Transparency V1)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep11,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "oak2003",    "Kof 10th Anniversary Extra Plus (Turn Time-Bg Into Half Transparency V2)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kof10thep12,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf10thep,  ROT0, "Eddids[FGCH]",    "Kof 10th Anniversary Extra Plus (Unlimited Credits in Console Mode)", MACHINE_SUPPORTS_SAVE )
 GAME( 2005, kof10th01,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kof10th,   ROT0, "Creamymami[EGCG]",    "Kof 10th Anniversary (Enhanced Power)", MACHINE_SUPPORTS_SAVE )
 GAME( 2005, kof10th02,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kof10th,   ROT0, "Creamymami[EGCG]",    "Kof 10th Anniversary (Unlimited Power Store)", MACHINE_SUPPORTS_SAVE )
 GAME( 2005, kof10th03,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kof10th,   ROT0, "kumagorou",    "Kof 10th Anniversary (Green Fire)", MACHINE_SUPPORTS_SAVE )
@@ -5049,32 +5076,33 @@ GAME( 2005, kof10th12,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_k
 GAME( 2005, kof10th13,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kof10th,   ROT0, "oak2003",    "Kof 10th Anniversary (Turn Time bg Into Half Transparency V2)", MACHINE_SUPPORTS_SAVE )
 GAME( 2005, kof10th14,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kof10th,   ROT0, "Eddids[FGCH]",    "Kof 10th Anniversary (Unlimited Credits In Console Mode)", MACHINE_SUPPORTS_SAVE )
 // Kof 10th Anniversary 2005 Unique
-GAME( 2005, kf2k5uni01,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "Creamymami[EGCG]",    "Kof 10th Anniversary 2005 Unique (Unlimited Power Store)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kf2k5uni02,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "kumagorou",    "Kof 10th Anniversary 2005 Unique (Green Fire)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kf2k5uni03,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "kawada7278",    "Kof 10th Anniversary 2005 Unique (Violet Fire)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kf2k5uni04,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "Kim",    "Kof 10th Anniversary 2005 Unique (Icy Blue Style)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kf2k5uni05,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "oak2003",    "Kof 10th Anniversary 2005 Unique (Fix s1's 3 Errors)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kf2k5uni06,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "Kim",    "Kof 10th Anniversary 2005 Unique (Change Color In Battle)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kf2k5uni07,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "kof1996",    "Kof 10th Anniversary 2005 Unique (Remove Countdown)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kf2k5uni08,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "wesker[FGCH]",    "Kof 10th Anniversary 2005 Unique (Practice Mode Maximum Power)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kf2k5uni09,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "oak2003",    "Kof 10th Anniversary 2005 Unique (Turn Time Bg Into Half Transparency V1)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kf2k5uni10,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "oak2003",    "Kof 10th Anniversary 2005 Unique (Turn Time Bg Into Half Transparency V2)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kf2k5uni11,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "Eddids[FGCH]",    "Kof 10th Anniversary 2005 Unique (Unlimited Credits In Console Mode)", MACHINE_SUPPORTS_SAVE )
-GAME( 2005, kf2k5uni12,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "oak2003",    "Kof 10th Anniversary 2005 Unique (Turn Life-Bar Into Half-Transparency)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, kf2k5uni15,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2005 Unique (Alpha Unique, 2020-01-23)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, kf2k5uni16,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2005 Unique (Alpha Unique New, 2020-01-24)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, kf2k5uni18,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2005 Unique (Omega Edition Simplified, 2020-02-27)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u01,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "Creamymami[EGCG]",    "Kof 10th Anniversary 2005 Unique (Unlimited Power Store)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u02,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "kumagorou",    "Kof 10th Anniversary 2005 Unique (Green Fire)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u03,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "kawada7278",    "Kof 10th Anniversary 2005 Unique (Violet Fire)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u04,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "Kim",    "Kof 10th Anniversary 2005 Unique (Icy Blue Style)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u05,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "oak2003",    "Kof 10th Anniversary 2005 Unique (Fix s1's 3 Errors)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u06,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "Kim",    "Kof 10th Anniversary 2005 Unique (Change Color In Battle)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u07,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "kof1996",    "Kof 10th Anniversary 2005 Unique (Remove Countdown)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u08,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "wesker[FGCH]",    "Kof 10th Anniversary 2005 Unique (Practice Mode Maximum Power)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u09,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "oak2003",    "Kof 10th Anniversary 2005 Unique (Turn Time Bg Into Half Transparency V1)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u10,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "oak2003",    "Kof 10th Anniversary 2005 Unique (Turn Time Bg Into Half Transparency V2)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u11,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "Eddids[FGCH]",    "Kof 10th Anniversary 2005 Unique (Unlimited Credits In Console Mode)", MACHINE_SUPPORTS_SAVE )
+GAME( 2005, kf2k5u12,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kf2k5uni,  ROT0, "oak2003",    "Kof 10th Anniversary 2005 Unique (Turn Life-Bar Into Half-Transparency)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kf2k5u15,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2005 Unique (Alpha Unique, 2020-01-23)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kf2k5u16,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2005 Unique (Alpha Unique New, 2020-01-24)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kf2k5u18,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2005 Unique (Omega Edition Simplified, 2020-02-27)", MACHINE_SUPPORTS_SAVE )
+GAME( 2025, kf2k5u19,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "GOTVG", "Kof 10th Anniversary 2005 Unique (Optimised, 2025-03-28)", MACHINE_SUPPORTS_SAVE )
 // Kof 10th Anniversary 2005 Unique (2008)
-GAME( 2008, kf2k8uni,       kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2008 Unique", MACHINE_SUPPORTS_SAVE )
-GAME( 2008, kf2k8uni01,    kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kof2002,   ROT0, "hack", "Kof 10th Anniversary 2008 Unique (Alt)", MACHINE_SUPPORTS_SAVE )
+GAME( 2008, kf2k8u,        kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2008 Unique", MACHINE_SUPPORTS_SAVE )
+GAME( 2008, kf2k8u01,      kof2002,  neogeo_noslot, neogeo, neogeo_state, init_kof2002,   ROT0, "hack", "Kof 10th Anniversary 2008 Unique (Alt)", MACHINE_SUPPORTS_SAVE )
 // Kof 10th Anniversary 2005 Unique (2019)
-GAME( 2019, kf2k19uni01,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2019 Unique (Optimised 2019-05-23)", MACHINE_SUPPORTS_SAVE )
-GAME( 2019, kf2k19uni02,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2019 Unique (Optimised 2019-06-05)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, kf2k19uni03,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2019 Unique (Optimised Simplified Edition, 2020-02-05)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, kf2k19uni04,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2019 Unique (Optimised 2020)", MACHINE_SUPPORTS_SAVE )
+GAME( 2019, kf2k19u01,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2019 Unique (Optimised 2019-05-23)", MACHINE_SUPPORTS_SAVE )
+GAME( 2019, kf2k19u02,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2019 Unique (Optimised 2019-06-05)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kf2k19u03,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2019 Unique (Optimised Simplified Edition, 2020-02-05)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kf2k19u04,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2019 Unique (Optimised 2020)", MACHINE_SUPPORTS_SAVE )
 // Kof 10th Anniversary 2005 Unique (2020)
-GAME( 2020, kf2k20uni01,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2020 Unique (Optimised, 2020-10-25)", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, kf2k20uni02,   kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2020 Unique (Optimised, 2020-11-06)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kf2k20u01,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2020 Unique (Optimised, 2020-10-25)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, kf2k20u02,     kof2002,  neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Kof 10th Anniversary 2020 Unique (Optimised, 2020-11-06)", MACHINE_SUPPORTS_SAVE )
 // Kof Special Edition 2004
 GAME( 2004, kof2k4se01,    kof2k4se, neogeo_noslot, neogeo, neogeo_state, init_kof2k4se,  ROT0, "KyoX",    "Kof Special Edition 2004 (Portuguese)(Alt)", MACHINE_SUPPORTS_SAVE )
 GAME( 2004, kof2k4se04,    kof2k4se, neogeo_noslot, neogeo, neogeo_state, init_kof2k4se,  ROT0, "wesker[FGCH]",    "Kof Special Edition 2004 (Unluck Max2 V1)", MACHINE_SUPPORTS_SAVE )

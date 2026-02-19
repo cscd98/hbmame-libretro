@@ -18,6 +18,8 @@ New Games
 - [hypernoid01]         Hypernoid (2022-02-24)
 - [jumpnrund01]         Jump n Run Tech Demo (Dez 2020)
 - [kabukikl14]          Far East of Eden (Enhanced, 2023-03-22)
+- [kof2003s77]          Kof2003 (PlayStation 2 Style Portraits, 2022-04-13)
+- [kf2k5u19]            Kof 10th Anniversary 2005 Unique (Optimised, 2025-03-28)
 - [kof94s43]            Kof'94 (Team Edit Edition v1.2.4 Style Portraits, 2024-06-03)
 - [kof95s49]            Kof'95 (Optimised, 2024-05-13)
 - [kof96s99]            Kof'96 (The Aniversary Edition 2.3 Final Version (gfx), 2020-05-27)

@@ -151,7 +151,7 @@ NUM GAME YEAR COMPANY                 TITLE
 365 0265 2004 Dragon Co, Ltd          King of Fighters Special Edition 2004 (hack of kof2002)
 365 2265 2004 Dragon Co, Ltd          King of Fighters Special Edition Plus 2004 (hack of kof2002)
 366 0275 2004 SNK?                    King of Fighters 10th Anniversary (hack of kof2002) (original number 5004,5008)
-367 0275 2005 SNK?                    King of Fighters 10th Anniversary 2005 (hack of kof10th) (original number 5006)
+367 0275 2005 SNK?                    King of Fighters 10th Anniversary 2005 (hack of kof10th) (original number 5006,5007)
 368 0275 2008 SNK?                    King of Fighters 10th Anniversary 2008 (hack of kof10th) (original number 5009)
 369 0275 2019 ?                       King of Fighters 10th Anniversary 2019 (hack of kof10th)
 370 0275 2020 ?                       King of Fighters 10th Anniversary 2020 (hack of kof10th)
@@ -330,7 +330,7 @@ NUM GAME YEAR COMPANY                 TITLE
 
 
 
-********************** Vaporware and Rumours **********************************
+********************** Vapourware and Rumours **********************************
 (Every unnumbered title starts here, until it actually exists)
 (Generally, these should be considered as abandoned)
 
