@@ -22,6 +22,12 @@
 
 
 // global allocation helpers
+#ifdef __LIBRETRO__
+#define global_alloc(Type)                          new Type
+#define global_alloc_array(Type, Num)               new Type[Num]
+#define global_free(Ptr)                            do { delete Ptr; } while (0)
+#define global_free_array(Ptr)                      do { delete[] Ptr; } while (0)
+#endif
 
 namespace util {
 

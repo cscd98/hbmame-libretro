@@ -28,6 +28,8 @@
 !/regtests/
 !/samples/
 !/scripts/
+/scripts/src/*.a
+/scripts/hbmame_hbmame/
 !/src/
 !/shaders/
 !/tests/

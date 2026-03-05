@@ -144,7 +144,9 @@ private:
 public:
 	render_primitive_list   *m_primlist;
 	osd_window_config       m_win_config;
+#ifndef __LIBRETRO__
 private:
+#endif
 	int                     m_index;
 protected:
 	bool                    m_fullscreen;
@@ -269,6 +271,12 @@ struct osd_video_config
 	int                 windowed;                   // start windowed?
 	int                 prescale;                   // prescale factor
 	int                 numscreens;                 // number of screens
+
+	// TODO
+#ifdef __LIBRETRO__
+	int                 keepaspect;                 // keep aspect ratio
+	int                 fullstretch;                // fractional stretch
+#endif
 
 	// hardware options
 	int                 mode;                       // output mode

@@ -9,7 +9,7 @@ PTR64 ?= 1
 TARGET ?= hbmame
 # OS ?= linux
 # TARGETOS ?= linux
-PYTHON_EXECUTABLE ?= python2
+PYTHON_EXECUTABLE ?= python3
 REGENIE ?= 1
 
 ###########################################################################

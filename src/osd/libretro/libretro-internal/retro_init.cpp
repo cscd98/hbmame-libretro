@@ -14,6 +14,7 @@
 #include "libretro.h"
 #include "options.h"
 #include "osdepend.h"
+#include "corestr.h"
 
 #include "modules/lib/osdobj_common.h"
 #include "modules/lib/osdlib.h"

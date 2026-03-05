@@ -48,7 +48,7 @@ public:
 	void toggle_full_screen();
 	void modify_prescale(int dir);
 	void resize(int32_t width, int32_t height);
-	void destroy() override;
+	void destroy();
 
 	void capture_pointer() override;
 	void release_pointer() override;
@@ -61,11 +61,9 @@ public:
 
 	int xy_to_render_target(int x, int y, int *xt, int *yt);
 
-	running_machine &machine() const override { return m_machine; }
-	osd_monitor_info *monitor() const override { return m_monitor.get(); }
-	int fullscreen() const override { return m_fullscreen; }
-
-	render_target *target() override { return m_target; }
+	running_machine &machine() const { return m_machine; }
+	osd_monitor_info *monitor() const { return m_monitor.get(); }
+	int fullscreen() const { return m_fullscreen; }
 
 	int prescale() const { return m_prescale; }
 
@@ -83,7 +81,6 @@ private:
 
 	// rendering info
 	osd_event           m_rendered_event;
-	render_target *     m_target;
 
 	// Original display_mode
 	RETRO_DM_Wrapper      *m_original_mode;
