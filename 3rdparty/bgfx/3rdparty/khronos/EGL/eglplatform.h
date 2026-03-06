@@ -112,6 +112,7 @@ typedef intptr_t EGLNativeWindowType;
 
 #elif defined(__unix__) || defined(USE_X11)
 
+#ifndef MESA_EGL_NO_X11_HEADERS
 /* X11 (tentative)  */
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
@@ -119,6 +120,11 @@ typedef intptr_t EGLNativeWindowType;
 typedef Display *EGLNativeDisplayType;
 typedef Pixmap   EGLNativePixmapType;
 typedef Window   EGLNativeWindowType;
+#else
+typedef void            *EGLNativeDisplayType;
+typedef khronos_uintptr_t EGLNativePixmapType;
+typedef khronos_uintptr_t EGLNativeWindowType;
+#endif
 
 #elif defined(__APPLE__)
 

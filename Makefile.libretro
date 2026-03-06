@@ -1,17 +1,22 @@
-
 VERBOSE ?= 1
-RETRO ?= 1
 NOWERROR ?= 1
-CONFIG ?= libretro"
+CONFIG ?= libretro
 NO_USE_MIDI ?= 1
 NO_USE_PORTAUDIO ?= 1
-PTR64 ?= 1 
+PTR64 ?= 1
 TARGET ?= hbmame
 # OS ?= linux
 # TARGETOS ?= linux
 PYTHON_EXECUTABLE ?= python3
 REGENIE ?= 1
+GITHUB_REPO ?= https://github.com/libretro/hbmame/
+DEBUG ?= 0
 
+#see https://github.com/libretro/mame/blob/093209930f5fbdaee0d6f3a3666f3d70025d089f/3rdparty/genie/build/gmake.darwin/genie.make#L55C2-L55C47
+export LIBRETRO_OS
+#this make file need dont better ad use vars instead of the way it done again can wait till the mac builds work
+export ARCHOPTS
+export ARCH
 ###########################################################################
 #
 #   LIBRETRO PLATFORM GUESSING
@@ -22,6 +27,7 @@ REGENIE ?= 1
 
 UNAME_S = $(shell uname -s)
 UNAME_M = $(shell uname -m)
+
 ifeq ($(platform),)
 	platform = unix
 	ifeq ($(UNAME_S),)
@@ -34,11 +40,27 @@ ifeq ($(platform),)
 		platform = osx
 	else ifneq ($(findstring win,$(UNAME_S)),)
 		platform = win
+	else ifeq ($(UNAME_M), i686)
+		platform = linux
 	endif
 endif
-ifeq ($(ARCH),)
+ifneq ($(ARCH),)
 	LIBRETRO_CPU = $(ARCH)
+	#GENIE makefiles use this variable fr something else unset if set
+	ifeq ($(ARCH),x86)
+		PTR64 := 0
+	endif
+	ARCH :=
+$(info unsetting ARCH=$(LIBRETRO_CPU))
 endif
+
+ifeq ($(platform),)
+$(error platform not set)
+else
+$(info platform=$(platform))
+$(info Defaults cc=$(cc) CC=$(CC) CFLAGS=$(CFLAGS) CCFLAGS=$(CCFLAGS) CXXFLAGS=$(CXXFLAGS) LDFLAGS=$(LDFLAGS) ARCH=$(ARCH) arch=$(arch) NUMPROC=$(NUMPROC))
+endif
+
 ifeq ($(LIBRETRO_CPU),)
 	ifeq ($(UNAME_M),)
 		ifeq ($(PROCESSOR_ARCHITECTURE),AMD64)
@@ -54,29 +76,6 @@ ifeq ($(LIBRETRO_CPU),)
 	endif
 endif
 
-###########################################################################
-#
-#   LIBRETRO PLATFORM-SPECIFIC CONFIGURATION
-#
-#   Settings needed to get MAME to build everywhere we build it
-#
-###########################################################################
-
-ifeq ($(platform), android)
-	#PTR64 = 0
-	# FIXME: Pass these to GENie and test...
-#	CROSS_BUILD = 1
-#	FORCE_DRC_C_BACKEND = 1
-else ifeq ($(platform), osx)
-	PYTHON_EXECUTABLE = python
-else ifneq (,$(findstring ios,$(platform)))
-#	PTR64 = 0
-        LIBRETRO_CPU=arm
-	PYTHON_EXECUTABLE = python
-	# FIXME: Pass these to GENie and test...
-#	CROSS_BUILD = 1
-#	FORCE_DRC_C_BACKEND = 1
-endif
 
 
 ###########################################################################
@@ -85,17 +84,17 @@ endif
 #
 ###########################################################################
 
-BUILDFLAGS = RETRO=$(RETRO) REGENIE=$(REGENIE) VERBOSE=$(VERBOSE) NOWERROR=$(NOWERROR) OSD="retro" NO_USE_MIDI=$(NO_USE_MIDI) NO_USE_PORTAUDIO=$(NO_USE_PORTAUDIO)
+BUILDFLAGS = REGENIE=$(REGENIE) VERBOSE=$(VERBOSE) NOWERROR=$(NOWERROR) OSD=retro NO_USE_MIDI=$(NO_USE_MIDI) NO_USE_PORTAUDIO=$(NO_USE_PORTAUDIO)
 
 ifneq ($(PYTHON_EXECUTABLE),)
 	BUILDFLAGS += PYTHON_EXECUTABLE=$(PYTHON_EXECUTABLE)
 endif
 ifeq ($(DEBUG),1)
 	BUILDFLAGS += CONFIG=libretrodbg
+	BUILDFLAGS += SYMBOLS=1 SYMLEVEL=1 OPTIMIZE=g
 else
 	BUILDFLAGS += CONFIG=libretro
 endif
-
 
 ###########################################################################
 #
@@ -105,43 +104,237 @@ endif
 
 PLATFLAGS =
 
-ifneq ($(platform),android)
-	ifneq ($(PTR64),)
-		PLATFLAGS += PTR64=$(PTR64)
-	endif
-	ifneq ($(platform),)
-		PLATFLAGS += LIBRETRO_OS="$(platform)"
-	endif
-endif
-ifeq ($(platform),win)
+ifneq ($(findstring win,$(platform)),)
 	ifeq ($(MSYSTEM),MINGW64)
 		MINGW64 ?= /mingw64
-		PLATFLAGS += MINGW64="$(MINGW64)"
+		PLATFLAGS += MINGW64=$(MINGW64)
+		LIBRETRO_CPU = x86_64
 	else ifeq ($(MSYSTEM),MINGW32)
 		MINGW32 ?= /mingw32
-		PLATFLAGS += MINGW32="$(MINGW32)"
+		PLATFLAGS += MINGW32=$(MINGW32)
+		LIBRETRO_CPU = x86
+		PTR64=0
+	else
+		# MSYSTEM not set, default to 64-bit
+		MINGW64 ?= /mingw64
+		PLATFLAGS += MINGW64=$(MINGW64)
+		LIBRETRO_CPU = x86_64
+	endif
+	CC  ?= cc
+	CXX ?= cxx
+	AR  ?= ar
+	PLATFLAGS += TARGETOS=windows OVERRIDE_CC=$(CC) OVERRIDE_CXX=$(CXX) AR=$(AR)
+	LLD := $(shell command -v lld 2> /dev/null)
+	ifneq ($(LLD),)
+		BUILDFLAGS += LDOPTS=-fuse-ld=lld
+	endif
+	WINDRES := $(shell command -v windres 2>/dev/null || command -v x86_64-w64-mingw32-windres 2>/dev/null)
+	ifneq ($(WINDRES),)
+		PLATFLAGS += WINDRES=$(WINDRES)
 	endif
 endif
-ifeq ($(platform),android)
-	ANDROID_NDK_LLVM ?= /opt/ndk/toolchains/llvm-3.5/prebuilt/linux-x86_64
-	ANDROID_NDK_ARM  ?= /opt/ndk/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64
-	ANDROID_NDK_ROOT ?= /opt/ndk
-	PLATFLAGS += TARGETOS="android-arm" gcc="android-arm"
-	PLATFLAGS +=  ANDROID_NDK_LLVM="$(ANDROID_NDK_LLVM)"
-	PLATFLAGS +=  ANDROID_NDK_ARM="$(ANDROID_NDK_ARM)"
-	PLATFLAGS +=  ANDROID_NDK_ROOT="$(ANDROID_NDK_ROOT)"
- 	LIBRETRO_CPU :=
-	ARCH :=
+
+# fix for older style variables used by hbmame
+ifneq ($(ANDROID_NDK_HOME),)
+	ifeq ($(UNAME_S),Darwin)
+		ifeq ($(UNAME_M),arm64)
+			ANDROID_NDK_HOST_TAG := darwin-arm64
+		else
+			ANDROID_NDK_HOST_TAG := darwin-x86_64
+		endif
+	else ifneq ($(findstring MINGW,$(UNAME_S)),)
+		ANDROID_NDK_HOST_TAG := windows-x86_64
+	else ifneq ($(findstring MSYS,$(UNAME_S)),)
+		ANDROID_NDK_HOST_TAG := windows-x86_64
+	else ifeq ($(UNAME_S),)
+		# UNAME_S empty means Windows (no uname available)
+		ANDROID_NDK_HOST_TAG := windows-x86_64
+	else
+		ANDROID_NDK_HOST_TAG := linux-x86_64
+	endif
+endif
+
+ifneq ($(ANDROID_NDK_HOME),)
+ANDROID_NDK_TOOLCHAIN := $(ANDROID_NDK_HOME)/toolchains/llvm/prebuilt/$(ANDROID_NDK_HOST_TAG)
+	export ANDROID_NDK_ROOT  := $(ANDROID_NDK_HOME)
+	export ANDROID_NDK_LLVM  := $(ANDROID_NDK_TOOLCHAIN)
+	export ANDROID_NDK_ARM   := $(ANDROID_NDK_TOOLCHAIN)
+	export ANDROID_NDK_ARM64 := $(ANDROID_NDK_TOOLCHAIN)
+	export ANDROID_NDK_X86   := $(ANDROID_NDK_TOOLCHAIN)
+	export ANDROID_NDK_X64   := $(ANDROID_NDK_TOOLCHAIN)
+	export ANDROID_NDK_CLANG := $(ANDROID_NDK_TOOLCHAIN)/bin/clang
+endif
+
+# android only needs a valid ANDROID_NDK_HOME set no paths are needed toolchain and makefile takes care of that
+# make CONFIG=libretero OSD=retro android-xxx is all thes required
+
+ifneq (,$(findstring android,$(platform)))
+	#buildbot fix
+	ifneq ($(ANDROID_NDK_ROOT),)
+		ANDROID_NDK_HOME=$(ANDROID_NDK_ROOT)
+	endif
+	export ANDROID_NDK_HOME ?= /opt/ndk
+
+	# because of pthread_cond_clockwait
+	PLATFLAGS += WITH_ANDROID=30
+endif
+
+ifeq ($(platform),android-arm)
+	PLATFLAGS += TARGETOS=android-arm gcc=android-arm PLATFORM=arm
+	LIBRETRO_CPU :=
 	LIBRETRO_OS :=
+	PTR64 :=
 endif
+ifeq ($(platform),android-arm64)
+	PLATFLAGS += TARGETOS=android-arm64 gcc=android-arm64 PLATFORM=arm64
+	LIBRETRO_CPU :=
+	LIBRETRO_OS :=
+	PTR64 :=
+endif
+ifeq ($(platform),android-x86)
+	PLATFLAGS += TARGETOS=android-x86 gcc=android-x86 PLATFORM=x86
+	LIBRETRO_CPU :=
+	LIBRETRO_OS :=
+	PTR64 :=
+endif
+ifeq ($(platform),android-x86_64)
+	PLATFLAGS += TARGETOS=android-x64 gcc=android-x64 PLATFORM=x64
+	LIBRETRO_CPU :=
+	LIBRETRO_OS :=
+	PTR64 :=
+endif
+
+ifneq ($(ANDROID_NDK_HOME),)
+    OK := $(shell if [ -d $(ANDROID_NDK_HOME) ]; then echo "ok"; fi)
+    ifeq ($(OK),)
+        $(error  path $(ANDROID_NDK_HOME) does not exist! please set ANDROID_NDK_HOME!)
+    else
+        $(info  ANDROID_NDK_HOME path is a valid directory $(ANDROID_NDK_HOME))
+    endif
+endif
+
+ifeq ($(platform),linux32)
+TARGETOS = linux
+	PTR64 := 0
+endif
+
 ifeq ($(platform),osx)
-  PLATFLAGS += DONT_USE_NETWORK=1
+	PLATFLAGS += DONT_USE_NETWORK=1
+	#PLATFLAGS +=OVERRIDE_CC=clang OVERRIDE_CXX=clang++
+	PLATFLAGS +=TARGETOS=macosx
+	ifeq ($(CROSS_COMPILE),1)
+		ARCHOPTS =-target $(LIBRETRO_APPLE_PLATFORM) -isysroot $(LIBRETRO_APPLE_ISYSROOT)
+		#libretro cpu and and libretro os arent needed for the mac anymore builds, Ill need to make sure there not used in other places	(in the lua scripts)
+		#leave as is for now but add the the platfrom and remove the conditions in LUA when ready to test. LEts get the builds working.		LIBRETRO_CPU = arm64
+		LIBRETRO_OS = macosx
+		LIBRETRO_CPU = arm64
+		PLATFLAGS +=LIBRETRO_OSX_ARM64=1
+		PLATFLAGS +=PLATFORM=arm64
+		#this will be removed like x64 platfrom after the builds are working
+		ARCHOPTS +=-arch $(LIBRETRO_CPU)
+		#this isint needed but it confuses people and they assume ist a x64 instead of arm build when there is a makefile issue
+		PLATFLAGS +=macosx_arm64_clang
+	else
+		LIBRETRO_OS = macosx
+		LIBRETRO_CPU =x86_64
+		#not set on x64 use the info from arm64 so we get the right target and path
+		LIBRETRO_APPLE_PLATFORM=x86_64-apple-macos10.15
+		LIBRETRO_APPLE_ISYSROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+		ARCHOPTS =-target $(LIBRETRO_APPLE_PLATFORM) -isysroot $(LIBRETRO_APPLE_ISYSROOT)
+		PLATFLAGS +=PLATFORM=x64
+		PLATFLAGS +=NOASM=1
+		#we dont need to pass -arch as i fixed the condition and there and arm is added from upstream in the last pull req.
+		#There is no variable in the lua scrip to disable it the other platfrom will follow suit and just use PLATFORM when we are up and running.
+	endif
+	PTR64 = 1
 endif
+
+ifeq ($(platform),ios-arm64)
+	LIBRETRO_APPLE_PLATFORM = arm64-apple-ios12.0
+	LIBRETRO_APPLE_ISYSROOT := $(shell xcodebuild -version -sdk iphoneos Path)
+	ARCHOPTS =-target $(LIBRETRO_APPLE_PLATFORM) -isysroot $(LIBRETRO_APPLE_ISYSROOT) -miphoneos-version-min=12.0
+	#the ci should set above only osx does it so far unset if its added to the ci
+	#-isysroot $(LIBRETRO_APPLE_ISYSROOT)
+	#-arch $(LIBRETRO_CPU) -target $(LIBRETRO_APPLE_PLATFORM) -isysroot $(IOSSDK) -miphoneos-version-min=12.0 was the flags used
+	#This is my first time touching mac related stuff, someone more knowlagable of the platfrom can tweak the settings. Again the llvm is a good place to start
+	# thats how i got the tagets needed.
+	PLATFLAGS +=OVERRIDE_CC=clang OVERRIDE_CXX=clang++
+	PLATFLAGS +=DONT_USE_NETWORK=1
+	PLATFLAGS +=NOASM=1
+	PLATFLAGS +=NO_USE_MIDI=1
+	PLATFLAGS +=NO_OPENGL=1
+	PLATFLAGS +=USE_QTDEBUG=0
+	PLATFLAGS +=LIBRETRO_IOS=1
+	#libretro cpu and and libretro os arent needed for the mac anymore builds, Ill need to make sure there not used in other places(in the lua scripts)
+	#leave as is for now but add the the platfrom and remove the conditions in LUA when ready to test. LEts get the builds working.
+	LIBRETRO_CPU = arm64
+	LIBRETRO_OS = macosx
+	PLATFLAGS +=LIBRETRO_IOS=1
+	ARCHOPTS +=-arch $(LIBRETRO_CPU)
+	PLATFLAGS +=TARGETOS=macosx
+	PLATFLAGS +=PLATFORM=arm64
+	BUILDFLAGS += OPTIMIZE=s
+	PTR64 =1
+	#this isint needed but it confuses people and they assume ist a x64 instead of arm build when there is a makefile issue
+	PLATFLAGS +=macosx_arm64_clang
+endif
+
+ifeq ($(platform),tvos-arm64)
+	LIBRETRO_APPLE_PLATFORM = arm64-apple-tvos11.0
+	LIBRETRO_APPLE_ISYSROOT := $(shell xcodebuild -version -sdk appletvos Path)
+	ARCHOPTS =-target $(LIBRETRO_APPLE_PLATFORM) -isysroot $(LIBRETRO_APPLE_ISYSROOT) -mappletvos-version-min=11.0
+	#the ci should set above only osx does it so far unset if its udded to the ci
+	PLATFLAGS +=OVERRIDE_CC=clang OVERRIDE_CXX=clang++
+	PLATFLAGS +=DONT_USE_NETWORK=1
+	PLATFLAGS +=NOASM=1
+	PLATFLAGS +=NO_USE_MIDI=1
+	PLATFLAGS +=NO_OPENGL=1
+	PLATFLAGS +=USE_QTDEBUG=0
+	#libretro cpu and and libretro os arent needed for the mac anymore builds, Ill need to make sure there not used in other places(in the lua scripts)
+	#leave as is for now but add the the platfrom and remove the conditions in LUA when ready to test. LEts get the builds working.
+	LIBRETRO_CPU = arm64
+	LIBRETRO_OS =macosx
+	PLATFLAGS +=LIBRETRO_TVOS=1
+	ARCHOPTS +=-arch $(LIBRETRO_CPU)
+	PLATFLAGS +=TARGETOS=macosx
+	PLATFLAGS +=PLATFORM=arm64
+	BUILDFLAGS += OPTIMIZE=s
+	PTR64 =1
+	#this isint needed but it confuses people and they assume ist a x64 instead of arm build when there is a makefile issue
+	PLATFLAGS +=macosx_arm64_clang
+endif
+
+ifneq (,$(or $(findstring webos,$(CROSS_COMPILE)),$(findstring starfish,$(CROSS_COMPILE))))
+	LIBRETRO_CPU :=
+	FORCE_DRC_C_BACKEND := 1
+	PTR64 := 0
+	PLATFLAGS += NOASM=1
+	PLATFLAGS += PLATFORM=arm
+	PLATFLAGS += ARCHITECTURE=
+	PLATFLAGS += USE_QTDEBUG=0
+	ifneq (,$(findstring starfish,$(CROSS_COMPILE)))
+		TOOLCHAIN_PREFIX = arm-starfishmllib32-linux-gnueabi-
+	else
+		TOOLCHAIN_PREFIX = arm-webos-linux-gnueabi-
+	endif
+	PLATFLAGS += OVERRIDE_CC=$(TOOLCHAIN_PREFIX)gcc OVERRIDE_CXX=$(TOOLCHAIN_PREFIX)g++
+	PLATFLAGS += OVERRIDE_LD=$(TOOLCHAIN_PREFIX)ld OVERRIDE_AR=$(TOOLCHAIN_PREFIX)ar
+	PLATFLAGS += CROSS_BUILD=1
+	PLATFLAGS += NO_X11=1
+	BUILDFLAGS += LDOPTS=-fuse-ld=gold
+	BUILDFLAGS += LDOPTS+=-Wl,--long-plt
+    BUILDFLAGS += OPTIMIZE=s
+endif
+
 ifneq ($(LIBRETRO_CPU),)
-	PLATFLAGS += ARCH="" LIBRETRO_CPU="$(LIBRETRO_CPU)"
+	PLATFLAGS += LIBRETRO_CPU=$(LIBRETRO_CPU)
 endif
 ifneq ($(FORCE_DRC_C_BACKEND),)
-	PLATFLAGS += FORCE_DRC_C_BACKEND="$(FORCE_DRC_C_BACKEND)"
+	PLATFLAGS += FORCE_DRC_C_BACKEND=$(FORCE_DRC_C_BACKEND)
+endif
+
+ifneq ($(PTR64),)
+	PLATFLAGS += PTR64=$(PTR64)
 endif
 
 ###########################################################################
@@ -169,15 +362,19 @@ endif
 #
 ###########################################################################
 
+# MAKEFILE is set by libretro gitlab-ci, but it confuses GENIE. So, unset it.
+# undefine <var> is not supported on make 3.81 (used by macosx).
+MAKEFILE :=
+
 all: build
 
 build:
 	$(MAKE) $(BUILDFLAGS) $(PLATFLAGS) $(TARGETFLAGS)
 
-vs2015:
-	$(MAKE) $(BUILDFLAGS) $(PLATFLAGS) $(TARGETFLAGS) vs2015
+vs2019:
+	$(MAKE) $(BUILDFLAGS) $(PLATFLAGS) $(TARGETFLAGS) vs2019
 
 clean:
 	$(MAKE) $(BUILDFLAGS) $(PLATFLAGS) $(TARGETFLAGS) clean
 
-.PHONY: all build clean vs2015
+.PHONY: all build clean vs2019

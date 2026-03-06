@@ -97,7 +97,7 @@ function toolchain(_buildDir, _subDir)
 
 			premake.gcc.cc  = "$(ANDROID_NDK_LLVM)/bin/clang"
 			premake.gcc.cxx = "$(ANDROID_NDK_LLVM)/bin/clang++"
-			premake.gcc.ar  = toolchainPrefix .. "ar"
+			premake.gcc.ar  = "$(ANDROID_NDK_LLVM)/bin/llvm-ar"
 			premake.gcc.llvm = true
 
 			location (_buildDir .. "projects/" .. _subDir .. "/".. _ACTION .. "-android-" .. _OPTIONS["PLATFORM"])
@@ -489,91 +489,52 @@ function toolchain(_buildDir, _subDir)
 		targetdir (_buildDir .. "android/bin/" .. _OPTIONS["PLATFORM"] .. "/Debug")
 
 	configuration { "android-*" }
-		objdir (_buildDir .. "android/obj/" .. _OPTIONS["PLATFORM"])
--- LIBRETRO HACK BEGIN support ndk-r13b structure
---		includedirs {
---			MAME_DIR .. "3rdparty/bgfx/3rdparty/khronos",
---			"$(ANDROID_NDK_ROOT)/sources/cxx-stl/llvm-libc++/libcxx/include",
---			"$(ANDROID_NDK_ROOT)/sources/cxx-stl/llvm-libc++/include",
---			"$(ANDROID_NDK_ROOT)/sysroot/usr/include",
---			"$(ANDROID_NDK_ROOT)/sources/android/support/include",
---			"$(ANDROID_NDK_ROOT)/sources/android/native_app_glue",
---		}
-if os.getenv("ANDROID_NDK_ROOT") then		
-		checkndk13 = os.getenv("ANDROID_NDK_ROOT") .. "/sources/cxx-stl/llvm-libc++/libcxx/include/list"	
-		if (os.isfile(checkndk13)) then
-			includedirs {
-				"$(ANDROID_NDK_ROOT)/sources/cxx-stl/llvm-libc++/libcxx/include",
-			}
-		else
-			includedirs {
-				"$(ANDROID_NDK_ROOT)/sources/cxx-stl/llvm-libc++/include",
-			}
+		local androidArchMap = {
+			['arm']   = { triple = "arm-linux-androideabi",   builtins = "arm-android"     },
+			['arm64'] = { triple = "aarch64-linux-android",   builtins = "aarch64-android"  },
+			['x86']   = { triple = "i686-linux-android",      builtins = "i686-android"     },
+			['x64']   = { triple = "x86_64-linux-android",    builtins = "x86_64-android"   },
+		}
+		local arch = androidArchMap[_OPTIONS["PLATFORM"]]
+		local builtinsLib = ""
+		if arch ~= nil then
+			builtinsLib = "$(ANDROID_NDK_LLVM)/lib/clang/" .. (_OPTIONS["CLANG_VERSION"] or "18") .. "/lib/linux/libclang_rt.builtins-" .. arch.builtins .. ".a"
 		end
-end
+
+		objdir (_buildDir .. "android/obj/" .. _OPTIONS["PLATFORM"])
+		includedirs {
+			MAME_DIR .. "3rdparty/bgfx/3rdparty/khronos",
+			--  LIBRETRO: don't mess with NDK includir order
+			-- "$(ANDROID_NDK_HOME)/sources/cxx-stl/llvm-libc++/libcxx/include",
+			-- "$(ANDROID_NDK_HOME)/sources/cxx-stl/llvm-libc++/include",
+			-- "$(ANDROID_NDK_HOME)/sysroot/usr/include",
+			-- "$(ANDROID_NDK_HOME)/sources/android/support/include",
+			-- "$(ANDROID_NDK_HOME)/sources/android/native_app_glue",
+		}
 		linkoptions {
 			"-nostdlib",
 		}
 		flags {
 			"NoImportLib",
 		}
---		links {
---			"c",
---			"dl",
---			"m",
---			"android",
---			"log",
---			"c++_static",
---			"c++abi",
---			"stdc++",
---			"gcc",
---		}
 		links {
 			"c",
 			"dl",
 			"m",
 			"android",
 			"log",
-		}
-
-if os.getenv("ANDROID_NDK_ROOT") then
-		if (os.isfile(checkndk13)) then
-			links {
-				"c++_static",
-			}
-		else
-			links {
-				"c++_static",
-				"c++abi",
-				"unwind",
-				"android_support",
-			}
-		end
-end
-		links {
---=======
---			"c++_static",
---			"c++abi",
---			"android_support",
---			"stdc++",
--->>>>>>> 2beedc540f14267850036f8b2aba81e874895ade
+			"c++_static",
+			"c++abi",
 			"stdc++",
-			"gcc",
+			"unwind"
 		}
--- LIBRETRO HACK END support ndk-r13b structure
-
---		buildoptions_c {
---			"-Wno-strict-prototypes",
---		}
--- LIBRETRO HACK END support ndk-r13b structure
-
 		buildoptions {
 			"-fpic",
 			"-ffunction-sections",
 			"-funwind-tables",
 			"-fstack-protector-strong",
 			"-no-canonical-prefixes",
-			"-fno-integrated-as",
+--			"-fno-integrated-as",
 			"-Wunused-value",
 			"-Wundef",
 			"-Wno-cast-align",
@@ -593,14 +554,14 @@ end
 
 	configuration { "android-arm" }
 			libdirs {
-				"$(ANDROID_NDK_ROOT)/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a",
-				"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-arm/usr/lib",
+				"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/arm-linux-androideabi/" .. androidPlatform:sub(9),
+				"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/arm-linux-androideabi",
 			}
 			includedirs {
 				"$(ANDROID_NDK_ROOT)/sysroot/usr/include/arm-linux-androideabi",
 			}
 			buildoptions {
-				"-gcc-toolchain $(ANDROID_NDK_ARM)",
+--				"-gcc-toolchain $(ANDROID_NDK_ARM)",
 				"-target armv7-none-linux-androideabi",
 				"-march=armv7-a",
 				"-mfloat-abi=softfp",
@@ -612,10 +573,11 @@ end
 			}
 			linkoptions {
 				"$(ANDROID_NDK_ROOT)/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libunwind.a -lgcc",
-				"-gcc-toolchain $(ANDROID_NDK_ARM)",
-				"--sysroot=$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-arm",
-				"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-arm/usr/lib/crtbegin_so.o",
-				"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-arm/usr/lib/crtend_so.o",
+--				"-gcc-toolchain $(ANDROID_NDK_ARM)",
+				"--sysroot=$(ANDROID_NDK_LLVM)/sysroot",
+				builtinsLib,
+				"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/arm-linux-androideabi/" .. androidPlatform:sub(9) .. "/crtbegin_so.o",
+				"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/arm-linux-androideabi/" .. androidPlatform:sub(9) .. "/crtend_so.o",
 				"-target armv7-none-linux-androideabi",
 				"-march=armv7-a",
 				"-mthumb",
@@ -623,64 +585,67 @@ end
 
 	configuration { "android-arm64" }
 			libdirs {
-				"$(ANDROID_NDK_ROOT)/sources/cxx-stl/llvm-libc++/libs/arm64-v8a",
-				"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-arm64/usr/lib64",
+				"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/aarch64-linux-android/" .. androidPlatform:sub(9),
+				"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/aarch64-linux-android",
 			}
 			includedirs {
 				"$(ANDROID_NDK_ROOT)/sysroot/usr/include/aarch64-linux-android",
 			}
 			buildoptions {
-				"-gcc-toolchain $(ANDROID_NDK_ARM64)",
+--				"-gcc-toolchain $(ANDROID_NDK_ARM64)",
 				"-target aarch64-none-linux-android",
 			}
 			linkoptions {
-				"-gcc-toolchain $(ANDROID_NDK_ARM64)",
-				"--sysroot=$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-arm64",
-				"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-arm64/usr/lib/crtbegin_so.o",
-				"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-arm64/usr/lib/crtend_so.o",
+--				"-gcc-toolchain $(ANDROID_NDK_ARM64)",
+				"--sysroot=$(ANDROID_NDK_LLVM)/sysroot",
+				builtinsLib,
+				"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/aarch64-linux-android/" .. androidPlatform:sub(9) .. "/crtbegin_so.o",
+				"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/aarch64-linux-android/" .. androidPlatform:sub(9) .. "/crtend_so.o",
 				"-target aarch64-none-linux-android",
 			}
 
 	configuration { "android-x86" }
 		libdirs {
-			"$(ANDROID_NDK_ROOT)/sources/cxx-stl/llvm-libc++/libs/x86",
-			"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-x86/usr/lib",
+			"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/i686-linux-android/" .. androidPlatform:sub(9),
+			"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/i686-linux-android",
 		}
 		includedirs {
 			"$(ANDROID_NDK_ROOT)/sysroot/usr/include/i686-linux-android",
 		}
 		buildoptions {
-			"-gcc-toolchain $(ANDROID_NDK_X86)",
+--			"-gcc-toolchain $(ANDROID_NDK_X86)",
 			"-target i686-none-linux-android",
 			"-mssse3"
 		}
 		linkoptions {
-			"-gcc-toolchain $(ANDROID_NDK_X86)",
+--			"-gcc-toolchain $(ANDROID_NDK_X86)",
 			"-target i686-none-linux-android",
 			"-mssse3",
-			"--sysroot=$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-x86",
-			"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-x86/usr/lib/crtbegin_so.o",
-			"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-x86/usr/lib/crtend_so.o",
+			"--sysroot=$(ANDROID_NDK_LLVM)/sysroot",
+			builtinsLib,
+			"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/i686-linux-android/" .. androidPlatform:sub(9) .. "/crtbegin_so.o",
+			"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/i686-linux-android/" .. androidPlatform:sub(9) .. "/crtend_so.o",
 		}
 
 	configuration { "android-x64" }
 		libdirs {
-			"$(ANDROID_NDK_ROOT)/sources/cxx-stl/llvm-libc++/libs/x86_64",
-			"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-x86_64/usr/lib64",
+			"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/x86_64-linux-android/" .. androidPlatform:sub(9),
+			"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/x86_64-linux-android",
 		}
 		includedirs {
 			"$(ANDROID_NDK_ROOT)/sysroot/usr/include/x86_64-linux-android",
 		}
 		buildoptions {
-			"-gcc-toolchain $(ANDROID_NDK_X64)",
+--			"-gcc-toolchain $(ANDROID_NDK_X64)",
 			"-target x86_64-none-linux-android",
 		}
 		linkoptions {
-			"-gcc-toolchain $(ANDROID_NDK_X64)",
+--			"-gcc-toolchain $(ANDROID_NDK_X64)",
 			"-target x86_64-none-linux-android",
-			"--sysroot=$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-x86_64",
-			"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-x86_64/usr/lib64/crtbegin_so.o",
-			"$(ANDROID_NDK_ROOT)/platforms/" .. androidPlatform .. "/arch-x86_64/usr/lib64/crtend_so.o",
+			"--sysroot=$(ANDROID_NDK_LLVM)/sysroot",
+			builtinsLib,
+			"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/x86_64-linux-android/" .. androidPlatform:sub(9) .. "/crtbegin_so.o",
+			"$(ANDROID_NDK_LLVM)/sysroot/usr/lib/x86_64-linux-android/" .. androidPlatform:sub(9) .. "/crtend_so.o",
 		}
 
 	configuration { "asmjs" }

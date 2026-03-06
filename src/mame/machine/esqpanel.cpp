@@ -427,7 +427,7 @@ void esqpanel_device::device_start()
 {
 	m_write_tx.resolve_safe();
 	m_write_analog.resolve_safe();
-
+#if 0
 	m_external_panel_server = new esqpanel::external_panel_server(machine().manager().http());
 	if (machine().manager().http()->is_active()) {
 		m_external_panel_server->set_keyboard(owner()->shortname());
@@ -442,6 +442,7 @@ void esqpanel_device::device_start()
 		m_external_timer = timer_alloc(FUNC(esqpanel_device::check_external_panel_server), this);
 		m_external_timer->enable(false);
 	}
+#endif
 }
 
 

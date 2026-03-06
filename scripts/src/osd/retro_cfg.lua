@@ -3,6 +3,12 @@
 
 dofile("retro_modules.lua")
 
+newoption {
+	trigger = "NO_X11",
+	value   = "1",
+	description = "Disable X11 support",
+}
+
 forcedincludes {
 	MAME_DIR .. "src/osd/libretro/retroprefix.h"
 }
@@ -74,6 +80,12 @@ elseif _OPTIONS["targetos"]=="freebsd" then
 		-- /usr/local/include is not considered a system include director on FreeBSD.  GL.h resides there and throws warnings
 		"-isystem /usr/local/include",
 	}
+end
+
+if _OPTIONS["NO_X11"]=="1" then
+    defines {
+        "MESA_EGL_NO_X11_HEADERS",
+    }
 end
 
 configuration { "osx*" }

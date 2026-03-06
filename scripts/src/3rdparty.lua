@@ -1373,6 +1373,7 @@ end
 			defines {
 				"BGFX_CONFIG_RENDERER_OPENGLES=1",
 				"BGFX_CONFIG_RENDERER_OPENGL=0",
+				"MESA_EGL_NO_X11_HEADERS"
 			}
 		end
 	end
