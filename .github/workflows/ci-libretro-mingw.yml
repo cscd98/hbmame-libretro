@@ -14,13 +14,13 @@ jobs:
       - name: Install MinGW
         run: |
           sudo apt update
-          sudo apt install -y mingw-w64
+          sudo apt install -y mingw-w64 gcc-mingw-w64-x86-64-posix g++-mingw-w64-x86-64-posix
 
       - name: Build
         shell: bash
         run: |
-          export CC=x86_64-w64-mingw32-gcc
-          export CXX=x86_64-w64-mingw32-g++
+          export CC=x86_64-w64-mingw32-gcc-posix
+          export CXX=x86_64-w64-mingw32-g++-posix
           export AR=x86_64-w64-mingw32-ar
 
           make -f Makefile.libretro \
