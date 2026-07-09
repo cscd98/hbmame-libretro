@@ -131,49 +131,36 @@ endif
 # android only needs a valid ANDROID_NDK_HOME set no paths are needed toolchain and makefile takes care of that
 # make CONFIG=libretero OSD=retro android-xxx is all thes required
 
+# ---------------------------------------------------------
+# Android NDK selection
+# ---------------------------------------------------------
+ifeq ($(findstring android,$(platform)),android)
+    # 1. NDK_NEXT
+    ifneq ($(ANDROID_NDK_NEXT),)
+        ANDROID_NDK_ROOT := /opt/android-ndk/$(ANDROID_NDK_NEXT)
+        ANDROID_NDK_HOME := $(ANDROID_NDK_ROOT)
+    else ifneq ($(ANDROID_NDK_ROOT),)
+        ANDROID_NDK_HOME := $(ANDROID_NDK_ROOT)
+    else
+        export ANDROID_NDK_HOME ?= /opt/ndk
+        ANDROID_NDK_ROOT := $(ANDROID_NDK_HOME)
+    endif
+    LIBRETRO_CPU :=
+    LIBRETRO_OS :=
+    PTR64 :=
+endif
+
 ifeq ($(platform),android-arm)
-#buildbot fix
-	ifneq ($(ANDROID_NDK_ROOT),)
-	ANDROID_NDK_HOME=$(ANDROID_NDK_ROOT)
-	endif
-	export ANDROID_NDK_HOME ?= /opt/ndk
 	PLATFLAGS += TARGETOS=android-arm gcc=android-arm PLATFORM=arm
-	LIBRETRO_CPU :=
-	LIBRETRO_OS :=
-	PTR64 :=
 endif
 ifeq ($(platform),android-arm64)
-#buildbot fix
-	ifneq ($(ANDROID_NDK_ROOT),)
-	ANDROID_NDK_HOME=$(ANDROID_NDK_ROOT)
-	endif
-	export ANDROID_NDK_HOME ?= /opt/ndk
 	PLATFLAGS += TARGETOS=android-arm64 gcc=android-arm64 PLATFORM=arm64
-	LIBRETRO_CPU :=
-	LIBRETRO_OS :=
-	PTR64 :=
 endif
 ifeq ($(platform),android-x86)
-#buildbot fix
-	ifneq ($(ANDROID_NDK_ROOT),)
-	ANDROID_NDK_HOME=$(ANDROID_NDK_ROOT)
-	endif
-	export ANDROID_NDK_HOME ?= /opt/ndk
 	PLATFLAGS += TARGETOS=android-x86 gcc=android-x86 PLATFORM=x86
-	LIBRETRO_CPU :=
-	LIBRETRO_OS :=
-	PTR64 :=
 endif
 ifeq ($(platform),android-x86_64)
-#buildbot fix
-	ifneq ($(ANDROID_NDK_ROOT),)
-	ANDROID_NDK_HOME=$(ANDROID_NDK_ROOT)
-	endif
-	export ANDROID_NDK_HOME ?= /opt/ndk
 	PLATFLAGS += TARGETOS=android-x64 gcc=android-x64 PLATFORM=x64
-	LIBRETRO_CPU :=
-	LIBRETRO_OS :=
-	PTR64 :=
 endif
 
 ifneq ($(ANDROID_NDK_HOME),)
